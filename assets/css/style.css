@@ -545,9 +545,6 @@ section {
 }
 
 @media (max-width: 992px) {
-    .about .container {
-        padding: 30px;
-    }
     .about {
         background: linear-gradient(180deg, #FFE673 0%, #FFE15A 100%);
     }
