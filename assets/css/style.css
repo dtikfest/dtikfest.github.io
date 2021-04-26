@@ -442,9 +442,10 @@ h6 {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     #beranda {
-        height: 500px;
+        width: 100%;
+        height: auto;
     }
     #beranda h1 {
         font-size: 24px;
