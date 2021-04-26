@@ -548,6 +548,18 @@ section {
     .about .container {
         padding: 30px;
     }
+    .about {
+        background: linear-gradient(180deg, #FFE673 0%, #FFE15A 100%);
+    }
+}
+
+@media (max-width: 434px) {
+    .about .section-title h1 {
+        white-space: pre-line;
+    }
+    .kegiatan .section-title h1 {
+        white-space: pre-line;
+    }
 }
 
 .about .section-title h1 {
@@ -566,7 +578,7 @@ section {
 .about p {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 36px;
     letter-spacing: 0.05em;
     color: #1762AA;
@@ -1025,6 +1037,11 @@ section {
 #footer .footer-top p img {
     width: 25px;
     margin-right: 10px;
+}
+
+#footer .footer-links {
+    text-align: center;
+    margin: 0 auto;
 }
 
 #footer .copyright {
