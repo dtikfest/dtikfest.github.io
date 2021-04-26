@@ -443,12 +443,19 @@ h6 {
 }
 
 @media (max-width: 992px) {
+    #beranda {
+        height: 500px;
+    }
     #beranda h1 {
-        font-size: 32px;
+        font-size: 24px;
         line-height: 40px;
+        margin: 30px 0 30px 0;
     }
     #beranda h2 {
         font-size: 20px;
+    }
+    #beranda .beranda-img img {
+        width: 70%;
     }
 }
 
