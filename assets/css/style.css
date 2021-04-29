@@ -867,11 +867,11 @@ section {
 
 
 /*--------------------------------------------------------------
-# Clients
+# Sponsors
 --------------------------------------------------------------*/
 
 
-.clients .client-logo {
+.sponsors .sponsor-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -882,17 +882,17 @@ section {
     padding: 40px;
 }
 
-.clients .client-logo img {
+.sponsors .sponsor-logo img {
     max-width: 70%;
     filter: grayscale(100);
 }
 
-.clients .client-logo:hover img {
+.sponsors .sponsor-logo:hover img {
     filter: none;
     transform: scale(1.1);
 }
 
-.clients img {
+.sponsors img {
     transition: all 0.4s ease-in-out;
 }
 
