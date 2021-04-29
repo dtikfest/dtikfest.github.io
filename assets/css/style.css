@@ -862,6 +862,20 @@ section {
 # Sponsors
 --------------------------------------------------------------*/
 
+.sponsors .section-title h1 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 41px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.sponsors .section-title p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+}
 
 .sponsors .sponsor-logo {
     display: flex;
