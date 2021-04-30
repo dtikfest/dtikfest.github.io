@@ -624,11 +624,6 @@ section {
     margin: 5%;
 }
 
-.galeri .gallery .desc {
-    padding: 15px;
-    text-align: center;
-}
-
 .galeri .swiper-pagination {
     margin-top: 20px;
     position: relative;
@@ -648,7 +643,6 @@ section {
 
 .galeri .galeri-item {
     box-sizing: content-box;
-    min-height: 320px;
 }
 
 
