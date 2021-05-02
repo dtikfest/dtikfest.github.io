@@ -567,7 +567,7 @@ section {
 .about p {
     font-style: normal;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 36px;
     letter-spacing: 0.05em;
     color: #1762AA;
@@ -607,7 +607,7 @@ section {
 .galeri .section-title p {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 28px;
 }
 
@@ -622,11 +622,6 @@ section {
 .galeri .gallery img {
     width: 90%;
     margin: 5%;
-}
-
-.galeri .gallery .desc {
-    padding: 15px;
-    text-align: center;
 }
 
 .galeri .swiper-pagination {
@@ -648,7 +643,6 @@ section {
 
 .galeri .galeri-item {
     box-sizing: content-box;
-    min-height: 320px;
 }
 
 
@@ -673,7 +667,7 @@ section {
 .testimonials .section-title p {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 28px;
 }
 
@@ -784,7 +778,7 @@ section {
 .kegiatan .section-title p {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 28px;
 }
 
@@ -873,7 +867,7 @@ section {
 .sponsors .section-title p {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 28px;
 }
 
