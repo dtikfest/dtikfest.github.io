@@ -20,10 +20,10 @@
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-
 
 </head>
 
@@ -53,7 +53,7 @@
 
                     <li class="dropdown"><a href="#"><span>Produk</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a class="nav-link scrollto" href="#about">Mobile</a></li>
+                            <li><a class="nav-link scrollto" href="product.html">Mobile</a></li>
                             <li><a class="nav-link scrollto" href="#team">Desktop</a></li>
                             <li><a class="nav-link scrollto" href="#testimonials">Website</a></li>
                             <li><a class="nav-link scrollto" href="#testimonials">IoT</a></li>
@@ -158,22 +158,22 @@
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
-                            <div class="galeri-item gallery">
+                            <div class="gallery">
                                 <img src="assets/img/gallery/img1.png" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="galeri-item gallery">
+                            <div class="gallery">
                                 <img src="assets/img/gallery/img2.png" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="galeri-item gallery">
+                            <div class="gallery">
                                 <img src="assets/img/gallery/img1.png" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="galeri-item gallery">
+                            <div class="gallery">
                                 <img src="assets/img/gallery/img2.png" alt="">
                             </div>
                         </div>
@@ -312,34 +312,63 @@
                 <div class="flow-group" data-aos="fade-up">
                     <h1 class="btn-get-started master-flow">19 Januari 2021</h1>
                 </div>
-                <div class="row">
-                    <div class="col-lg-5 flow">
-                        <div class="kegiatan-item" id="item1">
-                            <img src="assets/img/gallery/img1.png" alt="">
-                            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet enim in nisl tincidunt tristique. Donec molestie ligula at egestas venenatis.
+                <ul class="timeline">
+                    <li data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-image"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2009-2011</h4>
+                                <h4 class="subheading">Our Humble Beginnings</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 flow">
-                        <a class="btn-get-started sub-flow">1</a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-5 flow">
-                    </div>
-                    <div class="col-lg-2 flow">
-                        <a class="btn-get-started sub-flow">2</a>
-                    </div>
-                    <div class="col-lg-5 flow">
-                        <div class="kegiatan-item" id="item2">
-                            <img src="assets/img/gallery/img1.png" alt="">
-                            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet enim in nisl tincidunt tristique. Donec molestie ligula at egestas venenatis.
+                    </li>
+                    <li class="timeline-inverted" data-aos="fade-up">
+                        <div class="timeline-image"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">An Agency is Born</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-
+                    </li>
+                    <li data-aos="fade-up">
+                        <div class="timeline-image"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2015</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted" data-aos="fade-up">
+                        <div class="timeline-image"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2020</h4>
+                                <h4 class="subheading">Phase Two Expansion</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Acara Selesai
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- End Kegiatan Section -->
@@ -525,8 +554,8 @@
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
