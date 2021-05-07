@@ -139,8 +139,8 @@
                     <div class="swiper-slide">
                         <div class="testimonial-item">
                             <p>
-                                {{ $mhs->testimoni->deskripsi_testimoni}}
-                                {{-- {{!empty($mhs->testimoni) ? $mhs->testimoni->deskripsi_testimoni: ''}} --}}
+                                {{-- {{ $mhs->testimoni->deskripsi_testimoni}} --}}
+                                {{!empty($mhs->testimoni) ? $mhs->testimoni->deskripsi_testimoni: ''}}
                             </p>
                             <!--<img src="/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">-->
                             <h3>{{$mhs->nama_mahasiswa}}</h3>
