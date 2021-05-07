@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="detail-product.html">
+                <a href="/detailProduk">
                     <div class="product-box">
                         <img src="/img/App.png" alt="">
                         <div class="desc">
@@ -21,7 +21,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="detail-product.html">
+                <a href="/detailProduk">
                     <div class="product-box">
                         <img src="/img/App.png" alt="">
                         <div class="desc">
@@ -32,7 +32,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="detail-product.html">
+                <a href="/detailProduk">
                     <div class="product-box">
                         <img src="/img/App.png" alt="">
                         <div class="desc">
@@ -43,7 +43,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="detail-product.html">
+                <a href="/detailProduk">
                     <div class="product-box">
                         <img src="/img/App.png" alt="">
                         <div class="desc">
@@ -54,7 +54,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="detail-product.html">
+                <a href="/detailProduk">
                     <div class="product-box">
                         <img src="/img/App.png" alt="">
                         <div class="desc">
@@ -65,7 +65,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="detail-product.html">
+                <a href="/detailProduk">
                     <div class="product-box">
                         <img src="/img/App.png" alt="">
                         <div class="desc">
@@ -76,7 +76,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="detail-product.html">
+                <a href="/detailProduk">
                     <div class="product-box">
                         <img src="/img/App.png" alt="">
                         <div class="desc">

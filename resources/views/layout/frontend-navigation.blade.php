@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center">
 
         <div class="logo me-auto">
-            <a href="index.html"><img src="/img/logo.png" alt="" class="img-fluid"></a>
+            <a href="/"><img src="/img/logo.png" alt="" class="img-fluid"></a>
         </div>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
@@ -13,16 +13,16 @@
                         <span>Beranda</span> <i class="bi bi-chevron-down"></i>
                     </a>
                     <ul>
-                        <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
-                        <li><a class="nav-link scrollto" href="#galeri">Galeri</a></li>
-                        <li><a class="nav-link scrollto" href="#testimonials">Testimoni</a></li>
-                        <li><a class="nav-link scrollto" href="#kegiatan">Kegiatan</a></li>
+                        <li><a class="nav-link scrollto" href="/#about">Tentang</a></li>
+                        <li><a class="nav-link scrollto" href="/#galeri">Galeri</a></li>
+                        <li><a class="nav-link scrollto" href="/#testimonials">Testimoni</a></li>
+                        <li><a class="nav-link scrollto" href="/#kegiatan">Kegiatan</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown"><a href="#"><span>Produk</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a class="nav-link scrollto" href="product.html">Mobile</a></li>
+                        <li><a class="nav-link scrollto" href="/produk">Mobile</a></li>
                         <li><a class="nav-link scrollto" href="#team">Desktop</a></li>
                         <li><a class="nav-link scrollto" href="#testimonials">Website</a></li>
                         <li><a class="nav-link scrollto" href="#testimonials">IoT</a></li>

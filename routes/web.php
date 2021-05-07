@@ -23,4 +23,4 @@ Route::get('/', BerandaController::class);
 // });
 
 Route::get('produk', [ProdukController::class, 'index']);
-Route::get('produk/detail', [ProdukController::class, 'detailProduk']);
+Route::get('detailProduk', [ProdukController::class, 'detailProduk']);
