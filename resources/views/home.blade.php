@@ -94,27 +94,18 @@
             </div>
             <div class="gallery-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
+                    @forelse ($galeri as $gal)
+                    <div class="swiper-slide">
+                        <div class="gallery">
+                            <img src="/img/gallery/{{$gal->foto}}" alt="">
+                        </div>
+                    </div>
+                    @empty
+                    <div class="alert alert-info">
+                        There are no posts.
+                    </div>
+                    @endforelse
 
-                    <div class="swiper-slide">
-                        <div class="gallery">
-                            <img src="/img/gallery/img1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery">
-                            <img src="/img/gallery/img2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery">
-                            <img src="/img/gallery/img1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="gallery">
-                            <img src="/img/gallery/img2.png" alt="">
-                        </div>
-                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -263,54 +254,18 @@
             </div>
 
             <div class="row no-gutters sponsors-wrap clearfix wow fadeInUp">
-
+                @forelse ($industri as $ind)
                 <div class="col-lg-3 col-md-4 col-xs-6">
                     <div class="sponsor-logo" data-aos="zoom-in">
-                        <img src="/img/sponsors/sponsor-1.png" class="img-fluid" alt="">
+                        <img src="/img/sponsors/{{$ind->logo_industri}}" class="img-fluid" alt="">
                     </div>
                 </div>
+                @empty
+                <div class="alert alert-info">
+                    There are no posts.
+                </div>
+                @endforelse
 
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="sponsor-logo" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="/img/sponsors/sponsor-2.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="sponsor-logo" data-aos="zoom-in" data-aos-delay="150">
-                        <img src="/img/sponsors/sponsor-3.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="sponsor-logo" data-aos="zoom-in" data-aos-delay="200">
-                        <img src="/img/sponsors/sponsor-4.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="sponsor-logo" data-aos="zoom-in" data-aos-delay="250">
-                        <img src="/img/sponsors/sponsor-5.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="sponsor-logo" data-aos="zoom-in" data-aos-delay="300">
-                        <img src="/img/sponsors/sponsor-6.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="sponsor-logo" data-aos="zoom-in" data-aos-delay="350">
-                        <img src="/img/sponsors/sponsor-7.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="sponsor-logo">
-                        <img src="/img/sponsors/sponsor-8.png" class="img-fluid" alt="">
-                    </div>
-                </div>
 
             </div>
         </div>
