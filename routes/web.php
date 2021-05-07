@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\BerandaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', BerandaController::class);
+
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+Route::get('produk', [ProdukController::class, 'index']);
+Route::get('produk/detail', [ProdukController::class, 'detailProduk']);
