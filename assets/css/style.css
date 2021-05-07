@@ -551,6 +551,12 @@ section {
     }
 }
 
+@media (max-width: 575px) {
+    .about p {
+        margin: auto 1rem auto 1rem;
+    }
+}
+
 .about .section-title h1 {
     text-align: center;
     font-size: 42px;
@@ -567,7 +573,7 @@ section {
 .about p {
     font-style: normal;
     font-weight: normal;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 36px;
     letter-spacing: 0.05em;
     color: #1762AA;
@@ -605,9 +611,10 @@ section {
 }
 
 .galeri .section-title p {
+    text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 28px;
 }
 
@@ -620,8 +627,8 @@ section {
 }
 
 .galeri .gallery img {
-    width: 90%;
-    margin: 5%;
+    width: 94%;
+    margin: 3%;
 }
 
 .galeri .swiper-pagination {
@@ -774,7 +781,7 @@ section {
 .kegiatan .section-title p {
     font-style: normal;
     font-weight: normal;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 28px;
 }
 
@@ -1350,6 +1357,13 @@ section {
     overflow: hidden;
 }
 
+@media (max-width: 560px) {
+    #detail-product .top-tittle h2 {
+        font-size: 1.3rem;
+        margin: 0 0 0 1.5rem;
+    }
+}
+
 
 /* Hide the images by default */
 
@@ -1437,12 +1451,15 @@ section {
     margin: 30px auto 30px auto;
     width: 100%;
     font-size: 0;
+    text-align: center;
 }
 
 #detail-product #button-group a {
     width: 33%;
-    padding: 12px 28px;
+    padding: 12px 12px;
+    font-size: 1rem;
     font-family: "Raleway", sans-serif;
+    text-align: center;
     letter-spacing: 0.1em;
     font-weight: bold;
     color: #2D75BB;
@@ -1503,7 +1520,7 @@ section {
 
 #detail-product .content-item ul {
     list-style: none;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 36px;
     font-family: "Open Sans", sans-serif;
 }
@@ -1512,8 +1529,8 @@ section {
     margin: 0;
     padding: 12px 28px;
     color: #2D75BB;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 32px;
     font-family: "Open Sans", sans-serif;
 }
 
