@@ -58,27 +58,22 @@
                 <div class="row">
                     <div class="content">
                         <div class="content-item">
-                            <h1>Nama Aplikasi</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum quis amet, faucibus
-                                lorem. Lectus amet odio quis sed adipiscing adipiscing magna non. Nullam turpis faucibus
-                                ridiculus suscipit. Et blandit suspendisse curabitur
-                                eu congue dui ut. Lectus amet odio quis sed adipiscing adipiscing magna non. Nullam
-                                turpis faucibus ridiculus suscipit. </p>
+                            <h1>{{$tim->produk->nama_produk}}</h1>
+                            <p>{{$tim->produk->deskripsi_produk}}</p>
                         </div>
                         <div class="content-item" style="display: none;">
-                            <h1>Nama Tim</h1>
+                            <h1>{{$tim->nama_tim}}</h1>
                             <ul>
-                                <li>1. Syafii (2103191045)</li>
-                                <li>2. Syafii (2103191045)</li>
-                                <li>3. Syafii (2103191045)</li>
-                                <li>4. Syafii (2103191045)</li>
-                                <li>5. Syafii (2103191045)</li>
+                                @foreach ($tim->anggotaTim as $index => $anggota)
+                                <li>{{$index+1}}. {{$anggota->nama_mahasiswa }} ({{$anggota->nrp}})</li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="content-item" style="display: none;">
-                            <h3><i class='bx bxs-map'></i>Surabaya</h3>
-                            <h3><i class='bx bxs-contact'></i>+6281231129214</h3>
-                            <h3><i class='bx bxs-envelope'></i>siimam398@gmail.com</h3>
+                            {{-- {{dd($tim)}} --}}
+                            <h3><i class='bx bxs-map'></i>{{$tim->alamat}}</h3>
+                            <h3><i class='bx bxs-contact'></i>{{$tim->no_telp}}</h3>
+                            <h3><i class='bx bxs-envelope'></i>{{$tim->email}}</h3>
                         </div>
                     </div>
                 </div>

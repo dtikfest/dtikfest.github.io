@@ -10,9 +10,15 @@ class Mahasiswa extends Model
 {
     use HasFactory;
     protected $table = 'mahasiswa';
+    protected $primaryKey = 'nrp';
 
-    public function testimoni()
+    // public function testimoni()
+    // {
+    //     return $this->belongsTo(Testimoni::class);
+    // }
+
+    public function tim()
     {
-        return $this->hasOne(Testimoni::class);
+        return $this->belongsToMany(TimExhibitor::class, 'id_tim');
     }
 }

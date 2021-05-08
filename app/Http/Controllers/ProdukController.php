@@ -2,17 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TimExhibitor;
 use Illuminate\Http\Request;
 
 class ProdukController extends Controller
 {
     public function index()
     {
-        return view('produk.home');
+        return view('produk.index', [
+            'tim' => TimExhibitor::all(),
+        ]);
     }
 
-    public function detailProduk()
+    public function detailProdukTim(TimExhibitor $tim)
     {
-        return view('produk.detail-produk');
+        // $anggota_tim = $tim->anggotaTim()->latest();
+        return view('produk.detail-produk', compact('tim'));
     }
 }

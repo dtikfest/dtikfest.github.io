@@ -1,7 +1,5 @@
 @extends('layout.app',['title'=>'DTIK Fest 2021'])
 
-{{-- @section('title','DTIK Fest 2021') --}}
-
 @section('content')
 
 <!-- ======= Beranda Section ======= -->
@@ -94,18 +92,13 @@
             </div>
             <div class="gallery-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
-                    @forelse ($galeri as $gal)
+                    @foreach ($galeri as $gal)
                     <div class="swiper-slide">
                         <div class="gallery">
                             <img src="/img/gallery/{{$gal->foto}}" alt="">
                         </div>
                     </div>
-                    @empty
-                    <div class="alert alert-info">
-                        There are no posts.
-                    </div>
-                    @endforelse
-
+                    @endforeach
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -124,28 +117,22 @@
 
             <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
-
-                    @forelse ($mahasiswa as $mhs)
-                    {{-- @forelse ($testimoni as $testi) --}}
+                    @foreach ($testimoni as $testi)
                     <div class="swiper-slide">
                         <div class="testimonial-item">
                             <p>
-                                {{-- {{ $mhs->testimoni->deskripsi_testimoni}} --}}
-                                {{!empty($mhs->testimoni) ? $mhs->testimoni->deskripsi_testimoni: ''}}
+                                {{ $testi->deskripsi_testimoni}}
                             </p>
-                            <!--<img src="/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">-->
-                            <h3>{{$mhs->nama_mahasiswa}}</h3>
-                            {{-- <h4>{{$mhs->testimoni->peran}}</h4> --}}
+                            {{-- <img src="/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""> --}}
+                            <h3>{{$testi->mahasiswa->nama_mahasiswa}}</h3>
+                            {{-- <h3>{{dd($testi)}}</h3> --}}
+                            <h4>{{$testi->peran}}</h4>
                             <div class="icon">
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </div>
                         </div>
                     </div>
-                    @empty
-                    <div class="alert alert-info">
-                        There are no posts.
-                    </div>
-                    @endforelse
+                    @endforeach
 
                 </div>
                 <div class="swiper-pagination"></div>
@@ -254,19 +241,13 @@
             </div>
 
             <div class="row no-gutters sponsors-wrap clearfix wow fadeInUp">
-                @forelse ($industri as $ind)
+                @foreach ($industri as $ind)
                 <div class="col-lg-3 col-md-4 col-xs-6">
                     <div class="sponsor-logo" data-aos="zoom-in">
                         <img src="/img/sponsors/{{$ind->logo_industri}}" class="img-fluid" alt="">
                     </div>
                 </div>
-                @empty
-                <div class="alert alert-info">
-                    There are no posts.
-                </div>
-                @endforelse
-
-
+                @endforeach
             </div>
         </div>
     </section>

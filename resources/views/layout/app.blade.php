@@ -31,9 +31,14 @@
 
 <body>
 
+    @if (request()->is('admin'or'admin/*'))
+    @yield('content')
+    @else
     @include('layout/frontend-navigation')
     @yield('content')
     @include('layout/frontend-footer')
+    @endif
+
 </body>
 
 <!-- Vendor JS Files -->
