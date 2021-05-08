@@ -31,13 +31,13 @@
 
 <body>
 
-    @if (request()->is('admin'or'admin/*'))
+    {{-- @if (request()->is('admin'or'admin/*'))
     @yield('content')
-    @else
+    @else --}}
     @include('layout/frontend-navigation')
     @yield('content')
     @include('layout/frontend-footer')
-    @endif
+    {{-- @endif --}}
 
 </body>
 
