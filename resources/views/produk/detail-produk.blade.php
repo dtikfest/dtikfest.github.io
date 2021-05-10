@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <!-- ======= Detail Produk Section ======= -->
 <section id="detail-product">
     <div class="top-tittle" data-aos="fade-right" data-aos-easing="ease-in-out">
@@ -12,38 +11,27 @@
         <div class="row">
             <div class="col-lg-6 detail">
                 <div class="image-gallery" data-aos="zoom-in">
+                    <?php $i=1;?>
+                    @while ($tim->produk->{'foto_produk'.$i} != null)
                     <div class="mySlides">
-                        <img src="/img/App.png">
+                        <img src="/img/products/{{ $tim->produk->{'foto_produk'.$i} }}">
+                        <?php $i++;?>
                     </div>
+                    @endwhile
 
-                    <div class="mySlides">
-                        <img src="/img/App.png">
-                    </div>
-
-                    <div class="mySlides">
-                        <img src="/img/App.png">
-                    </div>
-
-                    <div class="mySlides">
-                        <img src="/img/App.png">
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class=" prev" onclick="plusSlides(-1)">❮</a>
                     <a class="next" onclick="plusSlides(1)">❯</a>
 
                     <div class="row">
+                        <?php $i=1;?>
+                        @while ($tim->produk->{'foto_produk'.$i} != null)
                         <div class="column">
-                            <img class="demo cursor" src="/img/App.png" onclick="currentSlide(1)">
+                            <img class="demo cursor" src="/img/products/{{ $tim->produk->{'foto_produk'.$i} }}"
+                                onclick="currentSlide($i)">
+                            <?php $i++;?>
                         </div>
-                        <div class="column">
-                            <img class="demo cursor" src="/img/App.png" onclick="currentSlide(2)">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="/img/App.png" onclick="currentSlide(3)">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="/img/App.png" onclick="currentSlide(4)">
-                        </div>
+                        @endwhile
+
                     </div>
                 </div>
             </div>

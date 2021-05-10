@@ -18,5 +18,6 @@ class ProdukController extends Controller
     {
         // $anggota_tim = $tim->anggotaTim()->latest();
         return view('produk.detail-produk', compact('tim'));
+        //parameter 'tim' diatas direferensikan ke url routing
     }
 }

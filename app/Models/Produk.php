@@ -11,8 +11,13 @@ class Produk extends Model
     protected $primaryKey = 'id_produk';
     use HasFactory;
 
-    // public function tim()
+    public function tim()
+    {
+        return $this->hasone(TimExhibitor::class, 'id_tim');
+    }
+
+    // public function kategori()
     // {
-    //     return $this->belongsTo(TimExhibitor::class, 'id_tim');
+    //     return $this->belongsToMany(Kategori::class, 'id_produk');
     // }
 }

@@ -19,18 +19,19 @@
                         <li><a class="nav-link scrollto" href="/#kegiatan">Kegiatan</a></li>
                     </ul>
                 </li>
-
                 <li class="dropdown"><a href="#"><span>Produk</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a class="nav-link scrollto" href="/produk">Mobile</a></li>
-                        <li><a class="nav-link scrollto" href="#team">Desktop</a></li>
-                        <li><a class="nav-link scrollto" href="#testimonials">Website</a></li>
-                        <li><a class="nav-link scrollto" href="#testimonials">IoT</a></li>
+                        @foreach (session()->get('kategoriProduk') as $katPro)
+                        <li>
+                            <a class="nav-link scrollto"
+                                href="/produk/{{$katPro->id_kategori}}">{{$katPro->kategori->nama_kategori}}</a>
+                        </li>
+                        @endforeach
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="#services">Arsip</a></li>
-                <li><a class="nav-link scrollto " href="#portfolio">Pemenang</a></li>
-                <li><a class="nav-link scrollto " href="#faq">FAQ</a></li>
+                <li><a class="nav-link scrollto " href="/pemenang">Pemenang</a></li>
+                <li><a class="nav-link scrollto" href="/arsip">Arsip</a></li>
+                <li><a class="nav-link scrollto " href="/faq">FAQ</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

@@ -17,8 +17,8 @@ class Mahasiswa extends Model
     //     return $this->belongsTo(Testimoni::class);
     // }
 
-    public function tim()
-    {
-        return $this->belongsToMany(TimExhibitor::class, 'id_tim');
-    }
+    // public function tim()
+    // {
+    //     return $this->belongsToMany(TimExhibitor::class, 'id_tim');
+    // }
 }

@@ -9,24 +9,30 @@
     </div>
     <div class="container">
         <div class="row">
-
-            @foreach ($tim as $tim)
+            {{-- {{dd($kategori_produk->produk[0]->tim->anggotaTim[0]->nrp)}} --}}
+            {{-- atribut produk itu dari method --}}
+            @forelse ($kategori_produk->produk as $katPro)
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="/detailProdukTim/{{$tim->id_tim}}">
+                <a href="/detailProdukTim/{{$katPro->tim->id_tim}}">
                     <div class="product-box">
-                        <img src="/img/App.png" alt="">
+                        <img src="/img/products/{{$katPro->foto_produk1}}" alt="">
                         <div class="desc">
-                            <h3>{{$tim->produk->nama_produk}}</h3>
-                            <h4>{{$tim->nama_tim}}</h4>
+                            <h3>{{$katPro->nama_produk}}</h3>
+                            <h4>{{$katPro->tim->nama_tim}}</h4>
                         </div>
                     </div>
                 </a>
             </div>
-            @endforeach
-
+            @empty
+            <div class=" vh-100">
+                <div class=" alert alert-info mt-5 text-center">
+                    Belum ada Post.
+                </div>
+            </div>
+            @endforelse
         </div>
 
-        <nav aria-label="pagination-nav">
+        {{-- <nav aria-label="pagination-nav">
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
                     <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
@@ -38,7 +44,7 @@
                     <a class="page-link" href="#">Next</a>
                 </li>
             </ul>
-        </nav>
+        </nav> --}}
     </div>
 </section>
 <!-- End Mobile -->
