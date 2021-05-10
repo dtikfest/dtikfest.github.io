@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 08, 2021 at 01:29 PM
+-- Generation Time: May 10, 2021 at 03:41 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -91,7 +91,8 @@ INSERT INTO `industri` (`id_industri`, `nama_industri`, `logo_industri`) VALUES
 (5, 'Rasyid Institute', 'sponsor-5.png'),
 (6, 'Maulidan Games', 'sponsor-6.png'),
 (7, 'PTI', 'sponsor-7.png'),
-(8, 'Sindika', 'sponsor-8.png');
+(8, 'Sindika', 'sponsor-8.png'),
+(9, 'Rasyid Technologies', 'sponsor-9.png');
 
 -- --------------------------------------------------------
 
@@ -147,6 +148,17 @@ CREATE TABLE `kategori` (
   `nama_kategori` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `kategori`
+--
+
+INSERT INTO `kategori` (`id_kategori`, `nama_kategori`) VALUES
+(1, 'Mobile'),
+(2, 'Website'),
+(3, 'Desktop'),
+(4, 'IOT'),
+(5, 'tes');
+
 -- --------------------------------------------------------
 
 --
@@ -158,6 +170,14 @@ CREATE TABLE `kategori_pemenang` (
   `nama_kategori_pemenang` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `kategori_pemenang`
+--
+
+INSERT INTO `kategori_pemenang` (`id_kategori_pemenang`, `nama_kategori_pemenang`) VALUES
+(1, 'Web Terbaik'),
+(2, 'Backend Developer terbaik');
+
 -- --------------------------------------------------------
 
 --
@@ -165,24 +185,34 @@ CREATE TABLE `kategori_pemenang` (
 --
 
 CREATE TABLE `kategori_pemenang_mahasiswa` (
-  `nrp` int(15) UNSIGNED NOT NULL,
-  `id_kategori_pemenang` int(11) UNSIGNED NOT NULL,
-  `juara ke` int(11) UNSIGNED NOT NULL,
-  `tahun` int(11) UNSIGNED NOT NULL
+  `nrp` int(15) UNSIGNED DEFAULT NULL,
+  `id_kategori_pemenang` int(11) UNSIGNED DEFAULT NULL,
+  `juara_ke` int(11) UNSIGNED DEFAULT NULL,
+  `tahun` int(11) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kategori_pemenang_tim`
+-- Table structure for table `kategori_pemenang_tim_mhs`
 --
 
-CREATE TABLE `kategori_pemenang_tim` (
-  `id_tim` int(11) UNSIGNED NOT NULL,
+CREATE TABLE `kategori_pemenang_tim_mhs` (
   `id_kategori_pemenang` int(11) UNSIGNED NOT NULL,
+  `id_tim` int(11) UNSIGNED DEFAULT NULL,
+  `nrp` int(15) UNSIGNED DEFAULT NULL,
   `juara_ke` int(11) UNSIGNED NOT NULL,
   `tahun` int(11) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `kategori_pemenang_tim_mhs`
+--
+
+INSERT INTO `kategori_pemenang_tim_mhs` (`id_kategori_pemenang`, `id_tim`, `nrp`, `juara_ke`, `tahun`) VALUES
+(1, 1, NULL, 1, 2021),
+(2, NULL, 2110181038, 2, 2021),
+(1, 2, NULL, 2, 2021);
 
 -- --------------------------------------------------------
 
@@ -191,10 +221,21 @@ CREATE TABLE `kategori_pemenang_tim` (
 --
 
 CREATE TABLE `kategori_produk` (
-  `id_produk` int(11) UNSIGNED NOT NULL,
   `id_kategori` int(11) UNSIGNED NOT NULL,
-  `tahun` int(11) UNSIGNED NOT NULL
+  `id_produk` int(11) UNSIGNED NOT NULL,
+  `tahun` int(11) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `kategori_produk`
+--
+
+INSERT INTO `kategori_produk` (`id_kategori`, `id_produk`, `tahun`) VALUES
+(1, 1, 2021),
+(2, 2, 2021),
+(3, 0, 2021),
+(4, 0, 2021),
+(5, 0, 2020);
 
 -- --------------------------------------------------------
 
@@ -240,15 +281,19 @@ CREATE TABLE `produk` (
   `demo_produk` varchar(255) DEFAULT NULL,
   `video_display` varchar(255) DEFAULT NULL,
   `poster` varchar(255) DEFAULT NULL,
-  `foto_produk` varchar(255) NOT NULL
+  `foto_produk1` varchar(255) DEFAULT NULL,
+  `foto_produk2` varchar(255) DEFAULT NULL,
+  `foto_produk3` varchar(255) DEFAULT NULL,
+  `foto_produk4` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `produk`
 --
 
-INSERT INTO `produk` (`id_produk`, `nama_produk`, `deskripsi_produk`, `demo_produk`, `video_display`, `poster`, `foto_produk`) VALUES
-(1, 'DolanKuy', 'DolanKuy adalah aplikasi referensi wisata yang ada di Indonesia, berbasis 3 platform yaitu mobile, website, dan desktop. Dengan DolanKuy user bisa melihat list wisata dan akomodasi pada tempat wisata dengan membandingkan review dari user lain.', NULL, NULL, NULL, 'dd.png');
+INSERT INTO `produk` (`id_produk`, `nama_produk`, `deskripsi_produk`, `demo_produk`, `video_display`, `poster`, `foto_produk1`, `foto_produk2`, `foto_produk3`, `foto_produk4`) VALUES
+(1, 'DolanKuy', 'DolanKuy adalah aplikasi referensi wisata yang ada di Indonesia, berbasis 3 platform yaitu mobile, website, dan desktop. Dengan DolanKuy user bisa melihat list wisata dan akomodasi pada tempat wisata dengan membandingkan review dari user lain.', NULL, NULL, NULL, 'dolankuy1.png', 'dolankuy2.png', 'dolankuy3.png', NULL),
+(2, 'Testing', 'Ini adalh produk testing', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -295,7 +340,8 @@ CREATE TABLE `tim_exhibitor` (
 --
 
 INSERT INTO `tim_exhibitor` (`id_tim`, `nama_tim`, `no_telp`, `email`, `alamat`, `id_produk`, `tahun`) VALUES
-(1, 'Tim DolanKuy', '+62812-3456-7890', 'uishabrina@gmail.com', 'Surabaya', 1, 2021);
+(1, 'Tim DolanKuy', '+62812-3456-7890', 'uishabrina@gmail.com', 'Surabaya', 1, 2021),
+(2, 'Tim testing', NULL, NULL, NULL, 2, 2021);
 
 --
 -- Indexes for dumped tables
@@ -362,20 +408,23 @@ ALTER TABLE `kategori_pemenang`
 -- Indexes for table `kategori_pemenang_mahasiswa`
 --
 ALTER TABLE `kategori_pemenang_mahasiswa`
-  ADD PRIMARY KEY (`nrp`,`id_kategori_pemenang`);
+  ADD KEY `ini_coba_ya` (`nrp`,`id_kategori_pemenang`),
+  ADD KEY `id_kategori_pemenang` (`id_kategori_pemenang`);
 
 --
--- Indexes for table `kategori_pemenang_tim`
+-- Indexes for table `kategori_pemenang_tim_mhs`
 --
-ALTER TABLE `kategori_pemenang_tim`
+ALTER TABLE `kategori_pemenang_tim_mhs`
   ADD KEY `id_tim` (`id_tim`),
-  ADD KEY `id_kategori_pemenang` (`id_kategori_pemenang`);
+  ADD KEY `id_kategori_pemenang` (`id_kategori_pemenang`),
+  ADD KEY `nrp` (`nrp`);
 
 --
 -- Indexes for table `kategori_produk`
 --
 ALTER TABLE `kategori_produk`
-  ADD KEY `id_kategori` (`id_kategori`),
+  ADD PRIMARY KEY (`id_kategori`,`id_produk`),
+  ADD KEY `id_kategori` (`id_kategori`,`id_produk`),
   ADD KEY `id_produk` (`id_produk`);
 
 --
@@ -432,11 +481,12 @@ ALTER TABLE `juri_kategori_pemenang`
   ADD CONSTRAINT `juri_kategori_pemenang_ibfk_2` FOREIGN KEY (`id_kategori_pemenang`) REFERENCES `kategori_pemenang` (`id_kategori_pemenang`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Constraints for table `kategori_pemenang_tim`
+-- Constraints for table `kategori_pemenang_tim_mhs`
 --
-ALTER TABLE `kategori_pemenang_tim`
-  ADD CONSTRAINT `kategori_pemenang_tim_ibfk_1` FOREIGN KEY (`id_tim`) REFERENCES `tim_exhibitor` (`id_tim`) ON DELETE NO ACTION ON UPDATE CASCADE,
-  ADD CONSTRAINT `kategori_pemenang_tim_ibfk_2` FOREIGN KEY (`id_kategori_pemenang`) REFERENCES `kategori_pemenang` (`id_kategori_pemenang`) ON DELETE NO ACTION ON UPDATE CASCADE;
+ALTER TABLE `kategori_pemenang_tim_mhs`
+  ADD CONSTRAINT `kategori_pemenang_tim_mhs_ibfk_1` FOREIGN KEY (`id_tim`) REFERENCES `tim_exhibitor` (`id_tim`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  ADD CONSTRAINT `kategori_pemenang_tim_mhs_ibfk_2` FOREIGN KEY (`id_kategori_pemenang`) REFERENCES `kategori_pemenang` (`id_kategori_pemenang`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  ADD CONSTRAINT `kategori_pemenang_tim_mhs_ibfk_3` FOREIGN KEY (`nrp`) REFERENCES `mahasiswa` (`nrp`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
 -- Constraints for table `kategori_produk`
