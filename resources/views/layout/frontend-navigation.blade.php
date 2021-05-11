@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center">
 
         <div class="logo me-auto">
-            <a href="/"><img src="/img/logo.png" alt="" class="img-fluid"></a>
+            <a href="{{asset('/')}}"><img src="{{asset('/img/logo.png')}}" alt="" class="img-fluid"></a>
         </div>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
@@ -13,10 +13,10 @@
                         <span>Beranda</span> <i class="bi bi-chevron-down"></i>
                     </a>
                     <ul>
-                        <li><a class="nav-link scrollto" href="/#about">Tentang</a></li>
-                        <li><a class="nav-link scrollto" href="/#galeri">Galeri</a></li>
-                        <li><a class="nav-link scrollto" href="/#testimonials">Testimoni</a></li>
-                        <li><a class="nav-link scrollto" href="/#kegiatan">Kegiatan</a></li>
+                        <li><a class="nav-link scrollto" href="{{ asset('/#about')}}">Tentang</a></li>
+                        <li><a class="nav-link scrollto" href="{{ asset('/#galeri')}}">Galeri</a></li>
+                        <li><a class="nav-link scrollto" href="{{ asset('/#testimonials')}}">Testimoni</a></li>
+                        <li><a class="nav-link scrollto" href="{{ asset('/#kegiatan')}}">Kegiatan</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="#"><span>Produk</span> <i class="bi bi-chevron-down"></i></a>
@@ -24,14 +24,14 @@
                         @foreach (session()->get('kategoriProduk') as $katPro)
                         <li>
                             <a class="nav-link scrollto"
-                                href="/produk/{{$katPro->id_kategori}}">{{$katPro->kategori->nama_kategori}}</a>
+                                href="{{asset('/produk/'.$katPro->id_kategori)}} ">{{$katPro->kategori->nama_kategori}}</a>
                         </li>
                         @endforeach
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto " href="/pemenang">Pemenang</a></li>
-                <li><a class="nav-link scrollto" href="/arsip">Arsip</a></li>
-                <li><a class="nav-link scrollto " href="/faq">FAQ</a></li>
+                <li><a class="nav-link scrollto " href="{{asset('/pemenang')}}">Pemenang</a></li>
+                <li><a class="nav-link scrollto" href="{{asset('/arsip')}}">Arsip</a></li>
+                <li><a class="nav-link scrollto " href="{{asset('/faq')}}">FAQ</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

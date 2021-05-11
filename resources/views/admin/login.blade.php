@@ -5,7 +5,7 @@
 <div class="container vh-100 d-flex card flex-row main mt-5 p-4 justify-content-center lg-margin">
     <div class="card-main mt-5">
         <h1 class="mb-4">Halaman Admin</h1>
-        <form action="/admin/login" method="POST">
+        <form action="{{asset('/admin/login')}}" method="POST">
             {{-- <input type="hidden" name="_token" value="<?php //echo csrf_token()?>"> --}}
             @csrf
             <div class="form-group mb-2">

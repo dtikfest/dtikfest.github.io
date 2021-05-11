@@ -6,7 +6,7 @@
 
                 <div class="col-lg-5 col-md-6 footer-links">
                     <div class="footer-info">
-                        <img src="/img/DTIK Fest.png" alt="">
+                        <img src="{{asset('/img/DTIK Fest.png')}}" alt="">
                         <div class="social-links mt-3">
                             <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                             <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
@@ -16,9 +16,9 @@
                 </div>
                 <div class="col-lg-5 col-md-6 col-lg-offset-2 footer-links">
                     <h2>Contact Us</h2>
-                    <p><img src="/img/wa.png" alt="" srcset=""></i>081231129214 (Syafii)</p>
-                    <p><img src="/img/wa.png" alt="" srcset=""></i>081231129214 (Syafii)</p>
-                    <p><img src="/img/wa.png" alt="" srcset=""></i>081231129214 (Syafii)</p>
+                    <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>081231129214 (Syafii)</p>
+                    <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>081231129214 (Syafii)</p>
+                    <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>081231129214 (Syafii)</p>
                 </div>
 
             </div>

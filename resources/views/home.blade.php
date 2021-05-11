@@ -1,14 +1,13 @@
 @extends('layout.app',['title'=>'DTIK Fest 2021'])
 
 @section('content')
-
 <!-- ======= Beranda Section ======= -->
 <section id="beranda">
 
     <div class="container">
         <div class="row">
             <div class="beranda-img" data-aos="zoom-in">
-                <img src="/img/DTIK Fest.png" class="img-fluid" alt="">
+                <img src="{{asset('/img/DTIK Fest.png')}}" class="img-fluid" alt="">
             </div>
             <div class="justify-content-center" data-aos="fade-up">
                 <div>
@@ -61,7 +60,8 @@
                     data-aos-delay="100">
                     <div class="content pt-4 pt-lg-0">
                         <p>
-                            <img src="/img/D2.png" alt=""> DTIK Fest adalah kegiatan yang diselenggarakan secara
+                            <img src="{{asset('/img/D2.png')}}" alt=""> DTIK Fest adalah kegiatan yang diselenggarakan
+                            secara
                             virtual oleh Departemen Teknik Informatika dan Komputer (ITCE) sebagai sarana apresiasi
                             kepada mahasiswa yang telah menyalurkan
                             ide kreatifnya secara nyata ke dalam sebuah produk teknologi inovatif dan kompetitif
@@ -95,7 +95,7 @@
                     @foreach ($galeri as $gal)
                     <div class="swiper-slide">
                         <div class="gallery">
-                            <img src="/img/gallery/{{$gal->foto}}" alt="">
+                            <img src="{{asset('/img/gallery/'.$gal->foto)}}" alt="">
                         </div>
                     </div>
                     @endforeach
@@ -125,7 +125,6 @@
                             </p>
                             {{-- <img src="/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""> --}}
                             <h3>{{$testi->mahasiswa->nama_mahasiswa}}</h3>
-                            {{-- <h3>{{dd($testi)}}</h3> --}}
                             <h4>{{$testi->peran}}</h4>
                             <div class="icon">
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
@@ -239,12 +238,11 @@
                 <h1>Sponsor</h1>
                 <p>TELAH DIDUKUNG OLEH</p>
             </div>
-
             <div class="row no-gutters sponsors-wrap clearfix wow fadeInUp">
                 @foreach ($industri as $ind)
                 <div class="col-lg-3 col-md-4 col-xs-6">
                     <div class="sponsor-logo" data-aos="zoom-in">
-                        <img src="/img/sponsors/{{$ind->logo_industri}}" class="img-fluid" alt="">
+                        <img src="{{asset('/img/sponsors/'.$ind->logo_industri) }}" class="img-fluid" alt="">
                     </div>
                 </div>
                 @endforeach

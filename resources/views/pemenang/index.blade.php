@@ -5,7 +5,7 @@
     <div class=" mt-5"></div>
     <div class=" alert alert-info text-center m-5">
         Halaman FAQ Masih Kosong <br>
-        <a href="/pemenang/a">Link Peringkat Juara 1 2 3</a>
+        <a href="{{asset('/pemenang/a')}}">Link Peringkat Juara 1 2 3</a>
     </div>
 </div>
 
