@@ -28,4 +28,11 @@ class BerandaController extends Controller
             'kategoriProduk'
         ));
     }
+
+    public function galeri(Request $tahun)
+    {
+        $tahun = $tahun->segment(2);
+        $image = glob("img/gallery/" . $tahun . "/*.*");
+        return view('galeri', compact('image', 'tahun'));
+    }
 }

@@ -16,9 +16,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 col-lg-offset-2 footer-links">
                     <h2>Contact Us</h2>
-                    <p><img src="/img/wa.png" alt="" srcset=""></i>081231129214 (Syafii)</p>
-                    <p><img src="/img/wa.png" alt="" srcset=""></i>081231129214 (Syafii)</p>
-                    <p><img src="/img/wa.png" alt="" srcset=""></i>081231129214 (Syafii)</p>
+
                 </div>
 
             </div>

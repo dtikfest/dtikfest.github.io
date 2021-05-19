@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center">
 
         <div class="logo me-auto">
-            <a href="/"><img src="/img/logo.png" alt="" class="img-fluid"></a>
+            <a href="/"><img src="{{asset('/img/logo.png')}}" alt="" class="img-fluid"></a>
         </div>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
@@ -23,15 +23,15 @@
                     <ul>
                         @foreach (session()->get('kategoriProduk') as $katPro)
                         <li>
-                            <a class="nav-link scrollto"
-                                href="/produk/{{$katPro->id_kategori}}">{{$katPro->kategori->nama_kategori}}</a>
+                            {{-- <a class="nav-link scrollto"
+                                href="/produk/{{$katPro->id_kategori}}">{{$katPro->kategori->nama_kategori}}</a> --}}
                         </li>
                         @endforeach
                     </ul>
                 </li>
                 <li><a class="nav-link scrollto " href="/pemenang">Pemenang</a></li>
                 <li><a class="nav-link scrollto" href="/arsip">Arsip</a></li>
-                <li><a class="nav-link scrollto " href="/faq">FAQ</a></li>
+                <li><a class="nav-link scrollto " href="/#faq">FAQ</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

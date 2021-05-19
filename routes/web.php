@@ -11,6 +11,8 @@ use App\Http\Controllers\Pemenang;
 use App\Http\Controllers\PemenangController;
 
 Route::get('/', BerandaController::class);
+// Route::get('galeri', [BerandaController::class, 'galeri']);
+Route::get('galeri/{tahun}', [BerandaController::class, 'galeri']);
 
 Route::get('produk/{kategori_produk:id_kategori}', [KategoriProdukController::class, 'index']);
 Route::get('detailProdukTim/{tim:id_tim}', [ProdukController::class, 'detailProdukTim']);
