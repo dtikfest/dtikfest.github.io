@@ -8,9 +8,9 @@
                     <div class="footer-info">
                         <img src="{{asset('/img/DTIK Fest.png')}}" alt="">
                         <div class="social-links mt-3">
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://www.facebook.com/dtik.fest" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://www.youtube.com/channel/UCmNTGcvJd4732qboYY8vf7A/featured" class="youtube"><i class="bx bxl-youtube"></i></a>
+                            <a href="https://www.instagram.com/dtik.fest/" class="instagram"><i class="bx bxl-instagram"></i></a>
                         </div>
                     </div>
                 </div>
