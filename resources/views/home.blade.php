@@ -83,12 +83,12 @@
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h1>Galeri</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet enim in nisl tincidunt
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet enim in nisl tincidunt
                     tristique. Donec molestie ligula at egestas venenatis. Fusce lacus sem, sagittis sed viverra quis,
                     gravida vel ligula. Vivamus imperdiet
                     malesuada vestibulum. Nam feugiat eu nulla sit amet interdum. Mauris sit amet dui id justo euismod
                     auctor a ac odio. Suspendisse condimentum enim eu dignissim mattis.
-                </p>
+                </p>-->
             </div>
             <div class="gallery-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
@@ -162,7 +162,7 @@
             <div class="flow-group" data-aos="fade-up">
                 <h1 class="btn-get-started master-flow">19 Januari 2021</h1>
             </div>
-            <ul class="timeline">
+            <ul class="timeline" data-aos="fade-up">
                 <li data-aos="fade-up" data-aos-delay="100">
                     <div class="timeline-image"></div>
                     <div class="timeline-panel">
@@ -172,9 +172,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 01 --}}
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <img src="/img/kegiatan/01 sambutan-grid.jpeg" alt="">
                         </div>
                     </div>
                 </li>
@@ -187,9 +185,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 02 --}}
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <img src="/img/kegiatan/02 pameran presentasi.jpeg" alt="">
                         </div>
                     </div>
                 </li>
@@ -202,9 +198,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 03 --}}
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <img src="/img/kegiatan/03 Awarding.jpeg" alt="">
                         </div>
                     </div>
                 </li>
@@ -217,9 +211,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 04 --}}
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <img src="/img/kegiatan/04 apresiasi juri.jpeg" alt="">
                         </div>
                     </div>
                 </li>

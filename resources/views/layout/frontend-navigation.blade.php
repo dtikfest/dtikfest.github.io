@@ -38,9 +38,9 @@
         <!-- .navbar -->
 
         <div class="header-social-links d-flex align-items-center">
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="youtube"><i class="bi bi-youtube"></i></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/dtik.fest" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCmNTGcvJd4732qboYY8vf7A/featured" class="youtube"><i class="bi bi-youtube"></i></i></a>
+            <a href="https://www.instagram.com/dtik.fest/" class="instagram"><i class="bi bi-instagram"></i></a>
         </div>
 
     </div>
