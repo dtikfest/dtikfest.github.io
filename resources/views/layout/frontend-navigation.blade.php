@@ -31,7 +31,7 @@
                 </li>
                 <li><a class="nav-link scrollto " href="{{asset('/pemenang')}}">Pemenang</a></li>
                 <li><a class="nav-link scrollto" href="{{asset('/arsip')}}">Arsip</a></li>
-                <li><a class="nav-link scrollto " href="{{asset('/faq')}}">FAQ</a></li>
+                <li><a class="nav-link scrollto " href="{{asset('/#faq')}}">FAQ</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
