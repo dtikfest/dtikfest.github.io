@@ -270,7 +270,7 @@
                         <div data-bs-toggle="collapse" class="collapsed question" href="#faq2">Kapan dan dimana atau bagaimana pelaksanaan DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq2" class="collapse" data-bs-parent=".faq-list">
                             <p>
-                                DTIK FEST 2021 diselenggarakan pada hari Selasa, 19 Januari 2021 pukul 08.00 - selesai, secara virtual yang dapat diakses melalui halaman exhibition <a href="https://dtik-fest.com/"><b>DTIK FEST</b></a>.
+                                DTIK Fest 2021 diselenggarakan pada hari Selasa, 19 Januari 2021 pukul 08.00 - selesai, secara virtual yang dapat diakses melalui halaman exhibition <a href="https://dtik-fest.com/"><b>DTIK FEST</b></a>.
                             </p>
                         </div>
                     </li>
