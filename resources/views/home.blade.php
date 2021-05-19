@@ -323,7 +323,7 @@
                         <div data-bs-toggle="collapse" class="collapsed question" href="#faq7">Bagaimana cara pendaftaran untuk menjadi visitor DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq7" class="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Akses halaman exhibition <a href="https://dtik-fest.com/"><b>DTIK FEST</b></a>. Lakukan registrasi untuk membuat akun Virtual Exhibition. Ikuti arahan selanjutnya dari panitia terkait.
+                                Akses halaman exhibition <a href="https://dtik-fest.com/"><b>DTIK FEST</b></a>. Lakukan registrasi untuk membuat akun virtual exhibition. Ikuti arahan selanjutnya dari panitia terkait.
                             </p>
                         </div>
                     </li>
@@ -338,7 +338,7 @@
                     </li>
 
                     <li>
-                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq9">Apakah Virtua Hive Exhibition dapat diakses melalui Android?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq9">Apakah halaman virtual exhibition dapat diakses melalui Android?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq9" class="collapse" data-bs-parent=".faq-list">
                             <p>
                                 Dapat diakses menggunakan Chrome tampilan desktop, namun lebih disarankan menggunakan PC.
@@ -347,10 +347,10 @@
                     </li>
                     
                     <li>
-                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq10">Apakah saat hari pelaksanaan acara, visitor langsung masuk ke Virtua Hive atau menunggu arahan dari panitia?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq10">Apakah saat hari pelaksanaan acara, visitor dapat langsung masuk ke halaman virtual exhibition atau menunggu arahan dari panitia?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq10" class="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Visitor dapat langsung mengakses Virtua Hive bila sudah mengerti cara penggunaannya. Bila belum, dapat menyaksikan simulasi di live streaming <a href="https://www.youtube.com/channel/UCmNTGcvJd4732qboYY8vf7A/featured"><b>Youtube DTIK Fest 2021</b></a>.
+                                Visitor dapat langsung mengakses halaman virtual exhibition apabila sudah memahami cara penggunaannya. Bila belum, dapat menyaksikan simulasi di live streaming <a href="https://www.youtube.com/channel/UCmNTGcvJd4732qboYY8vf7A/featured"><b>Youtube DTIK Fest 2021</b></a>.
                             </p>
                         </div>
                     </li>
@@ -359,7 +359,7 @@
                         <div data-bs-toggle="collapse" class="collapsed question" href="#faq11">Apakah acara ini mendapatkan E-Sertifikat?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq11" class="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Visitor DTIK FEST 2021 tidak mendapatkan E-Sertifikat, namun visitor mendapatkan kesempatan untuk mendapatkan doorprize.
+                                Visitor DTIK Fest 2021 tidak mendapatkan E-Sertifikat, namun visitor mendapatkan kesempatan untuk mendapatkan doorprize.
                             </p>
                         </div>
                     </li>
