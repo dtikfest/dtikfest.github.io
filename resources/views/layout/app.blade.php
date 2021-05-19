@@ -9,7 +9,7 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <link rel="icon" type="image/png" href="{{asset('/img/logo.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('/img/DTIK Fest.png')}}">
 
     <!-- Google Fonts -->
     <link

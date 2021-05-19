@@ -1244,6 +1244,10 @@ section {
     margin: 0 auto;
 }
 
+#footer .wa {
+    text-align: center;
+}
+
 #footer .copyright {
     text-align: center;
     padding-top: 30px;
