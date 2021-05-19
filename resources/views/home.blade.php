@@ -359,7 +359,7 @@
                         <div data-bs-toggle="collapse" class="collapsed question" href="#faq11">Apakah acara ini mendapatkan E-Sertifikat?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq11" class="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Visitor DTIK FEST 2021 tidak mendapatkan E-Sertifikat, namun visitor memiliki kesempatan untuk mendapatkan doorprize.
+                                Visitor DTIK FEST 2021 tidak mendapatkan E-Sertifikat, namun visitor mendapatkan kesempatan untuk mendapatkan doorprize.
                             </p>
                         </div>
                     </li>
