@@ -346,7 +346,8 @@
                         </div>
                         <div id="faq7" class="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Akses halaman exhibition <a href="https://dtik-fest.com/"><b>DTIK FEST</b></a>. Lakukan
+                                Akses halaman exhibition <a href="https://dtik-fest.com/" target="blank"><b>DTIK
+                                        FEST</b></a>. Lakukan
                                 registrasi untuk membuat akun virtual exhibition. Ikuti arahan selanjutnya dari panitia
                                 terkait.
                             </p>
@@ -360,7 +361,7 @@
                         <div id="faq8" class="collapse" data-bs-parent=".faq-list">
                             <p>
                                 Login menggunakan akun yang telah diregistrasi sebelumnya pada halaman exhibition <a
-                                    href="https://dtik-fest.com/"><b>DTIK FEST</b></a>.
+                                    href="https://dtik-fest.com/" target="blank"><b>DTIK FEST</b></a>.
                             </p>
                         </div>
                     </li>
@@ -386,7 +387,8 @@
                             <p>
                                 Visitor dapat langsung mengakses halaman virtual exhibition apabila sudah memahami cara
                                 penggunaannya. Bila belum, dapat menyaksikan simulasi di live streaming <a
-                                    href="https://www.youtube.com/channel/UCmNTGcvJd4732qboYY8vf7A/featured"><b>Youtube
+                                    href="https://www.youtube.com/channel/UCmNTGcvJd4732qboYY8vf7A/featured"
+                                    target="blank"><b>Youtube
                                         DTIK Fest 2021</b></a>.
                             </p>
                         </div>

@@ -10,6 +10,7 @@ use App\Models\Testimoni;
 use Illuminate\Http\Request;
 
 
+
 class BerandaController extends Controller
 {
     public function __invoke()
@@ -29,10 +30,13 @@ class BerandaController extends Controller
         ));
     }
 
-    public function galeri(Request $tahun)
+    public function galeri(Request $thn)
     {
-        $tahun = $tahun->segment(2);
-        $image = glob("img/gallery/" . $tahun . "/*.*");
-        return view('galeri', compact('image', 'tahun'));
+        $tahun = $thn->segment(count(request()->segments()));
+        $images = [];
+        foreach (glob(public_path() . '/img/gallery/' . $tahun . '/*.*') as $filename) {
+            $images[] = '/img/gallery/' . $tahun . '/' . basename($filename);
+        }
+        return view('galeri', compact('images', 'tahun'));
     }
 }

@@ -4,7 +4,7 @@
 <div class=" vh-100 w-100 d-flex align-items-center justify-content-center" data-aos="fade-up">
     <div class=" mt-5"></div>
     <div class=" alert alert-info text-center m-5">
-        Halaman FAQ Masih Kosong <br>
+        Halaman Pemenang Masih Kosong <br>
         <a href="{{asset('/pemenang/a')}}">Link Peringkat Juara 1 2 3</a>
     </div>
 </div>

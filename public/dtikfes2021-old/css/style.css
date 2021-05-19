@@ -1,0 +1,250 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Segoe UI;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.header {
+    /* position: fixed;
+    z-index: 1; */
+    /* right: 0;
+    left: 0; */
+    transition: background-color .3s, box-shadow .3s;
+}
+
+#main{
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    width: 140px;
+    height: 60px;
+    transition: width .3s, height .3s;
+}
+
+.nav-item {
+    font-size: 1.2em;
+    transition: font-size .3s;
+}
+
+.text-title {
+    font-size: 4em;
+    font-weight: 900;
+    font-family: Segoe Ui Black;
+}
+
+.text-blue {
+    color: #14477A !important;
+}
+
+.text-teal {
+    color: #0CA1A6 !important;
+}
+
+.text-yellow {
+    color: #F3C904 !important;
+}
+
+.btn-blue {
+    background-color: #14477A;
+    border-color: #14477A;
+    color: #FFFFFF;
+}
+
+.btn-blue:hover {
+    background-color: #0CA1A6;
+    border-color: #0CA1A6;
+    color: #FFFFFF;
+}
+
+.btn-yellow {
+    background-color: #F3C904;
+    color: #14477A;
+    border-color: #F3C904;
+}
+
+.btn-yellow:hover {
+    color: #FFFFFF;
+    background-color: #F2C808;
+    border-color: #F2C808;
+}
+
+.wrap {
+    border-radius: 7px;
+    width: 55vw;
+}
+
+#welcome {
+    background-image: url("../image/background-welcome.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about {
+    background-image: url("../image/background-about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about p {
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+#about img {
+    width: 65vw;
+    max-width: 100%;
+}
+
+#gallery img {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+    width: 580px;
+    height: 360px;
+}
+
+#testimony {
+    background-image: url("../image/background-testimony.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.testimony {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+}
+
+.testimony > p {
+    line-height: 21px;
+    font-style: italic;
+}
+
+.testimony > h5 {
+    font-size: 23px;
+    font-weight: 1000;
+}
+
+.testimony > h6 {
+    line-height: 8px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.testi-card {
+    /* min-height: 322px !important; */
+    /* min-height: 49vh !important; */
+}
+
+.footer {
+    box-shadow: 0 -10px 50px #7a7a7a3d;
+    height: auto;
+    width: 100%;
+}
+
+.footer-logo {
+    width: 10vw;
+    max-width: 130px;
+    min-width: 100px;
+    height: auto;
+}
+
+/*Slider*/
+.splide__slide img {
+    width : 100%;
+    height: 400px;
+}
+
+.cp2 {
+    display: none !important;
+}
+
+#gallery-page img {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: 200px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .h6 {
+        font-size: 15px;
+    }
+    .cp1 {
+        padding-left: 30px;
+    }
+    #about {
+        padding-top: 0;
+    }
+    #about h1{
+        text-align: center;
+    }
+    #about img {
+        margin-bottom: 50px
+    }
+    #gallery img {
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cp1 {
+        display: none !important;
+    }
+    .cp2 {
+        display: contents !important;
+    }
+    .contact p, .cp2 p {
+        text-align: center;
+    }
+    .header {
+        background-color: white !important;
+    }
+    #about {
+        padding-top: 0;
+    }
+    #about p{
+        word-spacing: 1px;
+    }
+    #about h1{
+        text-align: center;
+    }
+    #about img {
+        margin-bottom: 50px
+    }
+    .text-title {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    .btn {
+        font-size: 1em;
+    }
+    #gallery img {
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin: 0 auto;
+        width: 270px;
+        height: 170px;
+    }
+}

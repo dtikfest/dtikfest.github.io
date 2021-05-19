@@ -14,15 +14,16 @@
                     Tahun Dokumentasi
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="/galeri/2013">2013</a></li>
-                    <li><a class="dropdown-item" href="/galeri/2016">2016</a></li>
-                    <li><a class="dropdown-item" href="/galeri/2017">2017</a></li>
-                    <li><a class="dropdown-item" href="/galeri/2018">2018</a></li>
-                    <li><a class="dropdown-item" href="/galeri/2020">2020</a></li>
+                    <li><a class="dropdown-item" href={{asset("/galeri/2013")}}>2013</a></li>
+                    <li><a class="dropdown-item" href={{asset("/galeri/2016")}}>2016</a></li>
+                    <li><a class="dropdown-item" href={{asset("/galeri/2017")}}>2017</a></li>
+                    <li><a class="dropdown-item" href={{asset("/galeri/2018")}}>2018</a></li>
+                    <li><a class="dropdown-item" href={{asset("/galeri/2020")}}>2020</a></li>
                 </ul>
             </div>
-            {{-- {{ dd($image) }} --}}
-            @foreach ($image as $img)
+            {{-- {{ dd($tahun) }} --}}
+            {{-- {{ dd($images) }} --}}
+            @foreach ($images as $img)
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                 <img src="{{asset($img)}}">
             </div>

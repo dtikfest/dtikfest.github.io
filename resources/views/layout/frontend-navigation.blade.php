@@ -33,6 +33,8 @@
                 <li><a class="nav-link scrollto " href="{{asset('/pemenang')}}">Pemenang</a></li>
                 <li><a class="nav-link scrollto" href="{{asset('/arsip')}}">Arsip</a></li>
                 <li><a class="nav-link scrollto " href="{{asset('/#faq')}}">FAQ</a></li>
+                <li><a class="nav-link scrollto " href="{{asset('/dtikfes2021-old/index.html')}}">DTIK Fest 21(Old)</a>
+                </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
