@@ -53,6 +53,7 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
+    // 'url' => env('APP_URL', 'http://project/dtikfest.github.io'),
 
     'asset_url' => env('ASSET_URL', null),
 

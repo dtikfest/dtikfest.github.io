@@ -84,12 +84,12 @@
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h1>Galeri</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet enim in nisl tincidunt
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet enim in nisl tincidunt
                     tristique. Donec molestie ligula at egestas venenatis. Fusce lacus sem, sagittis sed viverra quis,
                     gravida vel ligula. Vivamus imperdiet
                     malesuada vestibulum. Nam feugiat eu nulla sit amet interdum. Mauris sit amet dui id justo euismod
                     auctor a ac odio. Suspendisse condimentum enim eu dignissim mattis.
-                </p>
+                </p>-->
             </div>
             <div class="gallery-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
@@ -166,18 +166,17 @@
             <div class="flow-group" data-aos="fade-up">
                 <h1 class="btn-get-started master-flow">19 Januari 2021</h1>
             </div>
-            <ul class="timeline">
+            <ul class="timeline" data-aos="fade-up">
                 <li data-aos="fade-up" data-aos-delay="100">
                     <div class="timeline-image"></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4>2009-2011</h4>
-                            <h4 class="subheading">Our Humble Beginnings</h4>
+                            {{-- <h4>2009-2011</h4> --}}
+                            <h4 class="subheading">Sambutan Pihak yang Berkontribusi</h4>
                         </div>
+                        {{-- Gambar Section Kegiatan 01 --}}
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <img src="/img/kegiatan/01 sambutan-grid.jpeg" alt="">
                         </div>
                     </div>
                 </li>
@@ -185,13 +184,12 @@
                     <div class="timeline-image"></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
+                            {{-- <h4>March 2011</h4> --}}
+                            <h4 class="subheading">Pameran dan Presentasi Produk Inovatif</h4>
                         </div>
+                        {{-- Gambar Section Kegiatan 02 --}}
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <img src="/img/kegiatan/02 pameran presentasi.jpeg" alt="">
                         </div>
                     </div>
                 </li>
@@ -199,13 +197,12 @@
                     <div class="timeline-image"></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4>December 2015</h4>
-                            <h4 class="subheading">Transition to Full Service</h4>
+                            {{-- <h4>December 2015</h4> --}}
+                            <h4 class="subheading">Awarding Peserta DTIK Fest 2021</h4>
                         </div>
+                        {{-- Gambar Section Kegiatan 03 --}}
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <img src="/img/kegiatan/03 Awarding.jpeg" alt="">
                         </div>
                     </div>
                 </li>
@@ -213,13 +210,12 @@
                     <div class="timeline-image"></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4>July 2020</h4>
-                            <h4 class="subheading">Phase Two Expansion</h4>
+                            {{-- <h4>July 2020</h4> --}}
+                            <h4 class="subheading">Apresiasi Juri</h4>
                         </div>
+                        {{-- Gambar Section Kegiatan 04 --}}
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <img src="/img/kegiatan/04 apresiasi juri.jpeg" alt="">
                         </div>
                     </div>
                 </li>
@@ -265,78 +261,161 @@
             </div>
 
             <ul class="faq-list" data-aos="fade-up">
+                <ul class="faq-list">
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Apa itu DTIK Fest 2021?<i
+                                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                        </div>
+                        <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Adalah kegiatan yang diselenggarakan secara virtual oleh Departemen Teknik Informatika
+                                dan Komputer (ITCE) Politeknik Elektronika Negeri Surabaya, sebagai sarana apresiasi
+                                kepada mahasiswa yang telah menyalurkan ide kreatifnya secara nyata ke dalam sebuah
+                                produk teknologi inovatif dan kompetitif.
+                            </p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Apa itu DTIK FEST 2021?<i
-                            class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                    <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                        <p>
-                            Para Exhibitor yang menampilkan produk pada acara DTIK Fest 2021 adalah mahasiswa Semester 4
-                            Jurusan Teknik Informatika dan Komputer Politeknik Elektronika Negeri Surabaya.
-                        </p>
-                    </div>
-                </li>
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq2">Kapan dan dimana atau
+                            bagaimana pelaksanaan DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                DTIK Fest 2021 diselenggarakan pada hari Selasa, 19 Januari 2021 pukul 08.00 - selesai,
+                                secara virtual yang dapat diakses melalui halaman exhibition <a
+                                    href="https://dtik-fest.com/"><b>DTIK FEST</b></a>.
+                            </p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq2">Kapan dan dimana atau
-                        bagaimana pelaksanaan DTIK FEST 2021?<i class="bi bi-chevron-down icon-show"></i><i
-                            class="bi bi-chevron-up icon-close"></i></div>
-                    <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                        <p>
-                            Para Exhibitor yang menampilkan produk pada acara DTIK Fest 2021 adalah mahasiswa Semester 4
-                            Jurusan Teknik Informatika dan Komputer Politeknik Elektronika Negeri Surabaya.
-                        </p>
-                    </div>
-                </li>
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq3">Siapa yang dapat
+                            mengikuti acara DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                DTIK Fest 2021 terbuka untuk umum.
+                            </p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq3">Siapa saja yang menjadi
-                        exhibitor pada acara DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i
-                            class="bi bi-chevron-up icon-close"></i></div>
-                    <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                        <p>
-                            Para Exhibitor yang menampilkan produk pada acara DTIK Fest 2021 adalah mahasiswa Semester 4
-                            Jurusan Teknik Informatika dan Komputer Politeknik Elektronika Negeri Surabaya.
-                        </p>
-                    </div>
-                </li>
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq4">Siapa saja yang menjadi
+                            exhibitor pada acara DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Exhibitor DTIK Fest 2021 adalah mahasiswa semester 5 Jurusan Teknik Informatika dan
+                                Komputer Politeknik Elektronika Negeri Surabaya.
+                            </p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq4">Siapa saja yang dapat
-                        mengikuti acara DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i
-                            class="bi bi-chevron-up icon-close"></i></div>
-                    <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-                        <p>
-                            Para Exhibitor yang menampilkan produk pada acara DTIK Fest 2021 adalah mahasiswa Semester 4
-                            Jurusan Teknik Informatika dan Komputer Politeknik Elektronika Negeri Surabaya.
-                        </p>
-                    </div>
-                </li>
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq5">Apa yang akan kami
+                            dapatkan dengan mengikuti acara DTIK Fest 2021?<i
+                                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                        </div>
+                        <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Anda akan mendapatkan berbagai informasi produk atau karya inovatif dari Jurusan Teknik
+                                Informatika dan Komputer Politeknik Elektronika Negeri Surabaya. Produk-produk yang
+                                dipamerkan adalah hasil karya inovatif yang dapat bersaing di dunia Industri, yang dapat
+                                Anda demokan melalui halaman utama <a href="#"><b>DTIK FEST</b></a>. Selain itu, setiap
+                                pengunjung memiliki kesempatan untuk mendapatkan doorprize yang telah disediakan.
+                            </p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq5">Siapa saja yang menjadi
-                        exhibitor pada acara DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i
-                            class="bi bi-chevron-up icon-close"></i></div>
-                    <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-                        <p>
-                            Para Exhibitor yang menampilkan produk pada acara DTIK Fest 2021 adalah mahasiswa Semester 4
-                            Jurusan Teknik Informatika dan Komputer Politeknik Elektronika Negeri Surabaya.
-                        </p>
-                    </div>
-                </li>
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq6">Kapan waktu pendaftaran
+                            dibuka?<i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Pendaftaran visitor DTIK Fest 2021 masih dibuka hingga H-1 acara dilaksanakan.
+                            </p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq6">Siapa saja yang menjadi
-                        exhibitor pada acara DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i
-                            class="bi bi-chevron-up icon-close"></i></div>
-                    <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-                        <p>
-                            Para Exhibitor yang menampilkan produk pada acara DTIK Fest 2021 adalah mahasiswa Semester 4
-                            Jurusan Teknik Informatika dan Komputer Politeknik Elektronika Negeri Surabaya.
-                        </p>
-                    </div>
-                </li>
-            </ul>
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq7">Bagaimana cara
+                            pendaftaran untuk menjadi visitor DTIK Fest 2021?<i
+                                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                        </div>
+                        <div id="faq7" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Akses halaman exhibition <a href="https://dtik-fest.com/"><b>DTIK FEST</b></a>. Lakukan
+                                registrasi untuk membuat akun virtual exhibition. Ikuti arahan selanjutnya dari panitia
+                                terkait.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq8">Bagaimana cara mengikuti
+                            DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq8" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Login menggunakan akun yang telah diregistrasi sebelumnya pada halaman exhibition <a
+                                    href="https://dtik-fest.com/"><b>DTIK FEST</b></a>.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq9">Apakah halaman virtual
+                            exhibition dapat diakses melalui Android?<i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq9" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Dapat diakses menggunakan Chrome tampilan desktop, namun lebih disarankan menggunakan
+                                PC.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq10">Apakah saat hari
+                            pelaksanaan acara, visitor dapat langsung masuk ke halaman virtual exhibition atau menunggu
+                            arahan dari panitia?<i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq10" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Visitor dapat langsung mengakses halaman virtual exhibition apabila sudah memahami cara
+                                penggunaannya. Bila belum, dapat menyaksikan simulasi di live streaming <a
+                                    href="https://www.youtube.com/channel/UCmNTGcvJd4732qboYY8vf7A/featured"><b>Youtube
+                                        DTIK Fest 2021</b></a>.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq11">Apakah acara ini
+                            mendapatkan E-Sertifikat?<i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq11" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Visitor DTIK Fest 2021 tidak mendapatkan E-Sertifikat, namun visitor mendapatkan
+                                kesempatan untuk mendapatkan doorprize.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq12">Saya memiliki pertanyaan
+                            yang belum terjawab mengenai DTIK Fest 2021<i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq12" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Dapat langsung menghubungi CP tertera, atau kontak melalui email ke
+                                <b>dtikfest@pens.ac.id</b>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
 
         </div>
     </section>

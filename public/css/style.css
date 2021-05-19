@@ -944,6 +944,7 @@ section {
 }
 
 .timeline .timeline-heading h4 {
+    font-weight: 600;
     margin-top: 0;
     color: inherit;
     font-family: "Open Sans", sans-serif;
@@ -953,10 +954,18 @@ section {
     text-transform: none;
 }
 
-.timeline .timeline-body>ul,
-.timeline .timeline-body>p {
-    margin-bottom: 0;
+.timeline .timeline-body {
     font-family: "Open Sans", sans-serif;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #2D75BB;
+    margin: 10px auto;
+}
+
+.timeline .timeline-body img {
+    width: 94%;
+    margin: 3%;
 }
 
 @media (min-width: 768px) {
@@ -999,6 +1008,9 @@ section {
         border-radius: 10px;
         margin-left: -100px;
     }
+    .timeline .timeline-heading h4 {
+        text-align: center;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1030,6 +1042,9 @@ section {
         border-radius: 10px;
         margin-left: -100px;
     }
+    .timeline .timeline-heading h4 {
+        text-align: center;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1058,6 +1073,9 @@ section {
         width: 200px;
         border-radius: 10px;
         margin-left: -100px;
+    }
+    .timeline .timeline-heading h4 {
+        text-align: center;
     }
 }
 
@@ -1261,6 +1279,10 @@ section {
 #footer .footer-links {
     text-align: center;
     margin: 0 auto;
+}
+
+#footer .wa {
+    text-align: center;
 }
 
 #footer .copyright {

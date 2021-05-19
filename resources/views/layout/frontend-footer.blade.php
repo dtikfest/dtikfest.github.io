@@ -6,17 +6,25 @@
 
                 <div class="col-lg-5 col-md-6 footer-links">
                     <div class="footer-info">
-                        <img src="/img/DTIK Fest.png" alt="">
+                        <img src="{{asset('/img/DTIK Fest.png')}}" alt="">
                         <div class="social-links mt-3">
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://www.facebook.com/dtik.fest" class="facebook"><i
+                                    class="bx bxl-facebook"></i></a>
+                            <a href="https://www.youtube.com/channel/UCmNTGcvJd4732qboYY8vf7A/featured"
+                                class="youtube"><i class="bx bxl-youtube"></i></a>
+                            <a href="https://www.instagram.com/dtik.fest/" class="instagram"><i
+                                    class="bx bxl-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 col-lg-offset-2 footer-links">
                     <h2>Contact Us</h2>
-
+                    <div class="wa">
+                        <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 858 5642 7907 (Zacky)</p>
+                        <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 819 3513 7262 (Nizhar)</p>
+                        <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 857 3154 4494 (Rizky)</p>
+                        <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 889 9603 1198 (Mega)</p>
+                    </div>
                 </div>
 
             </div>
