@@ -13,8 +13,8 @@
                 <div>
                     <h1>VIRTUAL SOFTWARE EXPO</h1>
                     <div class="text-center">
-                        <a href="#" class="btn-get-started exibition scrollto"><i class='bx bx-play'></i> VISIT
-                            EXIBITION</a>
+                        <a href="https://dtik-fest.com/" class="btn-get-started exibition scrollto"><i class='bx bx-play'></i> VISIT
+                            EXHIBITION</a>
                         <a href="#trailer" class="btn-get-started trailer scrollto">TRAILER</a>
                     </div>
                 </div>
