@@ -287,7 +287,7 @@
                         <div data-bs-toggle="collapse" class="collapsed question" href="#faq3">Siapa yang dapat mengikuti acara DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq3" class="collapse" data-bs-parent=".faq-list">
                             <p>
-                                DTIK FEST 2021 terbuka untuk umum.
+                                DTIK Fest 2021 terbuka untuk umum.
                             </p>
                         </div>
                     </li>
