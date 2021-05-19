@@ -181,7 +181,7 @@
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             {{-- <h4>March 2011</h4> --}}
-                            <h4 class="subheading">Pameran dan Presentasi Inovasi Karya Produk</h4>
+                            <h4 class="subheading">Pameran dan Presentasi Produk Inovatif</h4>
                         </div>
                         {{-- Gambar Section Kegiatan 02 --}}
                         <div class="timeline-body">
@@ -297,7 +297,7 @@
                         <div data-bs-toggle="collapse" class="collapsed question" href="#faq5">Apa yang akan kami dapatkan dengan mengikuti acara DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq5" class="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Anda akan mendapatkan berbagai informasi produk inovasi karya dari Jurusan Teknik Informatika dan Komputer Politeknik Elektronika Negeri Surabaya. Produk-produk yang dipamerkan adalah hasil inovasi karya yang dapat bersaing di dunia Industri, yang dapat Anda demokan melalui halaman utama <a href="#"><b>DTIK FEST</b></a>. Selain itu, setiap pengunjung memiliki kesempatan untuk mendapatkan doorprize yang telah disediakan.
+                                Anda akan mendapatkan berbagai informasi produk atau karya inovatif dari Jurusan Teknik Informatika dan Komputer Politeknik Elektronika Negeri Surabaya. Produk-produk yang dipamerkan adalah hasil karya inovatif yang dapat bersaing di dunia Industri, yang dapat Anda demokan melalui halaman utama <a href="#"><b>DTIK FEST</b></a>. Selain itu, setiap pengunjung memiliki kesempatan untuk mendapatkan doorprize yang telah disediakan.
                             </p>
                         </div>
                     </li>
