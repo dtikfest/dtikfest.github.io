@@ -105,7 +105,7 @@
             </div>
         </div>
         <div class=" text-center " data-aos="fade-up">
-            <a href="/galeri/2020" class="link-light bx-burst-hover">Selengkapnya</a>
+            <a href={{asset("/galeri/2020")}} class="link-light bx-burst-hover">Selengkapnya</a>
         </div>
     </section>
     <!-- End Features Section -->
@@ -176,7 +176,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 01 --}}
                         <div class="timeline-body">
-                            <img src="/img/kegiatan/01 sambutan-grid.jpeg" alt="">
+                            <img src="{{asset('/img/kegiatan/01 sambutan-grid.jpeg')}}" alt="">
                         </div>
                     </div>
                 </li>
@@ -189,7 +189,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 02 --}}
                         <div class="timeline-body">
-                            <img src="/img/kegiatan/02 pameran presentasi.jpeg" alt="">
+                            <img src="{{asset('/img/kegiatan/02 pameran presentasi.jpeg')}}" alt="">
                         </div>
                     </div>
                 </li>
@@ -202,7 +202,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 03 --}}
                         <div class="timeline-body">
-                            <img src="/img/kegiatan/03 Awarding.jpeg" alt="">
+                            <img src="{{asset('/img/kegiatan/03 Awarding.jpeg')}}" alt="">
                         </div>
                     </div>
                 </li>
@@ -215,7 +215,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 04 --}}
                         <div class="timeline-body">
-                            <img src="/img/kegiatan/04 apresiasi juri.jpeg" alt="">
+                            <img src="{{asset('/img/kegiatan/04 apresiasi juri.jpeg')}}" alt="">
                         </div>
                     </div>
                 </li>
@@ -284,7 +284,7 @@
                             <p>
                                 DTIK Fest 2021 diselenggarakan pada hari Selasa, 19 Januari 2021 pukul 08.00 - selesai,
                                 secara virtual yang dapat diakses melalui halaman exhibition <a
-                                    href="https://dtik-fest.com/"><b>DTIK FEST</b></a>.
+                                    href="https://dtik-fest.com/" target="blank"><b>DTIK FEST</b></a>.
                             </p>
                         </div>
                     </li>

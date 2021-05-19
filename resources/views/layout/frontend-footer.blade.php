@@ -20,10 +20,13 @@
                 <div class="col-lg-5 col-md-6 col-lg-offset-2 footer-links">
                     <h2>Contact Us</h2>
                     <div class="wa">
-                        <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 858 5642 7907 (Zacky)</p>
+                        <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 858 5642 7907 (Zacky) &nbsp;
+                        </p>
                         <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 819 3513 7262 (Nizhar)</p>
-                        <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 857 3154 4494 (Rizky)</p>
-                        <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 889 9603 1198 (Mega)</p>
+                        <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 857 3154 4494 (Rizky) &nbsp;
+                        </p>
+                        <p><img src="{{asset('/img/wa.png')}}" alt="" srcset=""></i>(+62) 889 9603 1198 (Mega) &nbsp;
+                        </p>
                     </div>
                 </div>
 
