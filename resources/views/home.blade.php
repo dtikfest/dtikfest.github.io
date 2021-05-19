@@ -347,7 +347,7 @@
                     </li>
                     
                     <li>
-                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq10">Apakah saat hari H, visitor langsung masuk ke Virtua Hive atau menunggu arahan dari panitia?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq10">Apakah saat hari pelaksanaan acara, visitor langsung masuk ke Virtua Hive atau menunggu arahan dari panitia?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq10" class="collapse" data-bs-parent=".faq-list">
                             <p>
                                 Visitor dapat langsung mengakses Virtua Hive bila sudah mengerti cara penggunaannya. Apabila belum, dapat menyaksikan simulasi di live streaming Youtube DTIK Fest 2021.
