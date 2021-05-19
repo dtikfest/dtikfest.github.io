@@ -198,7 +198,7 @@
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             {{-- <h4>December 2015</h4> --}}
-                            <h4 class="subheading">Awarding peserta DTIK Fest 2021</h4>
+                            <h4 class="subheading">Awarding Peserta DTIK Fest 2021</h4>
                         </div>
                         {{-- Gambar Section Kegiatan 03 --}}
                         <div class="timeline-body">
