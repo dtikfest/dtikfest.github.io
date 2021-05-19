@@ -296,7 +296,7 @@
                         <div data-bs-toggle="collapse" class="collapsed question" href="#faq4">Siapa saja yang menjadi exhibitor pada acara DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq4" class="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Exhibitor DTIK Fest 2021 adalah mahasiswa Semester 5 Jurusan Teknik Informatika dan Komputer Politeknik Elektronika Negeri Surabaya.
+                                Exhibitor DTIK Fest 2021 adalah mahasiswa semester 5 Jurusan Teknik Informatika dan Komputer Politeknik Elektronika Negeri Surabaya.
                             </p>
                         </div>
                     </li>
