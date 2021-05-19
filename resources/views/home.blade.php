@@ -269,7 +269,7 @@
                         <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Apa itu DTIK Fest 2021?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                         <div id="faq1" class="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Adalah kegiatan yang diselenggarakan secara virtual oleh Departemen Teknik Informatika dan Komputer (ITCE) sebagai sarana apresiasi kepada mahasiswa yang telah menyalurkan ide kreatifnya secara nyata ke dalam sebuah produk teknologi inovatif dan kompetitif.
+                                Adalah kegiatan yang diselenggarakan secara virtual oleh Departemen Teknik Informatika dan Komputer (ITCE) Politeknik Elektronika Negeri Surabaya, sebagai sarana apresiasi kepada mahasiswa yang telah menyalurkan ide kreatifnya secara nyata ke dalam sebuah produk teknologi inovatif dan kompetitif.
                             </p>
                         </div>
                     </li>
