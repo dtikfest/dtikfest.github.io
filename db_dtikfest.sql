@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2021 at 03:41 PM
+-- Generation Time: May 25, 2021 at 04:43 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -222,7 +222,7 @@ INSERT INTO `kategori_pemenang_tim_mhs` (`id_kategori_pemenang`, `id_tim`, `nrp`
 
 CREATE TABLE `kategori_produk` (
   `id_kategori` int(11) UNSIGNED NOT NULL,
-  `id_produk` int(11) UNSIGNED NOT NULL,
+  `id_produk` int(11) UNSIGNED DEFAULT NULL,
   `tahun` int(11) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -276,8 +276,8 @@ INSERT INTO `mahasiswa` (`nrp`, `nama_mahasiswa`, `kelas`, `jurusan`, `id_tim`, 
 
 CREATE TABLE `produk` (
   `id_produk` int(11) UNSIGNED NOT NULL,
-  `nama_produk` varchar(255) NOT NULL,
-  `deskripsi_produk` text NOT NULL,
+  `nama_produk` varchar(255) DEFAULT NULL,
+  `deskripsi_produk` text DEFAULT NULL,
   `demo_produk` varchar(255) DEFAULT NULL,
   `video_display` varchar(255) DEFAULT NULL,
   `poster` varchar(255) DEFAULT NULL,
@@ -423,9 +423,8 @@ ALTER TABLE `kategori_pemenang_tim_mhs`
 -- Indexes for table `kategori_produk`
 --
 ALTER TABLE `kategori_produk`
-  ADD PRIMARY KEY (`id_kategori`,`id_produk`),
-  ADD KEY `id_kategori` (`id_kategori`,`id_produk`),
-  ADD KEY `id_produk` (`id_produk`);
+  ADD PRIMARY KEY (`id_kategori`),
+  ADD KEY `id_kategori` (`id_kategori`,`id_produk`);
 
 --
 -- Indexes for table `mahasiswa`
@@ -487,13 +486,6 @@ ALTER TABLE `kategori_pemenang_tim_mhs`
   ADD CONSTRAINT `kategori_pemenang_tim_mhs_ibfk_1` FOREIGN KEY (`id_tim`) REFERENCES `tim_exhibitor` (`id_tim`) ON DELETE NO ACTION ON UPDATE CASCADE,
   ADD CONSTRAINT `kategori_pemenang_tim_mhs_ibfk_2` FOREIGN KEY (`id_kategori_pemenang`) REFERENCES `kategori_pemenang` (`id_kategori_pemenang`) ON DELETE NO ACTION ON UPDATE CASCADE,
   ADD CONSTRAINT `kategori_pemenang_tim_mhs_ibfk_3` FOREIGN KEY (`nrp`) REFERENCES `mahasiswa` (`nrp`) ON DELETE NO ACTION ON UPDATE CASCADE;
-
---
--- Constraints for table `kategori_produk`
---
-ALTER TABLE `kategori_produk`
-  ADD CONSTRAINT `kategori_produk_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`) ON DELETE NO ACTION ON UPDATE CASCADE,
-  ADD CONSTRAINT `kategori_produk_ibfk_2` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
 -- Constraints for table `mahasiswa`

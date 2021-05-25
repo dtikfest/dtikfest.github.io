@@ -23,9 +23,8 @@
                     <ul>
                         @foreach (session()->get('kategoriProduk') as $katPro)
                         <li>
-                            {{-- <a class="nav-link scrollto"
-                                href="{{asset('/produk/'.$katPro->id_kategori)}}
-                            ">{{$katPro->kategori->nama_kategori}}</a> --}}
+                            <a class="nav-link scrollto" href="{{asset('/produk/'.$katPro->id_kategori)}}
+                            ">{{$katPro->kategori->nama_kategori}}</a>
                         </li>
                         @endforeach
                     </ul>
@@ -33,7 +32,7 @@
                 <li><a class="nav-link scrollto " href="{{asset('/pemenang')}}">Pemenang</a></li>
                 <li><a class="nav-link scrollto" href="{{asset('/arsip')}}">Arsip</a></li>
                 <li><a class="nav-link scrollto " href="{{asset('/#faq')}}">FAQ</a></li>
-                <li><a class="nav-link scrollto " href="public/dtikfes2021-old/index.html">DTIK Fest 21(Old)</a>
+                {{-- <li><a class="nav-link scrollto " href="public/dtikfes2021-old/index.html">DTIK Fest 21(Old)</a> --}}
                 </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
