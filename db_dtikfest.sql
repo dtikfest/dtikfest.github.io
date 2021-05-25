@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 25, 2021 at 04:43 AM
+-- Generation Time: May 25, 2021 at 04:54 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -233,9 +233,9 @@ CREATE TABLE `kategori_produk` (
 INSERT INTO `kategori_produk` (`id_kategori`, `id_produk`, `tahun`) VALUES
 (1, 1, 2021),
 (2, 2, 2021),
-(3, 0, 2021),
-(4, 0, 2021),
-(5, 0, 2020);
+(3, 2, 2021),
+(4, 2, 2021),
+(5, 2, 2021);
 
 -- --------------------------------------------------------
 
@@ -423,8 +423,8 @@ ALTER TABLE `kategori_pemenang_tim_mhs`
 -- Indexes for table `kategori_produk`
 --
 ALTER TABLE `kategori_produk`
-  ADD PRIMARY KEY (`id_kategori`),
-  ADD KEY `id_kategori` (`id_kategori`,`id_produk`);
+  ADD KEY `id_kategori` (`id_kategori`),
+  ADD KEY `id_produk` (`id_produk`);
 
 --
 -- Indexes for table `mahasiswa`
@@ -480,6 +480,12 @@ ALTER TABLE `juri_kategori_pemenang`
   ADD CONSTRAINT `juri_kategori_pemenang_ibfk_2` FOREIGN KEY (`id_kategori_pemenang`) REFERENCES `kategori_pemenang` (`id_kategori_pemenang`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
+-- Constraints for table `kategori`
+--
+ALTER TABLE `kategori`
+  ADD CONSTRAINT `kategori_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `kategori_produk` (`id_kategori`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
 -- Constraints for table `kategori_pemenang_tim_mhs`
 --
 ALTER TABLE `kategori_pemenang_tim_mhs`
@@ -493,6 +499,12 @@ ALTER TABLE `kategori_pemenang_tim_mhs`
 ALTER TABLE `mahasiswa`
   ADD CONSTRAINT `mahasiswa_ibfk_1` FOREIGN KEY (`id_kampus`) REFERENCES `kampus` (`id_kampus`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `mahasiswa_ibfk_2` FOREIGN KEY (`id_tim`) REFERENCES `tim_exhibitor` (`id_tim`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `produk`
+--
+ALTER TABLE `produk`
+  ADD CONSTRAINT `produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `kategori_produk` (`id_produk`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
 -- Constraints for table `testimoni`
