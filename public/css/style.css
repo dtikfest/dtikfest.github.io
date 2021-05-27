@@ -249,7 +249,6 @@ h6 {
     .navbar .dropdown .dropdown ul {
         left: -90%;
     }
-
     .navbar .dropdown .dropdown:hover>ul {
         left: -100%;
     }
@@ -277,7 +276,6 @@ h6 {
     .mobile-nav-toggle {
         display: block;
     }
-
     .navbar ul {
         display: none;
     }
@@ -441,17 +439,14 @@ h6 {
         width: 100%;
         height: auto;
     }
-
     #beranda h1 {
         font-size: 24px;
         line-height: 40px;
         margin: 30px 0 30px 0;
     }
-
     #beranda h2 {
         font-size: 20px;
     }
-
     #beranda .beranda-img img {
         width: 70%;
     }
@@ -551,7 +546,6 @@ section {
     .about .section-title h1 {
         white-space: pre-line;
     }
-
     .kegiatan .section-title h1 {
         white-space: pre-line;
     }
@@ -596,6 +590,7 @@ section {
 /*--------------------------------------------------------------
 # galeri
 --------------------------------------------------------------*/
+
 #gallery-page img {
     object-fit: cover;
     object-position: center;
@@ -972,36 +967,30 @@ section {
     .timeline:before {
         left: 50%;
     }
-
     .timeline>li {
         min-height: 0;
         margin-bottom: 50px;
     }
-
     .timeline>li .timeline-panel {
         float: left;
         width: 41%;
         padding: 0 20px 20px 30px;
         text-align: right;
     }
-
     .timeline>li .timeline-image {
         left: 50%;
         margin-left: -25px;
     }
-
     .timeline>li .timeline-image h4 {
         font-size: 18px;
         line-height: 26px;
         margin: 12.5px auto 12.5px auto;
     }
-
     .timeline>li.timeline-inverted>.timeline-panel {
         float: right;
         padding: 0 30px 20px 20px;
         text-align: left;
     }
-
     .timeline>li .timeline-image:last-child {
         margin-left: 100px;
         width: 200px;
@@ -1017,25 +1006,20 @@ section {
     .timeline>li {
         min-height: 0;
     }
-
     .timeline>li .timeline-panel {
         padding: 0 20px 20px;
     }
-
     .timeline>li .timeline-image {
         margin-left: -25px;
     }
-
     .timeline>li .timeline-image h4 {
         font-size: 18px;
         line-height: 26px;
         margin: 12.5px auto 12.5px auto;
     }
-
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 20px 20px;
     }
-
     .timeline>li .timeline-image:last-child {
         margin-left: 100px;
         width: 200px;
@@ -1051,23 +1035,18 @@ section {
     .timeline>li {
         min-height: 0;
     }
-
     .timeline>li .timeline-panel {
         padding: 0 20px 20px 100px;
     }
-
     .timeline>li .timeline-image {
         margin-left: -25px;
     }
-
     .timeline>li .timeline-image h4 {
         margin: 12.5px auto 12.5px auto;
     }
-
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px;
     }
-
     .timeline>li .timeline-image:last-child {
         margin-left: 100px;
         width: 200px;
@@ -1374,7 +1353,7 @@ section {
 
 @media (max-width: 560px) {
     #product .top-tittle h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin: 0 0 0 1.5rem;
     }
 }
@@ -1418,7 +1397,7 @@ section {
 
 @media (max-width: 560px) {
     #detail-product .top-tittle h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin: 0 0 0 1.5rem;
     }
 }
@@ -1595,4 +1574,94 @@ section {
 
 #detail-product .content-item .bx {
     margin-right: 15px;
+}
+
+
+/*--------------------------------------------------------------
+# Kategori Pemenang
+--------------------------------------------------------------*/
+
+.kategori-pemenang {
+    width: 100%;
+    margin-top: 70px;
+    padding: 60px 0 60px 0;
+}
+
+.kategori-pemenang .top-tittle {
+    margin: 0 auto 60px auto;
+    width: 350px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.1em;
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: 0.5s;
+    color: #fff;
+    background: #FFD412;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.15);
+}
+
+.kategori-pemenang .top-tittle h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+}
+
+@media (max-width: 500px) {
+    .kategori-pemenang .top-tittle {
+        width: 300px;
+    }
+    .kategori-pemenang .top-tittle h2 {
+        font-size: 1.2rem;
+    }
+}
+
+.kategori-pemenang .item {
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+.kategori-pemenang .item-group {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    border-radius: 30px;
+    background: #ffffff;
+    margin: 10px auto;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px 12px;
+}
+
+.kategori-pemenang .item-group h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    color: #2D75BB;
+    font-weight: bold;
+}
+
+.kategori-pemenang .item-group h4 {
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    color: #838383;
+}
+
+.kategori-pemenang .bxs-chevron-down-circle,
+.bxs-chevron-up-circle {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.kategori-pemenang .hide {
+    display: none;
+}
+
+.kategori-pemenang .hidden-content {
+    display: none;
+}
+
+.kategori-pemenang .show,
+.hide {
+    margin-top: 30px;
+    text-align: center;
 }

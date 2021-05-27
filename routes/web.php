@@ -17,7 +17,7 @@ Route::get('produk/{kategori_produk:id_kategori}', [KategoriProdukController::cl
 Route::get('detailProdukTim/{tim:id_tim}', [ProdukController::class, 'detailProdukTim']);
 
 Route::get('pemenang', PemenangController::class);
-Route::get('pemenang/a', [PemenangController::class, 'peringkatJuara']);
+Route::get('pemenang/peringkat', [PemenangController::class, 'peringkatJuara']);
 
 Route::get('arsip', ArsipController::class);
 
