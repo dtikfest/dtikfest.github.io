@@ -18,44 +18,44 @@
                 </a>
             </div>
             <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <div class="item-group">
-                    <a href="#">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
-                    </a>
-                </div>
+                <a href="{{asset('/pemenang/peringkat')}}">
+                    <div class="item-group">
+                            <h3>Top Softskill</h3>
+                            <h4>Individual Award</h4>
+                    </div>
+                </a>
             </div>
             <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <div class="item-group">
-                    <a href="#">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
-                    </a>
-                </div>
+                <a href="{{asset('/pemenang/peringkat')}}">
+                    <div class="item-group">
+                            <h3>Top Softskill</h3>
+                            <h4>Individual Award</h4>
+                    </div>
+                </a>
             </div>
             <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <div class="item-group">
-                    <a href="#">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
-                    </a>
-                </div>
+                <a href="{{asset('/pemenang/peringkat')}}">
+                    <div class="item-group">
+                            <h3>Top Softskill</h3>
+                            <h4>Individual Award</h4>
+                    </div>
+                </a>
             </div>
             <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <div class="item-group">
-                    <a href="#">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
-                    </a>
-                </div>
+                <a href="{{asset('/pemenang/peringkat')}}">
+                    <div class="item-group">
+                            <h3>Top Softskill</h3>
+                            <h4>Individual Award</h4>
+                    </div>
+                </a>
             </div>
             <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <div class="item-group">
-                    <a href="#">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
-                    </a>
-                </div>
+                <a href="{{asset('/pemenang/peringkat')}}">
+                    <div class="item-group">
+                            <h3>Top Softskill</h3>
+                            <h4>Individual Award</h4>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -74,44 +74,44 @@
                     </a>
                 </div>
                 <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                    <div class="item-group">
-                        <a href="#">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </a>
-                    </div>
+                    <a href="{{asset('/pemenang/peringkat')}}">
+                        <div class="item-group">
+                                <h3>Top Softskill</h3>
+                                <h4>Individual Award</h4>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                    <div class="item-group">
-                        <a href="#">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </a>
-                    </div>
+                    <a href="{{asset('/pemenang/peringkat')}}">
+                        <div class="item-group">
+                                <h3>Top Softskill</h3>
+                                <h4>Individual Award</h4>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                    <div class="item-group">
-                        <a href="#">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </a>
-                    </div>
+                    <a href="{{asset('/pemenang/peringkat')}}">
+                        <div class="item-group">
+                                <h3>Top Softskill</h3>
+                                <h4>Individual Award</h4>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                    <div class="item-group">
-                        <a href="#">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </a>
-                    </div>
+                    <a href="{{asset('/pemenang/peringkat')}}">
+                        <div class="item-group">
+                                <h3>Top Softskill</h3>
+                                <h4>Individual Award</h4>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                    <div class="item-group">
-                        <a href="#">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </a>
-                    </div>
+                    <a href="{{asset('/pemenang/peringkat')}}">
+                        <div class="item-group">
+                                <h3>Top Softskill</h3>
+                                <h4>Individual Award</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
