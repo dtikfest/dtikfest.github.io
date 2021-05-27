@@ -1278,7 +1278,7 @@ section {
 
 
 /*--------------------------------------------------------------
-# Mobile
+# Product
 --------------------------------------------------------------*/
 
 #product {
@@ -1664,4 +1664,86 @@ section {
 .hide {
     margin-top: 30px;
     text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+# Peringkat Pemenang
+--------------------------------------------------------------*/
+
+#peringkat {
+    width: 100%;
+    margin-top: 70px;
+    padding: 60px 0 0 0;
+}
+
+#peringkat .top-tittle {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 0 30px 30px 0;
+    transition: 0.5s;
+    color: #fff;
+    background: #FFD412;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.15);
+}
+
+#peringkat .top-tittle h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 20px 0 4rem;
+}
+
+#peringkat .app {
+    margin: 30px 0 30px 0;
+}
+
+#peringkat .peringkat-box {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    border-radius: 30px;
+    background: #ffffff;
+    margin: 10px auto;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+#peringkat .peringkat-box img {
+    width: 100%;
+}
+
+#peringkat .peringkat-box .desc {
+    text-align: center;
+    padding: 20px;
+}
+
+#peringkat .peringkat-box .desc h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    color: #2D75BB;
+    font-weight: bold;
+}
+
+#peringkat .peringkat-box .desc h4 {
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    color: #838383;
+}
+
+#peringkat .pagination {
+    margin: 30px 0 60px;
+}
+
+@media (max-width: 767px) {
+    #peringkat .peringkat-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 560px) {
+    #peringkat .top-tittle h2 {
+        font-size: 1.2rem;
+        margin: 0 0 0 1.5rem;
+    }
 }
