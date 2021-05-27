@@ -39,6 +39,7 @@
     @include('layout/frontend-footer')
     @endif
 
+    <script src="//code.tidio.co/0emm6blrukygdj0stmu77wtqbnt7u6dh.js" async></script>
 </body>
 
 <!-- Vendor JS Files -->
