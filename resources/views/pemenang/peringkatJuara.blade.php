@@ -12,7 +12,7 @@
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
                 <a href="#">
                     <div class="peringkat-box">
-                        <img src="/public/img/products/dolankuy1.png" alt="">
+                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
                         <div class="desc">
                             <h3>Nama Produk</h3>
                             <h4>Nama Tim</h4>
@@ -23,7 +23,7 @@
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
                 <a href="#">
                     <div class="peringkat-box">
-                        <img src="/public/img/products/dolankuy1.png" alt="">
+                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
                         <div class="desc">
                             <h3>Nama Produk</h3>
                             <h4>Nama Tim</h4>
@@ -34,7 +34,7 @@
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
                 <a href="#">
                     <div class="peringkat-box">
-                        <img src="/public/img/products/dolankuy1.png" alt="">
+                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
                         <div class="desc">
                             <h3>Nama Produk</h3>
                             <h4>Nama Tim</h4>
@@ -45,7 +45,7 @@
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
                 <a href="#">
                     <div class="peringkat-box">
-                        <img src="/public/img/products/dolankuy1.png" alt="">
+                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
                         <div class="desc">
                             <h3>Nama Produk</h3>
                             <h4>Nama Tim</h4>
@@ -56,7 +56,7 @@
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
                 <a href="#">
                     <div class="peringkat-box">
-                        <img src="/public/img/products/dolankuy1.png" alt="">
+                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
                         <div class="desc">
                             <h3>Nama Produk</h3>
                             <h4>Nama Tim</h4>
@@ -64,7 +64,6 @@
                     </div>
                 </a>
             </div>
-        </div>
 
         {{-- <nav aria-label="pagination-nav">
             <ul class="pagination justify-content-center">
