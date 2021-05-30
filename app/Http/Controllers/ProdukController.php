@@ -17,7 +17,8 @@ class ProdukController extends Controller
     public function detailProdukTim(TimExhibitor $tim)
     {
         // $anggota_tim = $tim->anggotaTim()->latest();
-        return view('produk.detail-produk', compact('tim'));
+        $tahun = session()->get('tahun');
+        return view($tahun . '.produk.detail-produk', compact('tim', 'tahun'));
         //parameter 'tim' diatas direferensikan ke url routing
     }
 }

@@ -10,18 +10,21 @@ use App\Http\Controllers\KategoriProdukController;
 use App\Http\Controllers\Pemenang;
 use App\Http\Controllers\PemenangController;
 
+session()->put('tahun', '2021');
+// session()->put('tahun', '2022');
+$tahun = session()->get('tahun');
 Route::get('/', BerandaController::class);
-Route::get('galeri/{tahun}', [BerandaController::class, 'galeri']);
+Route::get($tahun, BerandaController::class);
+Route::get($tahun . 'galeri/{tahun}', [BerandaController::class, 'galeri']);
 
-Route::get('produk/{kategori_produk:id_kategori}', [KategoriProdukController::class, 'index']);
-Route::get('detailProdukTim/{tim:id_tim}', [ProdukController::class, 'detailProdukTim']);
+Route::get($tahun . '/produk/{kategori_produk:id_kategori}', [KategoriProdukController::class, 'index']);
+Route::get($tahun . '/detailProdukTim/{tim:id_tim}', [ProdukController::class, 'detailProdukTim']);
 
-Route::get('pemenang', PemenangController::class);
-Route::get('pemenang/peringkat', [PemenangController::class, 'peringkatJuara']);
+Route::get($tahun . '/pemenang', PemenangController::class);
+Route::get($tahun . '/pemenang/peringkat', [PemenangController::class, 'peringkatJuara']);
 
-Route::get('arsip', ArsipController::class);
-
-Route::get('faq', FAQController::class);
+Route::get($tahun . '/arsip', ArsipController::class);
+Route::get($tahun . '/arsip/{tahun}', [ArsipController::class, 'tahun']);
 
 Route::get('admin', AdminController::class);
 Route::post('admin/login', [AdminController::class, 'loginAuth']);

@@ -1,4 +1,4 @@
-@extends('layout.app',['title'=>'Arsip DTIK Fest 2021'])
+@extends($tahun.'.layout.app',['title'=>'Arsip DTIK Fest 2021'])
 
 @section('content')
 

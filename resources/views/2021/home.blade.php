@@ -1,4 +1,4 @@
-@extends('layout.app',['title'=>'DTIK Fest 2021'])
+@extends($tahun.'.layout.app',['title'=>'DTIK Fest 2021'])
 
 @section('content')
 <!-- ======= Beranda Section ======= -->
@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row">
             <div class="beranda-img" data-aos="zoom-in">
-                <img src="{{asset('/img/DTIK Fest.png')}}" class="img-fluid" alt="">
+                <img src="{{asset('aset-'.$tahun.'/img/DTIK Fest.png')}}" class="img-fluid" alt="">
             </div>
             <div class="justify-content-center" data-aos="fade-up">
                 <div>
@@ -61,7 +61,8 @@
                     data-aos-delay="100">
                     <div class="content pt-4 pt-lg-0">
                         <p>
-                            <img src="{{asset('/img/D2.png')}}" alt=""> DTIK Fest adalah kegiatan yang diselenggarakan
+                            <img src="{{asset('aset-'.$tahun.'/img/D2.png')}}" alt=""> DTIK Fest adalah kegiatan yang
+                            diselenggarakan
                             secara
                             virtual oleh Departemen Teknik Informatika dan Komputer (ITCE) sebagai sarana apresiasi
                             kepada mahasiswa yang telah menyalurkan
@@ -96,7 +97,7 @@
                     @foreach ($galeri as $gal)
                     <div class="swiper-slide">
                         <div class="gallery">
-                            <img src="{{asset('/img/gallery/'.$gal->foto)}}" alt="">
+                            <img src="{{asset('aset-'.$tahun.'/img/gallery/'.$gal->foto)}}" alt="">
                         </div>
                     </div>
                     @endforeach
@@ -105,7 +106,7 @@
             </div>
         </div>
         <div class=" text-center " data-aos="fade-up">
-            <a href={{asset("/galeri/2020")}} class="link-light bx-burst-hover">Selengkapnya</a>
+            <a href='aset-{{$tahun}}/galeri/2020' )}} class="link-light bx-burst-hover">Selengkapnya</a>
         </div>
     </section>
     <!-- End Features Section -->
@@ -176,7 +177,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 01 --}}
                         <div class="timeline-body">
-                            <img src="{{asset('/img/kegiatan/01 sambutan-grid.jpeg')}}" alt="">
+                            <img src="{{asset('aset-'.$tahun.'/img/kegiatan/01 sambutan-grid.jpeg')}}" alt="">
                         </div>
                     </div>
                 </li>
@@ -189,7 +190,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 02 --}}
                         <div class="timeline-body">
-                            <img src="{{asset('/img/kegiatan/02 pameran presentasi.jpeg')}}" alt="">
+                            <img src="{{asset('aset-'.$tahun.'/img/kegiatan/02 pameran presentasi.jpeg')}}" alt="">
                         </div>
                     </div>
                 </li>
@@ -202,7 +203,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 03 --}}
                         <div class="timeline-body">
-                            <img src="{{asset('/img/kegiatan/03 Awarding.jpeg')}}" alt="">
+                            <img src="{{asset('aset-'.$tahun.'/img/kegiatan/03 Awarding.jpeg')}}" alt="">
                         </div>
                     </div>
                 </li>
@@ -215,7 +216,7 @@
                         </div>
                         {{-- Gambar Section Kegiatan 04 --}}
                         <div class="timeline-body">
-                            <img src="{{asset('/img/kegiatan/04 apresiasi juri.jpeg')}}" alt="">
+                            <img src="{{asset('aset-'.$tahun.'/img/kegiatan/04 apresiasi juri.jpeg')}}" alt="">
                         </div>
                     </div>
                 </li>
@@ -242,7 +243,8 @@
                 @foreach ($industri as $ind)
                 <div class="col-lg-3 col-md-4 col-xs-6">
                     <div class="sponsor-logo" data-aos="zoom-in">
-                        <img src="{{asset('/img/sponsors/'.$ind->logo_industri) }}" class="img-fluid" alt="">
+                        <img src="{{asset('aset-'.$tahun.'/img/sponsors/'.$ind->logo_industri) }}" class="img-fluid"
+                            alt="">
                     </div>
                 </div>
                 @endforeach

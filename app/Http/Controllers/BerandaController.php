@@ -21,12 +21,15 @@ class BerandaController extends Controller
         $kategori = Kategori::all();
         $katPro = KategoriProduk::all()->where('tahun', '2021');
         $kategoriProduk = session()->put('kategoriProduk', $katPro);
-        return view('home', compact(
+        $tahun = session()->get('tahun');
+
+        return view($tahun . '.home', compact(
             'industri',
             'galeri',
             'testimoni',
             'kategori',
-            'kategoriProduk'
+            'kategoriProduk',
+            'tahun'
         ));
     }
 

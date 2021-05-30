@@ -11,8 +11,11 @@ class PemenangController extends Controller
 {
     public function __invoke()
     {
+        $tahun = session()->get('tahun');
         $kategoriPemenang = KategoriPemenangTimMhs::where('tahun', '2021')
-            ->distinct()
+            //->select('id_tim')
+            // ->groupBy('id_tim')
+            //->distinct()
             ->get();
         // $kategoriPemenang = KategoriPemenang::join(
         //     'kategori_pemenang_tim_mhs',
@@ -21,7 +24,7 @@ class PemenangController extends Controller
         // )
         //     ->groupBy('kategori_pemenang_tim_mhs.id_kategori_pemenang')
         //     ->get();
-        return view('pemenang.index', compact('kategoriPemenang'));
+        return view($tahun . '.pemenang.index', compact('kategoriPemenang', 'tahun'));
     }
 
     public function peringkatJuara()

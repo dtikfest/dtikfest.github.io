@@ -9,6 +9,11 @@ class ArsipController extends Controller
 {
     public function __invoke()
     {
-        return view('arsip');
+        $tahun = session()->get('tahun');
+        return view($tahun . '.arsip', compact('tahun'));
+    }
+
+    public function tahun(Request $tahun)
+    {
     }
 }

@@ -1,4 +1,4 @@
-@extends('layout.app',['title'=>'Detail Produk DTIK Fest 2021'])
+@extends($tahun.'.layout.app',['title'=>'Detail Produk DTIK Fest 2021'])
 
 @section('content')
 
@@ -14,7 +14,7 @@
                     <?php $i=1;?>
                     @while ($tim->produk->{'foto_produk'.$i} != null)
                     <div class="mySlides">
-                        <img src="{{asset('/img/products/'.$tim->produk->{'foto_produk'.$i})}}">
+                        <img src="{{asset('aset-'.$tahun.'/img/products/'.$tim->produk->{'foto_produk'.$i})}}">
                         <?php $i++;?>
                     </div>
                     @endwhile
@@ -26,7 +26,8 @@
                         <?php $i=1;?>
                         @while ($tim->produk->{'foto_produk'.$i} != null)
                         <div class="column">
-                            <img class="demo cursor" src="{{asset('/img/products/'.$tim->produk->{'foto_produk'.$i})}}"
+                            <img class="demo cursor"
+                                src="{{asset('aset-'.$tahun.'/img/products/'.$tim->produk->{'foto_produk'.$i})}}"
                                 onclick="currentSlide($i)">
                             <?php $i++;?>
                         </div>

@@ -1,4 +1,4 @@
-@extends('layout.app',['title'=>'Produk DTIK Fest 2021'])
+@extends($tahun.'.layout.app',['title'=>'Produk DTIK Fest 2021'])
 
 @section('content')
 
@@ -13,9 +13,9 @@
             {{-- atribut produk itu dari method --}}
             @forelse ($kategori_produk->produk as $katPro)
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="{{asset('/detailProdukTim/'.$katPro->tim->id_tim)}}">
+                <a href="{{asset($tahun.'/detailProdukTim/'.$katPro->tim->id_tim)}}">
                     <div class="product-box">
-                        <img src="{{asset('/img/products/'.$katPro->foto_produk1)}}" alt="">
+                        <img src="{{asset('aset-'.$tahun.'/img/products/'.$katPro->foto_produk1)}}" alt="">
                         <div class="desc">
                             <h3>{{$katPro->nama_produk}}</h3>
                             <h4>{{$katPro->tim->nama_tim}}</h4>
