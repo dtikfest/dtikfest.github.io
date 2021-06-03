@@ -2,14 +2,12 @@
 
 @section('content')
 
-<!-- Kategori Pemenang -->
-{{-- code berikut jangan dihapus yoh hehe --}}
 {{-- <div class=" vh-100 w-100 d-flex align-items-center justify-content-center">
     <div class=" mt-5"></div>
     {{dd($kategoriPemenang)}}
 @foreach ($kategoriPemenang as $value)
 <div class="text-center m-5">
-    {{$value->kategoriPemenang->nama_kategori_pemenang}}
+    {{$value->nama_kategori_pemenang}}
     <a href="/pemenang"></a>
 </div>
 @endforeach

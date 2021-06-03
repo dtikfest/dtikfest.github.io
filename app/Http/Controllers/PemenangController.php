@@ -12,18 +12,7 @@ class PemenangController extends Controller
     public function __invoke()
     {
         $tahun = session()->get('tahun');
-        $kategoriPemenang = KategoriPemenangTimMhs::where('tahun', '2021')
-            //->select('id_tim')
-            // ->groupBy('id_tim')
-            //->distinct()
-            ->get();
-        // $kategoriPemenang = KategoriPemenang::join(
-        //     'kategori_pemenang_tim_mhs',
-        //     'kategori_pemenang_tim_mhs.id_kategori_pemenang',
-        //     'kategori_pemenang.id_kategori_pemenang'
-        // )
-        //     ->groupBy('kategori_pemenang_tim_mhs.id_kategori_pemenang')
-        //     ->get();
+        $kategoriPemenang = KategoriPemenang::where('tahun', '2021')->get();
         return view($tahun . '.pemenang.index', compact('kategoriPemenang', 'tahun'));
     }
 
