@@ -1,4 +1,4 @@
-@extends('layout.app',['title'=>'FAQ DTIK Fest 2021'])
+@extends('layout.app',['title'=>'GALERI DTIK Fest 2021'])
 
 @section('content')
 

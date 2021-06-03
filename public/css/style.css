@@ -364,6 +364,89 @@ h6 {
 
 
 /*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+    z-index: 999999;
+}
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 3px solid #EBEFF8;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(35, 181, 185, 0.15);
+    background: #ffffff;
+}
+
+.ring:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #2D75BB;
+    border-radius: 50%;
+    animation: zoom 2000ms infinite ease;
+}
+
+.ring-img {
+    position: absolute;
+    top: 35%;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ring-img img {
+    max-width: 55px;
+}
+
+@keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s
+    }
+}
+
+.dissapear {
+    animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+/*--------------------------------------------------------------
 # Beranda Section
 --------------------------------------------------------------*/
 
@@ -698,8 +781,9 @@ section {
 .testimonials .testimonial-item .testimonial-img {
     width: 90px;
     border-radius: 50%;
-    margin: -40px 0 0 40px;
+    margin: -40px auto 0 auto;
     position: relative;
+    display: block;
     z-index: 2;
     border: 6px solid #fff;
 }
@@ -742,7 +826,7 @@ section {
 .testimonials .testimonial-item p {
     font-style: italic;
     margin: 0 15px 0 15px;
-    padding: 20px;
+    padding: 20px 20px 60px 20px;
     background: #EBEFF8;
     position: relative;
     border-radius: 6px;
@@ -939,7 +1023,7 @@ section {
 }
 
 .timeline .timeline-heading h4 {
-    font-weight: 600;
+    font-size: 1.5rem;
     margin-top: 0;
     color: inherit;
     font-family: "Open Sans", sans-serif;
@@ -1313,9 +1397,13 @@ section {
     position: relative;
     overflow: hidden;
     width: 90%;
-    border-radius: 30px;
+    border-radius: 10px;
+    border: 1px solid #ebecf0;
     background: #ffffff;
     margin: 10px auto;
+}
+
+#product .product-box:hover {
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.1);
 }
 
@@ -1389,8 +1477,8 @@ section {
 
 #detail-product .image-gallery {
     margin: 30px auto 30px auto;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
+    border-radius: 20px;
+    border: 2px solid #ebecf0;
     width: 80%;
     overflow: hidden;
 }
@@ -1631,6 +1719,11 @@ section {
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 30px 12px;
+    transition: transform 500ms ease-in-out;
+}
+
+.kategori-pemenang .item-group:hover {
+    transform: translateY(-10px);
 }
 
 .kategori-pemenang .item-group h3 {
@@ -1746,4 +1839,69 @@ section {
         font-size: 1.2rem;
         margin: 0 0 0 1.5rem;
     }
+}
+
+
+/*--------------------------------------------------------------
+# Arsip
+--------------------------------------------------------------*/
+
+.arsip {
+    width: 100%;
+    margin-top: 70px;
+    padding: 60px 0 60px 0;
+}
+
+.arsip .top-tittle {
+    margin: 0 auto 90px auto;
+    width: 350px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.1em;
+    padding: 12px 28px;
+    border-radius: 30px;
+    color: #fff;
+    background: #FFD412;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.15);
+}
+
+.arsip .top-tittle h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+}
+
+.arsip .arsip-box {
+    padding: 20px;
+    background: #2D75BB;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 90%;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.15);
+    transition: transform .1s ease-in-out;
+}
+
+.arsip .arsip-box:hover {
+    transform: translateY(-10px);
+}
+
+.arsip-box .icon {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 35px 15px;
+    margin: auto 20px;
+}
+
+.arsip-box .icon img {
+    width: 70px;
+    height: 30px;
+}
+
+.arsip-box .text {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
 }
