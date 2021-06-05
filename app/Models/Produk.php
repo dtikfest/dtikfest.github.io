@@ -16,8 +16,8 @@ class Produk extends Model
         return $this->hasone(TimExhibitor::class, 'id_tim');
     }
 
-    // public function kategori()
-    // {
-    //     return $this->belongsToMany(Kategori::class, 'id_produk');
-    // }
+    public function kategori()
+    {
+        return $this->hasOne(Kategori::class, 'id_kategori');
+    }
 }

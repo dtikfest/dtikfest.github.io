@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 
 class KategoriProdukController extends Controller
 {
-    public function index(KategoriProduk $kategori_produk)
+    public function index(Kategori $kategori_produk)
     {
         $tahun = session()->get('tahun');
         return view(session()->get('tahun') . '.produk.index', compact('kategori_produk', 'tahun'));

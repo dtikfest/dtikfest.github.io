@@ -11,17 +11,19 @@ use App\Http\Controllers\Pemenang;
 use App\Http\Controllers\PemenangController;
 
 session()->put('tahun', '2021');
-// session()->put('tahun', '2022');
-$tahun = session()->get('tahun');
+
+
 Route::get('/', BerandaController::class);
+$tahun = Session::get('tahun');
 Route::get($tahun, BerandaController::class);
-Route::get($tahun . 'galeri/{tahun}', [BerandaController::class, 'galeri']);
+Route::get($tahun . '/galeri/{tahun}', [BerandaController::class, 'galeri']);
 
 Route::get($tahun . '/produk/{kategori_produk:id_kategori}', [KategoriProdukController::class, 'index']);
 Route::get($tahun . '/detailProdukTim/{tim:id_tim}', [ProdukController::class, 'detailProdukTim']);
 
 Route::get($tahun . '/pemenang', PemenangController::class);
-Route::get($tahun . '/pemenang/peringkat', [PemenangController::class, 'peringkatJuara']);
+Route::get($tahun . '/pemenang/personal/{peringkatJuara:id_kategori_pemenang}', [PemenangController::class, 'peringkatJuaraMhs']);
+Route::get($tahun . '/pemenang/tim/{peringkatJuara:id_kategori_pemenang}', [PemenangController::class, 'peringkatJuaraTim']);
 
 Route::get($tahun . '/arsip', ArsipController::class);
 Route::get($tahun . '/arsip/{tahun}', [ArsipController::class, 'tahun']);

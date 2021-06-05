@@ -2,6 +2,8 @@
 
 @section('content')
 
+
+
 <!-- Peringkat Pemenang -->
 <section id="peringkat">
     <div class="top-tittle" data-aos="fade-right" data-aos-easing="ease-in-out">
@@ -9,6 +11,26 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
+            {{-- {{dd($peringkatJuara[1]->detailJuara->nama_tim)}} --}}
+            @if (empty($tim))
+            @foreach ($peringkatJuara as $value)
+            <div class="text-center m-5">
+                {{$value->nrp}}<br>
+                {{$value->detailJuara->nama_mahasiswa}}
+            </div>
+            @endforeach
+            @endif
+
+            @if (empty($solo))
+            @foreach ($peringkatJuara as $value)
+            <div class="text-center m-5">
+                {{$value->id_tim}}<br>
+                {{$value->detailJuara->nama_tim}}
+                <a href="{{asset($tahun.'/detailProdukTim/'.$value->detailJuara->id_tim)}}">link detail</a>
+            </div>
+            @endforeach
+            @endif
+
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
                 <a href="#">
                     <div class="peringkat-box">

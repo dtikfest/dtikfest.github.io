@@ -2,16 +2,25 @@
 
 @section('content')
 
-{{-- <div class=" vh-100 w-100 d-flex align-items-center justify-content-center">
+<div class=" vh-100 w-100 d-flex align-items-center justify-content-center">
     <div class=" mt-5"></div>
-    {{dd($kategoriPemenang)}}
-@foreach ($kategoriPemenang as $value)
-<div class="text-center m-5">
-    {{$value->nama_kategori_pemenang}}
-    <a href="/pemenang"></a>
+    {{-- {{dd($kategoriPemenangMhs[0]->kategoriPemenang)}} --}}
+    @foreach ($kategoriPemenangMhs as $value)
+    <div class="text-center m-5">
+        {{$value->kategoriPemenang->nama_kategori_pemenang}}<br>
+        <a href={{ asset($tahun.'/pemenang/personal/'.strtolower($value->id_kategori_pemenang))}}>link
+            detail</a>
+    </div>
+    @endforeach
+    <br><br>
+    @foreach ($kategoriPemenangTim as $value)
+    <div class="text-center m-5">
+        {{$value->kategoriPemenang->nama_kategori_pemenang}}<br>
+        <a href={{ asset($tahun.'/pemenang/tim/'.strtolower($value->id_kategori_pemenang))}}>link
+            detail</a>
+    </div>
+    @endforeach
 </div>
-@endforeach
-</div> --}}
 
 <section class="kategori-pemenang">
     <div class="top-tittle" data-aos="fade-up" data-aos-easing="ease-in-out">

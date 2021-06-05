@@ -1,4 +1,4 @@
-@extends('layout.app',['title'=>'FAQ DTIK Fest 2021'])
+@extends($tahun.'.layout.app',['title'=>'FAQ DTIK Fest 2021'])
 
 @section('content')
 
@@ -14,11 +14,11 @@
                     Tahun Dokumentasi
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href={{asset("/galeri/2013")}}>2013</a></li>
-                    <li><a class="dropdown-item" href={{asset("/galeri/2016")}}>2016</a></li>
-                    <li><a class="dropdown-item" href={{asset("/galeri/2017")}}>2017</a></li>
-                    <li><a class="dropdown-item" href={{asset("/galeri/2018")}}>2018</a></li>
-                    <li><a class="dropdown-item" href={{asset("/galeri/2020")}}>2020</a></li>
+                    <li><a class="dropdown-item" href={{asset($tahun."/galeri/2013")}}>2013</a></li>
+                    <li><a class="dropdown-item" href={{asset($tahun."/galeri/2016")}}>2016</a></li>
+                    <li><a class="dropdown-item" href={{asset($tahun."/galeri/2017")}}>2017</a></li>
+                    <li><a class="dropdown-item" href={{asset($tahun."/galeri/2018")}}>2018</a></li>
+                    <li><a class="dropdown-item" href={{asset($tahun."/galeri/2020")}}>2020</a></li>
                 </ul>
             </div>
             {{-- {{ dd($tahun) }} --}}

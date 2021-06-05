@@ -14,6 +14,6 @@ class KategoriPemenangTimMhs extends Model
 
     public function kategoriPemenang()
     {
-        return $this->hasOne(KategoriPemenang::class, 'id_kategori_pemenang', 'id_kategori_pemenang');
+        return $this->hasMany(KategoriPemenang::class, 'id_kategori_pemenang', 'id_kategori_pemenang');
     }
 }

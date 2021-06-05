@@ -5,34 +5,27 @@
 <!-- ======= Detail Produk Section ======= -->
 <section id="detail-product">
     <div class="top-tittle" data-aos="fade-right" data-aos-easing="ease-in-out">
-        <h2>Kategori Produk</h2>
+        <h2>{{$tim->produk->kategori->nama_kategori}}</h2>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 detail">
                 <div class="image-gallery" data-aos="zoom-in">
-                    <?php $i=1;?>
-                    @while ($tim->produk->{'foto_produk'.$i} != null)
+                    @foreach ($images as $img)
                     <div class="mySlides">
-                        <img src="{{asset('aset-'.$tahun.'/img/products/'.$tim->produk->{'foto_produk'.$i})}}">
-                        <?php $i++;?>
+                        <img src="{{asset($img)}}">
                     </div>
-                    @endwhile
+                    @endforeach
 
                     <a class=" prev" onclick="plusSlides(-1)">❮</a>
                     <a class="next" onclick="plusSlides(1)">❯</a>
 
                     <div class="row">
-                        <?php $i=1;?>
-                        @while ($tim->produk->{'foto_produk'.$i} != null)
+                        @foreach ($images as $img)
                         <div class="column">
-                            <img class="demo cursor"
-                                src="{{asset('aset-'.$tahun.'/img/products/'.$tim->produk->{'foto_produk'.$i})}}"
-                                onclick="currentSlide($i)">
-                            <?php $i++;?>
+                            <img class="demo cursor" src="{{asset($img)}}" onclick="currentSlide($i)">
                         </div>
-                        @endwhile
-
+                        @endforeach
                     </div>
                 </div>
             </div>

@@ -97,7 +97,7 @@
                     @foreach ($galeri as $gal)
                     <div class="swiper-slide">
                         <div class="gallery">
-                            <img src="{{asset('aset-'.$tahun.'/img/gallery/'.$gal->foto)}}" alt="">
+                            <img src="{{asset('/galeri-img/'.$gal->foto)}}" alt="">
                         </div>
                     </div>
                     @endforeach
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class=" text-center " data-aos="fade-up">
-            <a href='aset-{{$tahun}}/galeri/2020' )}} class="link-light bx-burst-hover">Selengkapnya</a>
+            <a href={{asset('/'.$tahun.'/galeri/2020')}} class="link-light bx-burst-hover">Selengkapnya</a>
         </div>
     </section>
     <!-- End Features Section -->

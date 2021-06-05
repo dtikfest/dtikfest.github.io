@@ -13,21 +13,23 @@ use Illuminate\Http\Request;
 
 class BerandaController extends Controller
 {
-    public function __invoke()
+    public function __invoke(Request $req)
     {
-        $industri = Industri::all();
-        $galeri = Galeri::all();
-        $testimoni = Testimoni::all();
-        $kategori = Kategori::all();
-        $katPro = KategoriProduk::all()->where('tahun', '2021');
-        $kategoriProduk = session()->put('kategoriProduk', $katPro);
+        session()->put('tahun', '2021');
+        $thn = $req->segment(count(request()->segments()));
+        if (isset($thn)) {
+            session()->put('tahun', $thn);
+        }
         $tahun = session()->get('tahun');
-
+        $industri = Industri::where('tahun', $tahun)->get();
+        $galeri = Galeri::where('tahun', $tahun)->get();
+        $testimoni = Testimoni::where('tahun', $tahun)->get();
+        $katPro = Kategori::where('tahun', $tahun)->get();
+        $kategoriProduk = session()->put('kategoriProduk', $katPro);
         return view($tahun . '.home', compact(
             'industri',
             'galeri',
             'testimoni',
-            'kategori',
             'kategoriProduk',
             'tahun'
         ));
@@ -35,11 +37,12 @@ class BerandaController extends Controller
 
     public function galeri(Request $thn)
     {
-        $tahun = $thn->segment(count(request()->segments()));
+        $tahun = session()->get('tahun');
+        $tahunGal = $thn->segment(count(request()->segments()));
         $images = [];
-        foreach (glob(public_path() . '/img/gallery/' . $tahun . '/*.*') as $filename) {
-            $images[] = '/img/gallery/' . $tahun . '/' . basename($filename);
+        foreach (glob(public_path() . '/galeri-img/' . $tahunGal . '/*.*') as $filename) {
+            $images[] = '/galeri-img/' . $tahunGal . '/' . basename($filename);
         }
-        return view('galeri', compact('images', 'tahun'));
+        return view($tahun . '/galeri', compact('images', 'tahun'));
     }
 }
