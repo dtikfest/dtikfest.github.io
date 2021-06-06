@@ -97,7 +97,7 @@
                     @foreach ($galeri as $gal)
                     <div class="swiper-slide">
                         <div class="gallery">
-                            <img src="{{asset('/galeri-img/'.$gal->foto)}}" alt="">
+                            <img src="{{asset('/arsip-galeri/'.$gal->foto)}}" alt="">
                         </div>
                     </div>
                     @endforeach

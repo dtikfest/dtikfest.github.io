@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 arsip-box" data-aos="fade-up">
-                <a href="#">
+                <a href={{asset('arsip/2022')}}>
                     <div class="row align-items-center">
                         <div class="col-1 icon">
                             <img src="{{asset('aset-'.$tahun.'/img/DTIK Fest.png')}}" alt="">

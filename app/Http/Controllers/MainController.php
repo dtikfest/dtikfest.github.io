@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 
 
 
-class BerandaController extends Controller
+class MainController extends Controller
 {
     public function __invoke(Request $req)
     {
@@ -44,5 +44,12 @@ class BerandaController extends Controller
             $images[] = '/arsip-galeri/' . $tahunGal . '/' . basename($filename);
         }
         return view($tahun . '/galeri', compact('images', 'tahun'));
+    }
+
+    public function arsip()
+    {
+        session()->put('tahun', '2021');
+        $tahun = session()->get('tahun');
+        return view('2021.arsip', compact('tahun'));
     }
 }

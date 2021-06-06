@@ -16,7 +16,7 @@ class KategoriPemenangMhs extends Model
         return $this->hasOne(KategoriPemenang::class, 'id_kategori_pemenang');
     }
 
-    public function detailJuara()
+    public function mhs()
     {
         return $this->hasOne(Mahasiswa::class, 'nrp', 'nrp');
     }

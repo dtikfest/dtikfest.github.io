@@ -2,25 +2,19 @@
 
 @section('content')
 
-<div class=" vh-100 w-100 d-flex align-items-center justify-content-center">
+{{-- <div class=" vh-100 w-100 d-flex align-items-center justify-content-center">
     <div class=" mt-5"></div>
-    {{-- {{dd($kategoriPemenangMhs[0]->kategoriPemenang)}} --}}
-    @foreach ($kategoriPemenangMhs as $value)
-    <div class="text-center m-5">
-        {{$value->kategoriPemenang->nama_kategori_pemenang}}<br>
-        <a href={{ asset($tahun.'/pemenang/personal/'.strtolower($value->id_kategori_pemenang))}}>link
-            detail</a>
-    </div>
-    @endforeach
-    <br><br>
-    @foreach ($kategoriPemenangTim as $value)
-    <div class="text-center m-5">
-        {{$value->kategoriPemenang->nama_kategori_pemenang}}<br>
-        <a href={{ asset($tahun.'/pemenang/tim/'.strtolower($value->id_kategori_pemenang))}}>link
-            detail</a>
-    </div>
-    @endforeach
+    {{dd($kategoriPemenangMhs[0]->kategoriPemenang)}}
+
+<br><br>
+@foreach ($kategoriPemenangTim as $value)
+<div class="text-center m-5">
+    {{$value->kategoriPemenang->nama_kategori_pemenang}}<br>
+    <a href={{ asset('/pemenang/tim/'.strtolower($value->id_kategori_pemenang))}}>link
+        detail</a>
 </div>
+@endforeach
+</div> --}}
 
 <section class="kategori-pemenang">
     <div class="top-tittle" data-aos="fade-up" data-aos-easing="ease-in-out">
@@ -28,54 +22,27 @@
     </div>
     <div class="container">
         <div class="row">
+            @foreach ($kategoriPemenangMhs as $value)
             <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <a href="{{asset('/pemenang/peringkat')}}">
+                <a href={{ asset('/pemenang/personal/'.strtolower($value->id_kategori_pemenang))}}>
                     <div class="item-group">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
+                        <h3>{{$value->kategoriPemenang->nama_kategori_pemenang}}</h3>
+                        <h4>Kategori Individu</h4>
                     </div>
                 </a>
             </div>
+            @endforeach
+
+            @foreach ($kategoriPemenangTim as $value)
             <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <a href="{{asset('/pemenang/peringkat')}}">
+                <a href={{ asset('/pemenang/tim/'.strtolower($value->id_kategori_pemenang))}}>
                     <div class="item-group">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
+                        <h3>{{$value->kategoriPemenang->nama_kategori_pemenang}}</h3>
+                        <h4>Kategori Tim</h4>
                     </div>
                 </a>
             </div>
-            <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <a href="{{asset('/pemenang/peringkat')}}">
-                    <div class="item-group">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <a href="{{asset('/pemenang/peringkat')}}">
-                    <div class="item-group">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <a href="{{asset('/pemenang/peringkat')}}">
-                    <div class="item-group">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                <a href="{{asset('/pemenang/peringkat')}}">
-                    <div class="item-group">
-                        <h3>Top Softskill</h3>
-                        <h4>Individual Award</h4>
-                    </div>
-                </a>
-            </div>
+            @endforeach
         </div>
 
         <div class="show" data-aos="fade-up" onclick="showContent()">
@@ -84,46 +51,6 @@
 
         <div class="hidden-content">
             <div class="row">
-                <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                    <a href="{{asset('/pemenang/peringkat')}}">
-                        <div class="item-group">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                    <a href="{{asset('/pemenang/peringkat')}}">
-                        <div class="item-group">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                    <a href="{{asset('/pemenang/peringkat')}}">
-                        <div class="item-group">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                    <a href="{{asset('/pemenang/peringkat')}}">
-                        <div class="item-group">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
-                    <a href="{{asset('/pemenang/peringkat')}}">
-                        <div class="item-group">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </div>
-                    </a>
-                </div>
                 <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
                     <a href="{{asset('/pemenang/peringkat')}}">
                         <div class="item-group">

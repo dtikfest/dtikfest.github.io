@@ -16,7 +16,7 @@ class KategoriPemenangTim extends Model
         return $this->hasOne(KategoriPemenang::class, 'id_kategori_pemenang');
     }
 
-    public function detailJuara()
+    public function tim()
     {
         return $this->hasOne(TimExhibitor::class, 'id_tim', 'id_tim');
     }

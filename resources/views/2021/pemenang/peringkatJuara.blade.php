@@ -7,87 +7,45 @@
 <!-- Peringkat Pemenang -->
 <section id="peringkat">
     <div class="top-tittle" data-aos="fade-right" data-aos-easing="ease-in-out">
-        <h2>Top Softskill</h2>
+        <h2>{{$peringkatJuara[0]->kategoriPemenang->nama_kategori_pemenang}}</h2>
     </div>
     <div class="container">
         <div class="row justify-content-center">
             {{-- {{dd($peringkatJuara[1]->detailJuara->nama_tim)}} --}}
-            @if (empty($tim))
+            @if ($jenis=='solo')
             @foreach ($peringkatJuara as $value)
-            <div class="text-center m-5">
-                {{$value->nrp}}<br>
-                {{$value->detailJuara->nama_mahasiswa}}
+            <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
+                <a href="#">
+                    <div class="peringkat-box">
+                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
+                        <div class="desc">
+                            <h3>{{$value->mhs->nama_mahasiswa}}</h3>
+                            <h4>kelas</h4>
+                        </div>
+                    </div>
+                </a>
             </div>
             @endforeach
             @endif
 
-            @if (empty($solo))
+            @if ($jenis=='tim')
             @foreach ($peringkatJuara as $value)
-            <div class="text-center m-5">
-                {{$value->id_tim}}<br>
-                {{$value->detailJuara->nama_tim}}
-                <a href="{{asset($tahun.'/detailProdukTim/'.$value->detailJuara->id_tim)}}">link detail</a>
+            <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
+                <a href={{asset('/detailProdukTim/'.$value->tim->id_tim)}}>
+                    <div class="peringkat-box">
+                        <img src={{asset('aset-'.$tahun.'/img/produk/'.$value->id_tim. preg_replace("/[^A-Za-z0-9]/", "", $value->tim->nama_tim).'/produk.png')}}
+                            alt="">
+                        <div class="desc">
+                            <h3>{{$value->tim->produk->nama_produk}}</h3>
+                            <h4>Tim {{$value->tim->nama_tim}}</h4>
+                        </div>
+                    </div>
+                </a>
             </div>
             @endforeach
             @endif
 
-            <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="#">
-                    <div class="peringkat-box">
-                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
-                        <div class="desc">
-                            <h3>Nama Produk</h3>
-                            <h4>Nama Tim</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="#">
-                    <div class="peringkat-box">
-                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
-                        <div class="desc">
-                            <h3>Nama Produk</h3>
-                            <h4>Nama Tim</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="#">
-                    <div class="peringkat-box">
-                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
-                        <div class="desc">
-                            <h3>Nama Produk</h3>
-                            <h4>Nama Tim</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="#">
-                    <div class="peringkat-box">
-                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
-                        <div class="desc">
-                            <h3>Nama Produk</h3>
-                            <h4>Nama Tim</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="#">
-                    <div class="peringkat-box">
-                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
-                        <div class="desc">
-                            <h3>Nama Produk</h3>
-                            <h4>Nama Tim</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        {{-- <nav aria-label="pagination-nav">
+            {{-- <nav aria-label="pagination-nav">
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
                     <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
@@ -100,6 +58,7 @@
                 </li>
             </ul>
         </nav> --}}
+        </div>
     </div>
 </section>
 <!-- End Peringkat Pemenang -->

@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\TimExhibitor;
+use App\Models\Kategori;
 use Illuminate\Http\Request;
 
 class ProdukController extends Controller
 {
-    public function index()
+    public function index(Kategori $kategori_produk)
     {
-        return view('produk.index', [
-            'tim' => TimExhibitor::where('tahun', $tahun)->get(),
-        ]);
+        $tahun = session()->get('tahun');
+        return view(session()->get('tahun') . '.produk.index', compact('kategori_produk', 'tahun'));
     }
 
     public function detailProdukTim(TimExhibitor $tim)
@@ -23,6 +23,5 @@ class ProdukController extends Controller
         }
 
         return view($tahun . '.produk.detail-produk', compact('tim', 'tahun', 'images'));
-        //parameter 'tim' diatas direferensikan ke url routing
     }
 }
