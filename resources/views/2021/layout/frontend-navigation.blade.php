@@ -3,8 +3,7 @@
     <div class="container d-flex align-items-center">
 
         <div class="logo me-auto">
-            <a href={{asset('/'.$tahun)}}><img src="{{asset('aset-'.$tahun.'/img/logo.png')}}" alt=""
-                    class="img-fluid"></a>
+            <a href={{asset('/')}}><img src="{{asset('aset-'.$tahun.'/img/logo.png')}}" alt="" class="img-fluid"></a>
         </div>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
@@ -26,14 +25,14 @@
                         @foreach (session()->get('kategoriProduk') as $katPro)
                         <li>
                             <a class="nav-link scrollto"
-                                href={{asset($tahun."/produk/".$katPro->id_kategori)}}>{{$katPro->nama_kategori}}</a>
+                                href={{asset("/produk/".$katPro->id_kategori)}}>{{$katPro->nama_kategori}}</a>
                         </li>
                         @endforeach
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto " href={{asset($tahun."/pemenang")}}>Pemenang</a></li>
-                <li><a class="nav-link scrollto" href={{asset($tahun."/arsip")}}>Arsip</a></li>
-                <li><a class="nav-link scrollto " href={{asset($tahun."/#faq")}}>FAQ</a></li>
+                <li><a class="nav-link scrollto " href={{asset("/pemenang")}}>Pemenang</a></li>
+                <li><a class="nav-link scrollto" href={{asset("/arsip")}}>Arsip</a></li>
+                <li><a class="nav-link scrollto " href={{asset("/#faq")}}>FAQ</a></li>
                 {{-- <li><a class="nav-link scrollto " href="public/dtikfes2021-old/index.html">DTIK Fest 21(Old)</a> --}}
                 </li>
             </ul>

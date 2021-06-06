@@ -40,8 +40,8 @@ class BerandaController extends Controller
         $tahun = session()->get('tahun');
         $tahunGal = $thn->segment(count(request()->segments()));
         $images = [];
-        foreach (glob(public_path() . '/galeri-img/' . $tahunGal . '/*.*') as $filename) {
-            $images[] = '/galeri-img/' . $tahunGal . '/' . basename($filename);
+        foreach (glob(public_path() . '/arsip-galeri/' . $tahunGal . '/*.*') as $filename) {
+            $images[] = '/arsip-galeri/' . $tahunGal . '/' . basename($filename);
         }
         return view($tahun . '/galeri', compact('images', 'tahun'));
     }

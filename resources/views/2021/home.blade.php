@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class=" text-center " data-aos="fade-up">
-            <a href={{asset('/'.$tahun.'/galeri/2020')}} class="link-light bx-burst-hover">Selengkapnya</a>
+            <a href={{asset('/galeri/2020')}} class="link-light bx-burst-hover">Selengkapnya</a>
         </div>
     </section>
     <!-- End Features Section -->

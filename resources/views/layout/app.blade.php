@@ -30,6 +30,7 @@
 </head>
 
 <body>
+
     @if (request()->is('admin/*'))
     @yield('content')
     @else
@@ -38,7 +39,7 @@
     @include('layout/frontend-footer')
     @endif
 
-    <<div class="preloader">
+    <div class="preloader">
         <div class="ring">
             <div class="ring-img">
                 <img src="{{asset('/img/DTIK Fest.png')}}" class="img-fluid" alt="">
@@ -61,9 +62,11 @@
 <script>
     var preloader = document.querySelector(".preloader");
     window.addEventListener("load", vanish);
-    function vanish(){
+
+    function vanish() {
         preloader.classList.add("dissapear");
     }
+
 </script>
 
 </html>

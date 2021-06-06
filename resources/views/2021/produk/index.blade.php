@@ -13,7 +13,7 @@
             {{-- atribut produk itu dari method --}}
             @forelse ($kategori_produk->produk as $katPro)
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
-                <a href="{{asset($tahun.'/detailProdukTim/'.$katPro->tim->id_tim)}}">
+                <a href="{{asset('/detailProdukTim/'.$katPro->tim->id_tim)}}">
                     <div class="product-box">
                         {{-- <img src="{{asset('aset-'.$tahun.'/img/products/'. $katPro->foto_produk1)}}" alt=""> --}}
                         <img src="{{asset('aset-'.$tahun.'/img/produk/'. $katPro->id_produk. preg_replace("/[^A-Za-z0-9]/", "", $katPro->nama_produk).'/produk.png')}}"

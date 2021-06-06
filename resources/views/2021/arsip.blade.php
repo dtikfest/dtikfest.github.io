@@ -13,7 +13,7 @@
                 <a href="#">
                     <div class="row align-items-center">
                         <div class="col-1 icon">
-                            <img src="{{asset('/img/DTIK Fest.png')}}" alt="">
+                            <img src="{{asset('aset-'.$tahun.'/img/DTIK Fest.png')}}" alt="">
                         </div>
                         <div class="col text">
                             <h4>DTIK Fest 2021</h4>
@@ -26,7 +26,7 @@
                 <a href="#">
                     <div class="row align-items-center">
                         <div class="col-1 icon">
-                            <img src="{{asset('/img/DTIK Fest.png')}}" alt="">
+                            <img src="{{asset('aset-'.$tahun.'/img/DTIK Fest.png')}}" alt="">
                         </div>
                         <div class="col text">
                             <h4>DTIK Fest 2021</h4>
@@ -39,7 +39,7 @@
                 <a href="#">
                     <div class="row align-items-center">
                         <div class="col-1 icon">
-                            <img src="{{asset('/img/DTIK Fest.png')}}" alt="">
+                            <img src="{{asset('aset-'.$tahun.'/img/DTIK Fest.png')}}" alt="">
                         </div>
                         <div class="col text">
                             <h4>DTIK Fest 2021</h4>
@@ -50,8 +50,8 @@
             </div>
         </div>
     </div>
-</div>
-            
-<!-- End Arsip -->
+    </div>
 
-@endsection
+    <!-- End Arsip -->
+
+    @endsection

@@ -13,7 +13,7 @@
 
     <!-- Google Fonts -->
     <link
-        href="https:/fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -39,7 +39,16 @@
     @include($tahun.'/layout/frontend-footer')
     @endif
 
-    <script src="/code.tidio.co/0emm6blrukygdj0stmu77wtqbnt7u6dh.js" async></script>
+    <div class="preloader">
+        <div class="ring">
+            <div class="ring-img">
+                <img src="{{asset('/img/DTIK Fest.png')}}" class="img-fluid" alt="">
+            </div>
+            <span></span>
+        </div>
+    </div>
+
+    <script src="//code.tidio.co/0emm6blrukygdj0stmu77wtqbnt7u6dh.js" async></script>
 </body>
 
 <!-- Vendor JS Files -->
@@ -50,5 +59,14 @@
 
 <!-- Template Main JS File -->
 <script src="{{asset('aset-'.$tahun.'/js/main.js')}}"></script>
+<script>
+    var preloader = document.querySelector(".preloader");
+    window.addEventListener("load", vanish);
+
+    function vanish() {
+        preloader.classList.add("dissapear");
+    }
+
+</script>
 
 </html>
