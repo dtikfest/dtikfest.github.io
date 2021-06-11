@@ -11,8 +11,8 @@ class Kategori extends Model
     protected $table = 'kategori';
     protected $primaryKey = 'id_kategori';
 
-    public function kategoriProduk()
+    public function produk()
     {
-        return $this->belongsToMany(KategoriProduk::class, 'id_kategori');
+        return $this->hasMany(Produk::class, 'id_kategori');
     }
 }
