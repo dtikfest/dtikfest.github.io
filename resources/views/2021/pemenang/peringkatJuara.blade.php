@@ -33,7 +33,7 @@
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
                 <a href={{asset('/detailProdukTim/'.$value->tim->id_tim)}}>
                     <div class="peringkat-box">
-                        <img src={{asset('aset-'.$tahun.'/img/produk/'.$value->id_tim. preg_replace("/[^A-Za-z0-9]/", "", $value->tim->nama_tim).'/produk.png')}}
+                        <img src={{asset('aset-'.$tahun.'/img/produk/'.$value->id_tim. preg_replace("/[^A-Za-z0-9]/", "", $value->tim->produk->nama_produk).'/produk.png')}}
                             alt="">
                         <div class="desc">
                             <h3>{{$value->tim->produk->nama_produk}}</h3>
