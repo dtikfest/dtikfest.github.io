@@ -17,10 +17,12 @@
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
                 <a href="#">
                     <div class="peringkat-box">
-                        <img src="{{asset('/img/products/dolankuy1.png')}}" alt="">
+                        {{-- {{dd($value->mhs)}} --}}
+                        <img src="{{asset('aset-'.$tahun.'/img/mahasiswa/'.$value->mhs->foto)}}" alt=""
+                            style="height:300px">
                         <div class="desc">
                             <h3>{{$value->mhs->nama_mahasiswa}}</h3>
-                            <h4>kelas</h4>
+                            {{-- <h4>kelas</h4> --}}
                         </div>
                     </div>
                 </a>
