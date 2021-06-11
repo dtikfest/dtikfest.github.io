@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Jun 2021 pada 20.54
+-- Waktu pembuatan: 11 Jun 2021 pada 06.52
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.3.14
 
@@ -516,7 +516,7 @@ INSERT INTO `tim_exhibitor` (`id_tim`, `nama_tim`, `no_telp`, `email`, `alamat`,
 (15, 'Saaco', '085649007471', 'milhamwhyd@gmail.com', 'Surabaya', 15, 2021),
 (16, 'Antrean Sehat', '085785068842', 'rochimatus22@gmail.com', 'Surabaya', 16, 2021),
 (17, 'Benjol', '082145492740', 'ivandioakira@gmail.com', 'Surabaya', 17, 2021),
-(18, 'Clara', '089518805511', '', 'Surabaya', 18, 2021),
+(18, 'Clara', '089518805511', 'ilyasofficial1617@gmail.com', 'Surabaya', 18, 2021),
 (19, 'KA Trips', '089691772323', 'nisar.reus34@gmail.com', 'Surabaya', 19, 2021),
 (20, 'AssetNest', '085940870092', 'dragneel77@gmail.com', 'Surabaya', 20, 2021),
 (21, 'Hotelin', '082230258077', 'azizkarebet@gmail.com', 'Surabaya', 21, 2021),
