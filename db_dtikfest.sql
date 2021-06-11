@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Jun 2021 pada 06.52
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.3.14
+-- Generation Time: Jun 11, 2021 at 10:17 AM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `galeri`
+-- Table structure for table `galeri`
 --
 
 CREATE TABLE `galeri` (
@@ -35,7 +34,7 @@ CREATE TABLE `galeri` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `galeri`
+-- Dumping data for table `galeri`
 --
 
 INSERT INTO `galeri` (`id_galeri`, `foto`, `tahun`) VALUES
@@ -45,7 +44,7 @@ INSERT INTO `galeri` (`id_galeri`, `foto`, `tahun`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `hadiah`
+-- Table structure for table `hadiah`
 --
 
 CREATE TABLE `hadiah` (
@@ -60,7 +59,7 @@ CREATE TABLE `hadiah` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `hadiah_kategori_pemenang`
+-- Table structure for table `hadiah_kategori_pemenang`
 --
 
 CREATE TABLE `hadiah_kategori_pemenang` (
@@ -71,7 +70,7 @@ CREATE TABLE `hadiah_kategori_pemenang` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `industri`
+-- Table structure for table `industri`
 --
 
 CREATE TABLE `industri` (
@@ -82,7 +81,7 @@ CREATE TABLE `industri` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `industri`
+-- Dumping data for table `industri`
 --
 
 INSERT INTO `industri` (`id_industri`, `nama_industri`, `logo_industri`, `tahun`) VALUES
@@ -99,7 +98,7 @@ INSERT INTO `industri` (`id_industri`, `nama_industri`, `logo_industri`, `tahun`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `juri`
+-- Table structure for table `juri`
 --
 
 CREATE TABLE `juri` (
@@ -110,7 +109,7 @@ CREATE TABLE `juri` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `juri_kategori_pemenang`
+-- Table structure for table `juri_kategori_pemenang`
 --
 
 CREATE TABLE `juri_kategori_pemenang` (
@@ -122,7 +121,7 @@ CREATE TABLE `juri_kategori_pemenang` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kampus`
+-- Table structure for table `kampus`
 --
 
 CREATE TABLE `kampus` (
@@ -133,7 +132,7 @@ CREATE TABLE `kampus` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `kampus`
+-- Dumping data for table `kampus`
 --
 
 INSERT INTO `kampus` (`id_kampus`, `nama_kampus`, `alamat_kampus`, `no_tlp_kampus`) VALUES
@@ -142,7 +141,7 @@ INSERT INTO `kampus` (`id_kampus`, `nama_kampus`, `alamat_kampus`, `no_tlp_kampu
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kategori`
+-- Table structure for table `kategori`
 --
 
 CREATE TABLE `kategori` (
@@ -152,7 +151,7 @@ CREATE TABLE `kategori` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `kategori`
+-- Dumping data for table `kategori`
 --
 
 INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `tahun`) VALUES
@@ -163,7 +162,7 @@ INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `tahun`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kategori_pemenang`
+-- Table structure for table `kategori_pemenang`
 --
 
 CREATE TABLE `kategori_pemenang` (
@@ -173,7 +172,7 @@ CREATE TABLE `kategori_pemenang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `kategori_pemenang`
+-- Dumping data for table `kategori_pemenang`
 --
 
 INSERT INTO `kategori_pemenang` (`id_kategori_pemenang`, `nama_kategori_pemenang`, `tahun`) VALUES
@@ -191,7 +190,7 @@ INSERT INTO `kategori_pemenang` (`id_kategori_pemenang`, `nama_kategori_pemenang
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kategori_pemenang_mahasiswa`
+-- Table structure for table `kategori_pemenang_mahasiswa`
 --
 
 CREATE TABLE `kategori_pemenang_mahasiswa` (
@@ -202,7 +201,7 @@ CREATE TABLE `kategori_pemenang_mahasiswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `kategori_pemenang_mahasiswa`
+-- Dumping data for table `kategori_pemenang_mahasiswa`
 --
 
 INSERT INTO `kategori_pemenang_mahasiswa` (`id_kategori_pemenang`, `nrp`, `juara_ke`, `tahun`) VALUES
@@ -220,7 +219,7 @@ INSERT INTO `kategori_pemenang_mahasiswa` (`id_kategori_pemenang`, `nrp`, `juara
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kategori_pemenang_tim`
+-- Table structure for table `kategori_pemenang_tim`
 --
 
 CREATE TABLE `kategori_pemenang_tim` (
@@ -231,7 +230,7 @@ CREATE TABLE `kategori_pemenang_tim` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `kategori_pemenang_tim`
+-- Dumping data for table `kategori_pemenang_tim`
 --
 
 INSERT INTO `kategori_pemenang_tim` (`id_kategori_pemenang`, `id_tim`, `juara_ke`, `tahun`) VALUES
@@ -280,7 +279,7 @@ INSERT INTO `kategori_pemenang_tim` (`id_kategori_pemenang`, `id_tim`, `juara_ke
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kategori_produk_unused`
+-- Table structure for table `kategori_produk_unused`
 --
 
 CREATE TABLE `kategori_produk_unused` (
@@ -292,7 +291,7 @@ CREATE TABLE `kategori_produk_unused` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `mahasiswa`
+-- Table structure for table `mahasiswa`
 --
 
 CREATE TABLE `mahasiswa` (
@@ -302,122 +301,129 @@ CREATE TABLE `mahasiswa` (
   `jurusan` varchar(255) DEFAULT NULL,
   `id_tim` int(11) UNSIGNED DEFAULT NULL,
   `tahun` int(11) UNSIGNED NOT NULL,
-  `id_kampus` int(11) UNSIGNED NOT NULL
+  `id_kampus` int(11) UNSIGNED NOT NULL,
+  `foto` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `mahasiswa`
+-- Dumping data for table `mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`nrp`, `nama_mahasiswa`, `kelas`, `jurusan`, `id_tim`, `tahun`, `id_kampus`) VALUES
-(1, 'Dary Winata Nugraha Djati', NULL, 'Teknik Informatika', 1, 2021, 1),
-(2, 'Andro Aprila Adiputra', NULL, 'Teknik Informatika', 1, 2021, 1),
-(3, 'Ekky Regita Laurentino', NULL, 'Teknik Informatika', 1, 2021, 1),
-(4, 'Rissa Hanifah Ersanty', NULL, 'Teknik Informatika', 1, 2021, 1),
-(5, 'I Putu Gede Verdhangga Mahandya', NULL, 'Teknik Informatika', 1, 2021, 1),
-(6, 'Ilham Dwi Kurniawan', NULL, 'Teknik Informatika', 1, 2021, 1),
-(7, 'Sulaiman', NULL, 'Teknik Komputer', 2, 2021, 1),
-(8, 'Nur Cahyo', NULL, 'Teknik Komputer', 2, 2021, 1),
-(9, 'Ekky Kharismadani', NULL, 'Teknik Komputer', 2, 2021, 1),
-(10, 'Atharian Ramadhany', NULL, 'Teknik Komputer', 2, 2021, 1),
-(11, 'Lusiana Diyan Ningrum', NULL, 'Teknik Komputer', 3, 2021, 1),
-(12, 'Ahmad Torikul Huda', NULL, 'Teknik Komputer', 3, 2021, 1),
-(13, 'M. Billit Shotta Purana', NULL, 'Teknik Komputer', 3, 2021, 1),
-(14, 'Ahmad Faizin', NULL, 'Teknik Komputer', 3, 2021, 1),
-(15, 'Dekasari Putri Suwandi', NULL, 'Teknik Komputer', 4, 2021, 1),
-(16, 'Fadl Lul Hakim Ihsan', NULL, 'Teknik Komputer', 4, 2021, 1),
-(17, 'Firja Hanif Maulana', NULL, 'Teknik Komputer', 4, 2021, 1),
-(18, 'Aditia Yuliyanto', NULL, 'Teknik Komputer', 4, 2021, 1),
-(19, 'Erna Alfi Nurrohmah', NULL, 'Teknik Komputer', 5, 2021, 1),
-(20, 'Hendika Putra Madani', NULL, 'Teknik Komputer', 5, 2021, 1),
-(21, 'Syarfina', NULL, 'Teknik Komputer', 5, 2021, 1),
-(22, 'Rifqi Affan Maulana', NULL, 'Teknik Komputer', 5, 2021, 1),
-(23, 'Ivana Yudith Walujo', NULL, 'Teknik Komputer', 6, 2021, 1),
-(24, 'Tirta Farisaldi Ibrahim', NULL, 'Teknik Komputer', 6, 2021, 1),
-(25, 'Muhammad Aufa', NULL, 'Teknik Komputer', 6, 2021, 1),
-(26, 'Chofifah Widyah', NULL, 'Teknik Komputer', 7, 2021, 1),
-(27, 'Muhammad Hafidz', NULL, 'Teknik Komputer', 7, 2021, 1),
-(28, 'Muhammad Iqbal Alfarabi', NULL, 'Teknik Komputer', 7, 2021, 1),
-(29, 'Mohammad Johan Arifin', NULL, 'Teknik Komputer', 7, 2021, 1),
-(30, 'Muhammad Amin A', NULL, 'Teknik Komputer', 8, 2021, 1),
-(31, 'Nur Rizky Romadhon', NULL, 'Teknik Komputer', 8, 2021, 1),
-(32, 'Kirana Hanifati', NULL, 'Teknik Komputer', 8, 2021, 1),
-(33, 'Alfis Syahry', NULL, 'Teknik Komputer', 9, 2021, 1),
-(34, 'Nilam Winarti', NULL, 'Teknik Komputer', 9, 2021, 1),
-(35, 'Ahmad Dlomiri', NULL, 'Teknik Komputer', 9, 2021, 1),
-(36, 'Muhammad Izzat', NULL, 'Teknik Informatika', 11, 2021, 1),
-(37, 'Milati Rohmatu Sakinah', NULL, 'Teknik Informatika', 11, 2021, 1),
-(38, 'Alfian Haidar', NULL, 'Teknik Informatika', 11, 2021, 1),
-(39, 'Hakim Akbaru Sulthony', NULL, 'Teknik Informatika', 11, 2021, 1),
-(40, 'Rifqi Fajar Ramdani', NULL, 'Teknik Informatika', 11, 2021, 1),
-(41, 'Muhammad Riza Bachtiar', NULL, 'Teknik Informatika', 12, 2021, 1),
-(42, 'Muhammad Riza Nafis', NULL, 'Teknik Informatika', 12, 2021, 1),
-(43, 'Mohamad Akbar Fadlika Wibowo', NULL, 'Teknik Informatika', 12, 2021, 1),
-(44, 'Muhammad Fahreza Ansori', NULL, 'Teknik Informatika', 12, 2021, 1),
-(45, 'Agustina Anisa F', NULL, 'Teknik Informatika', 12, 2021, 1),
-(46, 'M. Ivan Muntahir ', NULL, 'Teknik Komputer', 13, 2021, 1),
-(47, 'M. Mukhtarul Lathief', NULL, 'Teknik Komputer', 13, 2021, 1),
-(48, 'M. Wafiq K.', NULL, 'Teknik Komputer', 14, 2021, 1),
-(49, 'M. Firdaus. M. ', NULL, 'Teknik Komputer', 14, 2021, 1),
-(50, 'Awang Syahsiah A. ', NULL, 'Teknik Komputer', 14, 2021, 1),
-(51, 'Churun In L. ', NULL, 'Teknik Komputer', 14, 2021, 1),
-(52, 'Adnindiah Putri Imawati', NULL, 'Teknik Komputer', 15, 2021, 1),
-(53, 'Moch. Ilham Wahyudi', NULL, 'Teknik Komputer', 15, 2021, 1),
-(54, 'Wiratama Ashidiqi N', NULL, 'Teknik Komputer', 15, 2021, 1),
-(55, 'Ghafariz Ainoor Rohan', NULL, 'Teknik Komputer', 15, 2021, 1),
-(56, 'Sabillah Ferdiana Febrianti', NULL, 'Teknik Informatika', 16, 2021, 1),
-(57, 'Muhammad Ghozy Al Ghifari', NULL, 'Teknik Informatika', 16, 2021, 1),
-(58, 'Refano Pradana Yogatama', NULL, 'Teknik Informatika', 16, 2021, 1),
-(59, 'Rochimatus Sa\'diyah', NULL, 'Teknik Informatika', 16, 2021, 1),
-(60, 'Muhammad Satriyo Aji', NULL, 'Teknik Informatika', 16, 2021, 1),
-(61, 'Yanu Adi Nugraha', NULL, 'Teknik Informatika', 16, 2021, 1),
-(62, 'I Made Akira Ivandio Agusta', NULL, 'Teknik Informatika', 17, 2021, 1),
-(63, 'Sylvi Indryana Safira', NULL, 'Teknik Informatika', 17, 2021, 1),
-(64, 'Andi Abdul Salam Sabil', NULL, 'Teknik Informatika', 17, 2021, 1),
-(65, 'Sabila Jamal', NULL, 'Teknik Informatika', 17, 2021, 1),
-(66, 'Lina Dwi Pratiwi', NULL, 'Teknik Informatika', 17, 2021, 1),
-(67, 'Muhammad Fadhli Ubaidilah', NULL, 'Teknik Informatika', 18, 2021, 1),
-(68, 'Ilyas Yudhistira Kurniawan', NULL, 'Teknik Informatika', 18, 2021, 1),
-(69, 'Tiara Puspita Anggraeni', NULL, 'Teknik Informatika', 18, 2021, 1),
-(70, 'Aditya Indra Pramana', NULL, 'Teknik Informatika', 18, 2021, 1),
-(71, 'Gebriela Rifka Duanti ', NULL, 'Teknik Informatika', 18, 2021, 1),
-(72, 'Fajar Septian Nugraha', NULL, 'Teknik Informatika', 18, 2021, 1),
-(73, 'M. Nisar Yanuar U. ', NULL, 'Teknik Informatika', 19, 2021, 1),
-(74, 'Ardiansyah Dwi S. ', NULL, 'Teknik Informatika', 19, 2021, 1),
-(75, 'Faidza Fariq A.', NULL, 'Teknik Informatika', 19, 2021, 1),
-(76, 'Ahmad Maulana J. ', NULL, 'Teknik Informatika', 19, 2021, 1),
-(77, 'Helmi Dharmawan', NULL, 'Teknik Informatika', 19, 2021, 1),
-(78, 'Intan Fitri R. ', NULL, 'Teknik Informatika', 19, 2021, 1),
-(79, 'Iqbal Nur Imansyah', NULL, 'Teknik Informatika', 20, 2021, 1),
-(80, 'Nawa Almahasin', NULL, 'Teknik Informatika', 20, 2021, 1),
-(81, 'Goldy Najima', NULL, 'Teknik Informatika', 20, 2021, 1),
-(82, 'Chandra Kirana', NULL, 'Teknik Informatika', 20, 2021, 1),
-(83, 'Febilenia Risma', NULL, 'Teknik Informatika', 20, 2021, 1),
-(84, 'Danang Tribrata', NULL, 'Teknik Informatika', 20, 2021, 1),
-(85, 'Rizky Adam Pambudi', NULL, 'Teknik Informatika', 21, 2021, 1),
-(86, 'Muhammad Aziz Karebet', NULL, 'Teknik Informatika', 21, 2021, 1),
-(87, 'Muhammad Mujir', NULL, 'Teknik Informatika', 21, 2021, 1),
-(88, 'Muhammad Irfan Shiddiq', NULL, 'Teknik Informatika', 21, 2021, 1),
-(89, 'Sarah Ummul Afifah', NULL, 'Teknik Informatika', 21, 2021, 1),
-(90, 'Marisna Nurul Fadhila', NULL, 'Teknik Informatika', 21, 2021, 1),
-(91, 'Hafizh Irfansyah Putra', NULL, 'Teknik Komputer', 22, 2021, 1),
-(92, 'Anisia Nabillah Hilwah', NULL, 'Teknik Komputer', 22, 2021, 1),
-(93, 'Alvian Tedy Aditya', NULL, 'Teknik Komputer', 23, 2021, 1),
-(94, 'Clifford Jason Taco', NULL, 'Teknik Komputer', 23, 2021, 1),
-(95, 'Didi Alfandi', NULL, 'Teknik Komputer', 23, 2021, 1),
-(96, 'Dinda Heni Ayundri', NULL, 'Teknik Komputer', 23, 2021, 1),
-(97, 'Fachri Azril', NULL, 'Teknik Komputer', 23, 2021, 1),
-(2110181038, 'Belinda Anindya KW', NULL, 'Teknik Informatika', 10, 2021, 1),
-(2110181039, 'Eka Dharma Widhyana', NULL, 'Teknik Informatika', 10, 2021, 1),
-(2110181044, 'Gilang Taufiq Arsyannur', NULL, 'Teknik Informatika', 10, 2021, 1),
-(2110181048, 'Ulima Inas Shabrina', NULL, 'Teknik Informatika', 10, 2021, 1),
-(2110181056, 'Zul Fauzi Oktavian', NULL, 'Teknik Informatika', 10, 2021, 1),
-(2110181059, 'I Gede Kresna Putra', NULL, 'Teknik Informatika', 10, 2021, 1);
+INSERT INTO `mahasiswa` (`nrp`, `nama_mahasiswa`, `kelas`, `jurusan`, `id_tim`, `tahun`, `id_kampus`, `foto`) VALUES
+(1, 'Dary Winata Nugraha Djati', NULL, 'Teknik Informatika', 1, 2021, 1, NULL),
+(2, 'Andro Aprila Adiputra', NULL, 'Teknik Informatika', 1, 2021, 1, NULL),
+(3, 'Ekky Regita Laurentino', NULL, 'Teknik Informatika', 1, 2021, 1, NULL),
+(4, 'Rissa Hanifah Ersanty', NULL, 'Teknik Informatika', 1, 2021, 1, NULL),
+(5, 'I Putu Gede Verdhangga Mahandya', NULL, 'Teknik Informatika', 1, 2021, 1, NULL),
+(6, 'Ilham Dwi Kurniawan', NULL, 'Teknik Informatika', 1, 2021, 1, NULL),
+(7, 'Sulaiman', NULL, 'Teknik Komputer', 2, 2021, 1, NULL),
+(8, 'Nur Cahyo', NULL, 'Teknik Komputer', 2, 2021, 1, NULL),
+(9, 'Ekky Kharismadani', NULL, 'Teknik Komputer', 2, 2021, 1, NULL),
+(10, 'Atharian Ramadhany', NULL, 'Teknik Komputer', 2, 2021, 1, NULL),
+(11, 'Lusiana Diyan Ningrum', NULL, 'Teknik Komputer', 3, 2021, 1, NULL),
+(12, 'Ahmad Torikul Huda', NULL, 'Teknik Komputer', 3, 2021, 1, NULL),
+(13, 'M. Billit Shotta Purana', NULL, 'Teknik Komputer', 3, 2021, 1, NULL),
+(14, 'Ahmad Faizin', NULL, 'Teknik Komputer', 3, 2021, 1, NULL),
+(15, 'Dekasari Putri Suwandi', NULL, 'Teknik Komputer', 4, 2021, 1, NULL),
+(16, 'Fadl Lul Hakim Ihsan', NULL, 'Teknik Komputer', 4, 2021, 1, NULL),
+(17, 'Firja Hanif Maulana', NULL, 'Teknik Komputer', 4, 2021, 1, NULL),
+(18, 'Aditia Yuliyanto', NULL, 'Teknik Komputer', 4, 2021, 1, NULL),
+(19, 'Erna Alfi Nurrohmah', NULL, 'Teknik Komputer', 5, 2021, 1, NULL),
+(20, 'Hendika Putra Madani', NULL, 'Teknik Komputer', 5, 2021, 1, NULL),
+(21, 'Syarfina', NULL, 'Teknik Komputer', 5, 2021, 1, NULL),
+(22, 'Rifqi Affan Maulana', NULL, 'Teknik Komputer', 5, 2021, 1, NULL),
+(23, 'Ivana Yudith Walujo', NULL, 'Teknik Komputer', 6, 2021, 1, NULL),
+(24, 'Tirta Farisaldi Ibrahim', NULL, 'Teknik Komputer', 6, 2021, 1, NULL),
+(25, 'Muhammad Aufa', NULL, 'Teknik Komputer', 6, 2021, 1, NULL),
+(26, 'Chofifah Widyah', NULL, 'Teknik Komputer', 7, 2021, 1, NULL),
+(27, 'Muhammad Hafidz', NULL, 'Teknik Komputer', 7, 2021, 1, NULL),
+(28, 'Muhammad Iqbal Alfarabi', NULL, 'Teknik Komputer', 7, 2021, 1, NULL),
+(29, 'Mohammad Johan Arifin', NULL, 'Teknik Komputer', 7, 2021, 1, NULL),
+(30, 'Muhammad Amin A', NULL, 'Teknik Komputer', 8, 2021, 1, NULL),
+(31, 'Nur Rizky Romadhon', NULL, 'Teknik Komputer', 8, 2021, 1, NULL),
+(32, 'Kirana Hanifati', NULL, 'Teknik Komputer', 8, 2021, 1, NULL),
+(33, 'Alfis Syahry', NULL, 'Teknik Komputer', 9, 2021, 1, NULL),
+(34, 'Nilam Winarti', NULL, 'Teknik Komputer', 9, 2021, 1, NULL),
+(35, 'Ahmad Dlomiri', NULL, 'Teknik Komputer', 9, 2021, 1, NULL),
+(36, 'Muhammad Izzat', NULL, 'Teknik Informatika', 11, 2021, 1, NULL),
+(37, 'Milati Rohmatu Sakinah', NULL, 'Teknik Informatika', 11, 2021, 1, NULL),
+(38, 'Alfian Haidar', NULL, 'Teknik Informatika', 11, 2021, 1, NULL),
+(39, 'Hakim Akbaru Sulthony', NULL, 'Teknik Informatika', 11, 2021, 1, NULL),
+(40, 'Rifqi Fajar Ramdani', NULL, 'Teknik Informatika', 11, 2021, 1, NULL),
+(41, 'Muhammad Riza Bachtiar', NULL, 'Teknik Informatika', 12, 2021, 1, NULL),
+(42, 'Muhammad Riza Nafis', NULL, 'Teknik Informatika', 12, 2021, 1, 'Nafis - 26.jpg'),
+(43, 'Mohamad Akbar Fadlika Wibowo', NULL, 'Teknik Informatika', 12, 2021, 1, NULL),
+(44, 'Muhammad Fahreza Ansori', NULL, 'Teknik Informatika', 12, 2021, 1, NULL),
+(45, 'Agustina Anisa F', NULL, 'Teknik Informatika', 12, 2021, 1, NULL),
+(46, 'M. Ivan Muntahir ', NULL, 'Teknik Komputer', 13, 2021, 1, NULL),
+(47, 'M. Mukhtarul Lathief', NULL, 'Teknik Komputer', 13, 2021, 1, NULL),
+(48, 'M. Wafiq K.', NULL, 'Teknik Komputer', 14, 2021, 1, NULL),
+(49, 'M. Firdaus. M. ', NULL, 'Teknik Komputer', 14, 2021, 1, NULL),
+(50, 'Awang Syahsiah A. ', NULL, 'Teknik Komputer', 14, 2021, 1, NULL),
+(51, 'Churun In L. ', NULL, 'Teknik Komputer', 14, 2021, 1, NULL),
+(52, 'Adnindiah Putri Imawati', NULL, 'Teknik Komputer', 15, 2021, 1, NULL),
+(53, 'Moch. Ilham Wahyudi', NULL, 'Teknik Komputer', 15, 2021, 1, NULL),
+(54, 'Wiratama Ashidiqi N', NULL, 'Teknik Komputer', 15, 2021, 1, NULL),
+(55, 'Ghafariz Ainoor Rohan', NULL, 'Teknik Komputer', 15, 2021, 1, NULL),
+(56, 'Sabillah Ferdiana Febrianti', NULL, 'Teknik Informatika', 16, 2021, 1, NULL),
+(57, 'Muhammad Ghozy Al Ghifari', NULL, 'Teknik Informatika', 16, 2021, 1, NULL),
+(58, 'Refano Pradana Yogatama', NULL, 'Teknik Informatika', 16, 2021, 1, NULL),
+(59, 'Rochimatus Sa\'diyah', NULL, 'Teknik Informatika', 16, 2021, 1, 'rochimatus - 22.jpg'),
+(60, 'Muhammad Satriyo Aji', NULL, 'Teknik Informatika', 16, 2021, 1, 'Muhammad Satriyo Aji - 27.jpeg'),
+(61, 'Yanu Adi Nugraha', NULL, 'Teknik Informatika', 16, 2021, 1, NULL),
+(62, 'I Made Akira Ivandio Agusta', NULL, 'Teknik Informatika', 17, 2021, 1, 'I made akira - 30.jpg'),
+(63, 'Sylvi Indryana Safira', NULL, 'Teknik Informatika', 17, 2021, 1, NULL),
+(64, 'Andi Abdul Salam Sabil', NULL, 'Teknik Informatika', 17, 2021, 1, NULL),
+(65, 'Sabila Jamal', NULL, 'Teknik Informatika', 17, 2021, 1, '13 - Sabila Jamal D4 2018.jpg'),
+(66, 'Lina Dwi Pratiwi', NULL, 'Teknik Informatika', 17, 2021, 1, NULL),
+(67, 'Muhammad Fadhli Ubaidilah', NULL, 'Teknik Informatika', 18, 2021, 1, NULL),
+(68, 'Ilyas Yudhistira Kurniawan', NULL, 'Teknik Informatika', 18, 2021, 1, NULL),
+(69, 'Tiara Puspita Anggraeni', NULL, 'Teknik Informatika', 18, 2021, 1, NULL),
+(70, 'Aditya Indra Pramana', NULL, 'Teknik Informatika', 18, 2021, 1, 'Aditya Indra Pramana - 27.jpg'),
+(71, 'Gebriela Rifka Duanti ', NULL, 'Teknik Informatika', 18, 2021, 1, NULL),
+(72, 'Fajar Septian Nugraha', NULL, 'Teknik Informatika', 18, 2021, 1, NULL),
+(73, 'M. Nisar Yanuar U. ', NULL, 'Teknik Informatika', 19, 2021, 1, 'Nisar - 20.jpg'),
+(74, 'Ardiansyah Dwi S. ', NULL, 'Teknik Informatika', 19, 2021, 1, NULL),
+(75, 'Faidza Fariq A.', NULL, 'Teknik Informatika', 19, 2021, 1, NULL),
+(76, 'Ahmad Maulana J. ', NULL, 'Teknik Informatika', 19, 2021, 1, NULL),
+(77, 'Helmi Dharmawan', NULL, 'Teknik Informatika', 19, 2021, 1, NULL),
+(78, 'Intan Fitri R. ', NULL, 'Teknik Informatika', 19, 2021, 1, NULL),
+(79, 'Iqbal Nur Imansyah', NULL, 'Teknik Informatika', 20, 2021, 1, 'Iqbal Nur Imansyah - 22.jpeg'),
+(80, 'Nawa Almahasin', NULL, 'Teknik Informatika', 20, 2021, 1, 'Nawa Almahasin - 11.jpeg'),
+(81, 'Goldy Najima', NULL, 'Teknik Informatika', 20, 2021, 1, NULL),
+(82, 'Chandra Kirana', NULL, 'Teknik Informatika', 20, 2021, 1, NULL),
+(83, 'Febilenia Risma', NULL, 'Teknik Informatika', 20, 2021, 1, NULL),
+(84, 'Danang Tribrata', NULL, 'Teknik Informatika', 20, 2021, 1, NULL),
+(85, 'Rizky Adam Pambudi', NULL, 'Teknik Informatika', 21, 2021, 1, NULL),
+(86, 'Muhammad Aziz Karebet', NULL, 'Teknik Informatika', 21, 2021, 1, NULL),
+(87, 'Muhammad Mujir', NULL, 'Teknik Informatika', 21, 2021, 1, '19 - Muhammad Mujir D4B18.jpg'),
+(88, 'Muhammad Irfan Shiddiq', NULL, 'Teknik Informatika', 21, 2021, 1, NULL),
+(89, 'Sarah Ummul Afifah', NULL, 'Teknik Informatika', 21, 2021, 1, NULL),
+(90, 'Marisna Nurul Fadhila', NULL, 'Teknik Informatika', 21, 2021, 1, NULL),
+(91, 'Hafizh Irfansyah Putra', NULL, 'Teknik Komputer', 22, 2021, 1, NULL),
+(92, 'Anisia Nabillah Hilwah', NULL, 'Teknik Komputer', 22, 2021, 1, NULL),
+(93, 'Alvian Tedy Aditya', NULL, 'Teknik Komputer', 23, 2021, 1, NULL),
+(94, 'Clifford Jason Taco', NULL, 'Teknik Komputer', 23, 2021, 1, NULL),
+(95, 'Didi Alfandi', NULL, 'Teknik Komputer', 23, 2021, 1, NULL),
+(96, 'Dinda Heni Ayundri', NULL, 'Teknik Komputer', 23, 2021, 1, NULL),
+(97, 'Fachri Azril', NULL, 'Teknik Komputer', 23, 2021, 1, NULL),
+(98, 'Silfiana Nur Hamida', NULL, '', NULL, 2021, 1, NULL),
+(99, 'Putra Edi Tia', NULL, '', NULL, 2021, 1, NULL),
+(100, 'Ardian Kristya Pratama', NULL, '', NULL, 2021, 1, NULL),
+(101, 'Andika Ahmad Ramadhan', NULL, '', NULL, 2021, 1, NULL),
+(102, 'Luqmanul Hakim Iksan', NULL, '', NULL, 2021, 1, NULL),
+(103, 'M. Rizqi Hasan Al-Banna', NULL, NULL, NULL, 2021, 1, NULL),
+(2110181038, 'Belinda Anindya KW', NULL, 'Teknik Informatika', 10, 2021, 1, NULL),
+(2110181039, 'Eka Dharma Widhyana', NULL, 'Teknik Informatika', 10, 2021, 1, NULL),
+(2110181044, 'Gilang Taufiq Arsyannur', NULL, 'Teknik Informatika', 10, 2021, 1, NULL),
+(2110181048, 'Ulima Inas Shabrina', NULL, 'Teknik Informatika', 10, 2021, 1, NULL),
+(2110181056, 'Zul Fauzi Oktavian', NULL, 'Teknik Informatika', 10, 2021, 1, NULL),
+(2110181059, 'I Gede Kresna Putra', NULL, 'Teknik Informatika', 10, 2021, 1, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `produk`
+-- Table structure for table `produk`
 --
 
 CREATE TABLE `produk` (
@@ -435,7 +441,7 @@ CREATE TABLE `produk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `produk`
+-- Dumping data for table `produk`
 --
 
 INSERT INTO `produk` (`id_produk`, `id_kategori`, `nama_produk`, `deskripsi_produk`, `demo_produk`, `video_display`, `poster`, `foto_produk1`, `foto_produk2`, `foto_produk3`, `foto_produk4`) VALUES
@@ -466,7 +472,7 @@ INSERT INTO `produk` (`id_produk`, `id_kategori`, `nama_produk`, `deskripsi_prod
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `testimoni`
+-- Table structure for table `testimoni`
 --
 
 CREATE TABLE `testimoni` (
@@ -478,10 +484,21 @@ CREATE TABLE `testimoni` (
   `tahun` int(11) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `testimoni`
+--
+
+INSERT INTO `testimoni` (`id_testimoni`, `deskripsi_testimoni`, `nrp`, `id_industri`, `peran`, `tahun`) VALUES
+(1, 'Acaranya berjalan dengan terstrukrur dan sangat bermanfaat, kita bisa mengetahui aplikasi lain yang dibuat oleh setiap tim dari mahasiswa pens, serta aplikasi yang di buat oleh maulidan games. Sehingga, kita bisa terinspirasi ide baru untuk membuat aplikasi yang lebih bagus. Dan selain mendapat pengalaman tim kami juga diberikan bonus sebagai di acara ini.', 98, NULL, 'Peserta Software Expo', 2021),
+(2, 'Software expo merupakan titik puncak dari perjuangan selama satu semester dalam menyelesaikan project yang sudah diberikan. Banyak banget pengalaman yang bisa kita dapatkan, mulai dari keseruan persiapan aplikasi, ketegangan saat presentasi di depan penguji, pengetahuan kriteria aplikasi yang siap diluncurkan, bagaimana menjalankan sebuah tim, bagaimana aplikasi yang kita bangun dari sudut pandang bisnis. Pokoknya seru!', 99, NULL, 'Peserta Software Expo', 2021),
+(3, 'Untuk saya, Software Expo 2020 merupakan event yang menjadi motivasi awal untuk menemukan minat dalam bidang software development. Dari Software Expo saya mendapatkan banyak proses dan pengalaman untuk membuat aplikasi yang selain meningkatkan hard skill, juga meningkatkan rasa percaya diri untuk berkembang lebih lagi di bidang software development.', 100, NULL, 'Mentor Software Expo', 2021),
+(4, 'WPPL adalah salah satu mata kuliah yang bagus untuk belajar bagaimana berkomunikasi dan bekerja dengan tim. DTIK Fest adalah salah satu terobosan yang bagus dalam memamerkan hasil pekerjaan seluruh tim yang tergabung dalam WPPL di tahun ini.', 102, NULL, 'Peserta Software Expo', 2021),
+(5, 'Software Expo itu Acaranya sama kayak demo project dosen pada umumnya cuma dibuat lebih megah dan banyak dosen yang mengunjungi tiap tiap stan. Ilmu yang didapat jelas banyak ya tapi yang paling berkesan itu ilmu metode scrum dalam membagi task dan koordinasi antar anggota. Kalau pengalaman yang paling diingat adalah mampu menyelesaikan project nya dalam 3 hari', 103, NULL, 'Peserta Software Expo', 2021);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tim_exhibitor`
+-- Table structure for table `tim_exhibitor`
 --
 
 CREATE TABLE `tim_exhibitor` (
@@ -495,7 +512,7 @@ CREATE TABLE `tim_exhibitor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tim_exhibitor`
+-- Dumping data for table `tim_exhibitor`
 --
 
 INSERT INTO `tim_exhibitor` (`id_tim`, `nama_tim`, `no_telp`, `email`, `alamat`, `id_produk`, `tahun`) VALUES
@@ -516,7 +533,7 @@ INSERT INTO `tim_exhibitor` (`id_tim`, `nama_tim`, `no_telp`, `email`, `alamat`,
 (15, 'Saaco', '085649007471', 'milhamwhyd@gmail.com', 'Surabaya', 15, 2021),
 (16, 'Antrean Sehat', '085785068842', 'rochimatus22@gmail.com', 'Surabaya', 16, 2021),
 (17, 'Benjol', '082145492740', 'ivandioakira@gmail.com', 'Surabaya', 17, 2021),
-(18, 'Clara', '089518805511', 'ilyasofficial1617@gmail.com', 'Surabaya', 18, 2021),
+(18, 'Clara', '089518805511', '', 'Surabaya', 18, 2021),
 (19, 'KA Trips', '089691772323', 'nisar.reus34@gmail.com', 'Surabaya', 19, 2021),
 (20, 'AssetNest', '085940870092', 'dragneel77@gmail.com', 'Surabaya', 20, 2021),
 (21, 'Hotelin', '082230258077', 'azizkarebet@gmail.com', 'Surabaya', 21, 2021),
@@ -528,78 +545,78 @@ INSERT INTO `tim_exhibitor` (`id_tim`, `nama_tim`, `no_telp`, `email`, `alamat`,
 --
 
 --
--- Indeks untuk tabel `galeri`
+-- Indexes for table `galeri`
 --
 ALTER TABLE `galeri`
   ADD PRIMARY KEY (`id_galeri`);
 
 --
--- Indeks untuk tabel `hadiah`
+-- Indexes for table `hadiah`
 --
 ALTER TABLE `hadiah`
   ADD PRIMARY KEY (`id_hadiah`),
   ADD KEY `id_industri` (`id_industri`);
 
 --
--- Indeks untuk tabel `hadiah_kategori_pemenang`
+-- Indexes for table `hadiah_kategori_pemenang`
 --
 ALTER TABLE `hadiah_kategori_pemenang`
   ADD KEY `id_hadiah` (`id_hadiah`),
   ADD KEY `id_kategori_pemenang` (`id_kategori_pemenang`);
 
 --
--- Indeks untuk tabel `industri`
+-- Indexes for table `industri`
 --
 ALTER TABLE `industri`
   ADD PRIMARY KEY (`id_industri`);
 
 --
--- Indeks untuk tabel `juri`
+-- Indexes for table `juri`
 --
 ALTER TABLE `juri`
   ADD PRIMARY KEY (`id_juri`);
 
 --
--- Indeks untuk tabel `juri_kategori_pemenang`
+-- Indexes for table `juri_kategori_pemenang`
 --
 ALTER TABLE `juri_kategori_pemenang`
   ADD KEY `id_juri` (`id_juri`),
   ADD KEY `id_kategori_pemenang` (`id_kategori_pemenang`);
 
 --
--- Indeks untuk tabel `kampus`
+-- Indexes for table `kampus`
 --
 ALTER TABLE `kampus`
   ADD PRIMARY KEY (`id_kampus`);
 
 --
--- Indeks untuk tabel `kategori`
+-- Indexes for table `kategori`
 --
 ALTER TABLE `kategori`
   ADD PRIMARY KEY (`id_kategori`);
 
 --
--- Indeks untuk tabel `kategori_pemenang`
+-- Indexes for table `kategori_pemenang`
 --
 ALTER TABLE `kategori_pemenang`
   ADD PRIMARY KEY (`id_kategori_pemenang`);
 
 --
--- Indeks untuk tabel `kategori_pemenang_mahasiswa`
+-- Indexes for table `kategori_pemenang_mahasiswa`
 --
 ALTER TABLE `kategori_pemenang_mahasiswa`
   ADD PRIMARY KEY (`id_kategori_pemenang`,`nrp`),
   ADD KEY `nrp` (`nrp`);
 
 --
--- Indeks untuk tabel `kategori_pemenang_tim`
+-- Indexes for table `kategori_pemenang_tim`
 --
 ALTER TABLE `kategori_pemenang_tim`
   ADD PRIMARY KEY (`id_kategori_pemenang`,`id_tim`),
   ADD KEY `id_tim` (`id_tim`);
 
 --
--- Indeks untuk tabel `kategori_produk_unused`
+-- Indexes for table `kategori_produk_unused`
 --
 ALTER TABLE `kategori_produk_unused`
   ADD PRIMARY KEY (`id_kategori`,`id_produk`),
@@ -607,7 +624,7 @@ ALTER TABLE `kategori_produk_unused`
   ADD KEY `id_produk` (`id_produk`);
 
 --
--- Indeks untuk tabel `mahasiswa`
+-- Indexes for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
   ADD PRIMARY KEY (`nrp`),
@@ -615,14 +632,14 @@ ALTER TABLE `mahasiswa`
   ADD KEY `id_tim` (`id_tim`);
 
 --
--- Indeks untuk tabel `produk`
+-- Indexes for table `produk`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`id_produk`),
   ADD KEY `id_kategori` (`id_kategori`);
 
 --
--- Indeks untuk tabel `testimoni`
+-- Indexes for table `testimoni`
 --
 ALTER TABLE `testimoni`
   ADD PRIMARY KEY (`id_testimoni`),
@@ -630,130 +647,130 @@ ALTER TABLE `testimoni`
   ADD KEY `id_industri` (`id_industri`);
 
 --
--- Indeks untuk tabel `tim_exhibitor`
+-- Indexes for table `tim_exhibitor`
 --
 ALTER TABLE `tim_exhibitor`
   ADD PRIMARY KEY (`id_tim`),
   ADD KEY `id_produk` (`id_produk`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `hadiah`
+-- AUTO_INCREMENT for table `hadiah`
 --
 ALTER TABLE `hadiah`
   MODIFY `id_hadiah` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `industri`
+-- AUTO_INCREMENT for table `industri`
 --
 ALTER TABLE `industri`
   MODIFY `id_industri` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT untuk tabel `juri`
+-- AUTO_INCREMENT for table `juri`
 --
 ALTER TABLE `juri`
   MODIFY `id_juri` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `kampus`
+-- AUTO_INCREMENT for table `kampus`
 --
 ALTER TABLE `kampus`
   MODIFY `id_kampus` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `kategori`
+-- AUTO_INCREMENT for table `kategori`
 --
 ALTER TABLE `kategori`
   MODIFY `id_kategori` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `kategori_pemenang`
+-- AUTO_INCREMENT for table `kategori_pemenang`
 --
 ALTER TABLE `kategori_pemenang`
   MODIFY `id_kategori_pemenang` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT untuk tabel `produk`
+-- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
   MODIFY `id_produk` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT untuk tabel `testimoni`
+-- AUTO_INCREMENT for table `testimoni`
 --
 ALTER TABLE `testimoni`
-  MODIFY `id_testimoni` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_testimoni` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT untuk tabel `tim_exhibitor`
+-- AUTO_INCREMENT for table `tim_exhibitor`
 --
 ALTER TABLE `tim_exhibitor`
   MODIFY `id_tim` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `hadiah`
+-- Constraints for table `hadiah`
 --
 ALTER TABLE `hadiah`
   ADD CONSTRAINT `hadiah_ibfk_1` FOREIGN KEY (`id_industri`) REFERENCES `industri` (`id_industri`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `hadiah_kategori_pemenang`
+-- Constraints for table `hadiah_kategori_pemenang`
 --
 ALTER TABLE `hadiah_kategori_pemenang`
   ADD CONSTRAINT `hadiah_kategori_pemenang_ibfk_2` FOREIGN KEY (`id_kategori_pemenang`) REFERENCES `kategori_pemenang` (`id_kategori_pemenang`) ON DELETE NO ACTION ON UPDATE CASCADE,
   ADD CONSTRAINT `hadiah_kategori_pemenang_ibfk_3` FOREIGN KEY (`id_hadiah`) REFERENCES `hadiah` (`id_hadiah`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `juri_kategori_pemenang`
+-- Constraints for table `juri_kategori_pemenang`
 --
 ALTER TABLE `juri_kategori_pemenang`
   ADD CONSTRAINT `juri_kategori_pemenang_ibfk_1` FOREIGN KEY (`id_kategori_pemenang`) REFERENCES `kategori_pemenang` (`id_kategori_pemenang`) ON DELETE NO ACTION ON UPDATE CASCADE,
   ADD CONSTRAINT `juri_kategori_pemenang_ibfk_2` FOREIGN KEY (`id_juri`) REFERENCES `juri` (`id_juri`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `kategori_pemenang_mahasiswa`
+-- Constraints for table `kategori_pemenang_mahasiswa`
 --
 ALTER TABLE `kategori_pemenang_mahasiswa`
   ADD CONSTRAINT `kategori_pemenang_mahasiswa_ibfk_1` FOREIGN KEY (`id_kategori_pemenang`) REFERENCES `kategori_pemenang` (`id_kategori_pemenang`) ON DELETE NO ACTION ON UPDATE CASCADE,
   ADD CONSTRAINT `kategori_pemenang_mahasiswa_ibfk_2` FOREIGN KEY (`nrp`) REFERENCES `mahasiswa` (`nrp`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `kategori_pemenang_tim`
+-- Constraints for table `kategori_pemenang_tim`
 --
 ALTER TABLE `kategori_pemenang_tim`
   ADD CONSTRAINT `kategori_pemenang_tim_ibfk_1` FOREIGN KEY (`id_kategori_pemenang`) REFERENCES `kategori_pemenang` (`id_kategori_pemenang`) ON DELETE NO ACTION ON UPDATE CASCADE,
   ADD CONSTRAINT `kategori_pemenang_tim_ibfk_2` FOREIGN KEY (`id_tim`) REFERENCES `tim_exhibitor` (`id_tim`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `mahasiswa`
+-- Constraints for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
   ADD CONSTRAINT `mahasiswa_ibfk_1` FOREIGN KEY (`id_tim`) REFERENCES `tim_exhibitor` (`id_tim`) ON DELETE NO ACTION ON UPDATE CASCADE,
   ADD CONSTRAINT `mahasiswa_ibfk_2` FOREIGN KEY (`id_kampus`) REFERENCES `kampus` (`id_kampus`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `produk`
+-- Constraints for table `produk`
 --
 ALTER TABLE `produk`
   ADD CONSTRAINT `produk_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `testimoni`
+-- Constraints for table `testimoni`
 --
 ALTER TABLE `testimoni`
   ADD CONSTRAINT `testimoni_ibfk_1` FOREIGN KEY (`nrp`) REFERENCES `mahasiswa` (`nrp`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `testimoni_ibfk_2` FOREIGN KEY (`id_industri`) REFERENCES `industri` (`id_industri`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `tim_exhibitor`
+-- Constraints for table `tim_exhibitor`
 --
 ALTER TABLE `tim_exhibitor`
   ADD CONSTRAINT `tim_exhibitor_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`) ON DELETE NO ACTION ON UPDATE CASCADE;

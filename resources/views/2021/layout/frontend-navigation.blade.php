@@ -31,7 +31,7 @@
                     </ul>
                 </li>
                 <li><a class="nav-link scrollto " href={{asset("/pemenang")}}>Pemenang</a></li>
-                <li><a class="nav-link scrollto" href={{asset("/arsip")}}>Arsip</a></li>
+                <li><a class="nav-link scrollto" href={{asset("/arsipp")}}>Arsip</a></li>
                 <li><a class="nav-link scrollto " href={{asset("/#faq")}}>FAQ</a></li>
                 {{-- <li><a class="nav-link scrollto " href="public/dtikfes2021-old/index.html">DTIK Fest 21(Old)</a> --}}
                 </li>
