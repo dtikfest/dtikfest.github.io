@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2021 at 10:17 AM
+-- Generation Time: Jun 12, 2021 at 05:11 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -407,12 +407,12 @@ INSERT INTO `mahasiswa` (`nrp`, `nama_mahasiswa`, `kelas`, `jurusan`, `id_tim`, 
 (95, 'Didi Alfandi', NULL, 'Teknik Komputer', 23, 2021, 1, NULL),
 (96, 'Dinda Heni Ayundri', NULL, 'Teknik Komputer', 23, 2021, 1, NULL),
 (97, 'Fachri Azril', NULL, 'Teknik Komputer', 23, 2021, 1, NULL),
-(98, 'Silfiana Nur Hamida', NULL, '', NULL, 2021, 1, NULL),
-(99, 'Putra Edi Tia', NULL, '', NULL, 2021, 1, NULL),
-(100, 'Ardian Kristya Pratama', NULL, '', NULL, 2021, 1, NULL),
+(98, 'Silfiana Nur Hamida', NULL, '', NULL, 2021, 1, 'Silfiana Nur Hamida.jpg'),
+(99, 'Putra Edi Tia', NULL, '', NULL, 2021, 1, 'Putra Edi Tia.jpg'),
+(100, 'Ardian Kristya Pratama', NULL, '', NULL, 2021, 1, 'Ardian Kristya.jpg'),
 (101, 'Andika Ahmad Ramadhan', NULL, '', NULL, 2021, 1, NULL),
-(102, 'Luqmanul Hakim Iksan', NULL, '', NULL, 2021, 1, NULL),
-(103, 'M. Rizqi Hasan Al-Banna', NULL, NULL, NULL, 2021, 1, NULL),
+(102, 'Andika Ahmad Ramadhan', NULL, '', NULL, 2021, 1, 'Andika Ramadhan.png'),
+(103, 'Luqmanul Hakim Iksan', NULL, NULL, NULL, 2021, 1, 'Luqmanul Hakim Iksan.jpg'),
 (2110181038, 'Belinda Anindya KW', NULL, 'Teknik Informatika', 10, 2021, 1, NULL),
 (2110181039, 'Eka Dharma Widhyana', NULL, 'Teknik Informatika', 10, 2021, 1, NULL),
 (2110181044, 'Gilang Taufiq Arsyannur', NULL, 'Teknik Informatika', 10, 2021, 1, NULL),
@@ -492,7 +492,7 @@ INSERT INTO `testimoni` (`id_testimoni`, `deskripsi_testimoni`, `nrp`, `id_indus
 (1, 'Acaranya berjalan dengan terstrukrur dan sangat bermanfaat, kita bisa mengetahui aplikasi lain yang dibuat oleh setiap tim dari mahasiswa pens, serta aplikasi yang di buat oleh maulidan games. Sehingga, kita bisa terinspirasi ide baru untuk membuat aplikasi yang lebih bagus. Dan selain mendapat pengalaman tim kami juga diberikan bonus sebagai di acara ini.', 98, NULL, 'Peserta Software Expo', 2021),
 (2, 'Software expo merupakan titik puncak dari perjuangan selama satu semester dalam menyelesaikan project yang sudah diberikan. Banyak banget pengalaman yang bisa kita dapatkan, mulai dari keseruan persiapan aplikasi, ketegangan saat presentasi di depan penguji, pengetahuan kriteria aplikasi yang siap diluncurkan, bagaimana menjalankan sebuah tim, bagaimana aplikasi yang kita bangun dari sudut pandang bisnis. Pokoknya seru!', 99, NULL, 'Peserta Software Expo', 2021),
 (3, 'Untuk saya, Software Expo 2020 merupakan event yang menjadi motivasi awal untuk menemukan minat dalam bidang software development. Dari Software Expo saya mendapatkan banyak proses dan pengalaman untuk membuat aplikasi yang selain meningkatkan hard skill, juga meningkatkan rasa percaya diri untuk berkembang lebih lagi di bidang software development.', 100, NULL, 'Mentor Software Expo', 2021),
-(4, 'WPPL adalah salah satu mata kuliah yang bagus untuk belajar bagaimana berkomunikasi dan bekerja dengan tim. DTIK Fest adalah salah satu terobosan yang bagus dalam memamerkan hasil pekerjaan seluruh tim yang tergabung dalam WPPL di tahun ini.', 102, NULL, 'Peserta Software Expo', 2021),
+(4, 'WPPL adalah salah satu mata kuliah yang bagus untuk belajar bagaimana berkomunikasi dan bekerja dengan tim. DTIK Fest adalah salah satu terobosan yang bagus dalam memamerkan hasil pekerjaan seluruh tim yang tergabung dalam WPPL di tahun ini.', 102, NULL, 'Mentor Software Expo', 2021),
 (5, 'Software Expo itu Acaranya sama kayak demo project dosen pada umumnya cuma dibuat lebih megah dan banyak dosen yang mengunjungi tiap tiap stan. Ilmu yang didapat jelas banyak ya tapi yang paling berkesan itu ilmu metode scrum dalam membagi task dan koordinasi antar anggota. Kalau pengalaman yang paling diingat adalah mampu menyelesaikan project nya dalam 3 hari', 103, NULL, 'Peserta Software Expo', 2021);
 
 -- --------------------------------------------------------

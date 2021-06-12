@@ -61,8 +61,8 @@
                 </div>
                 <div class="row">
                     <div class="detail-button">
-                        <a href="#" class="btn-get-started link">Demo Produk</a>
-                        <a href="https://www.youtube.com/embed/QgoD1uAn0x8" class="btn-get-started video-lightbox"><i
+                        <a href="https://play.google.com/store/apps" class="btn-get-started link">Demo Produk</a>
+                        <a href={{$tim->produk->video_display}} class="btn-get-started video-lightbox"><i
                                 class='bx bx-play'></i> Video</a>
                     </div>
                 </div>

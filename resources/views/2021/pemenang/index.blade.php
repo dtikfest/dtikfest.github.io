@@ -45,7 +45,7 @@
             @endforeach
         </div>
 
-        <div class="show" data-aos="fade-up" onclick="showContent()">
+        {{-- <div class="show" data-aos="fade-up" onclick="showContent()">
             <i class='bx bxs-chevron-down-circle' style='color:#2d75bb'></i>
         </div>
 
@@ -53,17 +53,17 @@
             <div class="row">
                 <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
                     <a href="{{asset('/pemenang/peringkat')}}">
-                        <div class="item-group">
-                            <h3>Top Softskill</h3>
-                            <h4>Individual Award</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <div class="item-group">
+            <h3>Top Softskill</h3>
+            <h4>Individual Award</h4>
         </div>
-        <div class="hide" data-aos="fade-up" onclick="hideContent()">
-            <i class='bx bxs-chevron-up-circle' style='color:#2d75bb'></i>
-        </div>
+        </a>
+    </div>
+    </div>
+    </div>
+    <div class="hide" data-aos="fade-up" onclick="hideContent()">
+        <i class='bx bxs-chevron-up-circle' style='color:#2d75bb'></i>
+    </div> --}}
     </div>
 </section>
 <!-- End Kategori Pemenang -->
