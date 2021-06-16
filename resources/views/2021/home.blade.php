@@ -128,7 +128,8 @@
                             <p>
                                 {{ $testi->deskripsi_testimoni}}
                             </p>
-                            <img src="{{asset('/img/testi.jpg')}}" class="testimonial-img" alt="">
+                            <img src="{{asset('aset-'.$tahun.'/img/mahasiswa/'. $testi->mahasiswa->foto)}}"
+                                class="testimonial-img" alt="" style="height: 78px; width:78px">
                             <h3>{{$testi->mahasiswa->nama_mahasiswa}}</h3>
                             <h4>{{$testi->peran}}</h4>
                             <div class="icon">

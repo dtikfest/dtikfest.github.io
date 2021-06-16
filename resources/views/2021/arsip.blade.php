@@ -29,27 +29,13 @@
                             <img src="{{asset('aset-'.$tahun.'/img/DTIK Fest.png')}}" alt="">
                         </div>
                         <div class="col text">
-                            <h4>DTIK Fest 2021</h4>
-                            <p>Politeknik Negeri Surabaya</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-12 arsip-box" data-aos="fade-up">
-                <a href="#">
-                    <div class="row align-items-center">
-                        <div class="col-1 icon">
-                            <img src="{{asset('aset-'.$tahun.'/img/DTIK Fest.png')}}" alt="">
-                        </div>
-                        <div class="col text">
-                            <h4>DTIK Fest 2021</h4>
-                            <p>Politeknik Negeri Surabaya</p>
+                            <h4>Coming Soon</h4>
+                            <p></p>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- End Arsip -->
