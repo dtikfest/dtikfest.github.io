@@ -18,8 +18,8 @@ class ProdukController extends Controller
     {
         $tahun = session()->get('tahun');
         $images = [];
-        foreach (glob(public_path() . '/aset-' . $tahun . '/img/produk/' . $tim->produk->id_produk . preg_replace("/[^A-Za-z0-9]/", "", $tim->produk->nama_produk) . '/*.*') as $filename) {
-            $images[] = '/aset-' . $tahun . '/img/produk/' . $tim->produk->id_produk . preg_replace("/[^A-Za-z0-9]/", "", $tim->produk->nama_produk) . '/' . basename($filename);
+        foreach (glob(public_path() . '/aset-' . $tahun . '/img/produk/' . $tim->produk->id_produk . strtolower(preg_replace("/[^A-Za-z0-9]/", "", $tim->produk->nama_produk)) . '/*.*') as $filename) {
+            $images[] = '/aset-' . $tahun . '/img/produk/' . $tim->produk->id_produk . strtolower(preg_replace("/[^A-Za-z0-9]/", "", $tim->produk->nama_produk)) . '/' . basename($filename);
         }
 
         return view($tahun . '.produk.detail-produk', compact('tim', 'tahun', 'images'));
