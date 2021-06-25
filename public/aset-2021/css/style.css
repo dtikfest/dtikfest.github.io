@@ -1759,6 +1759,26 @@ section {
     text-align: center;
 }
 
+.kategori-pemenang .icon {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 15px 15px;
+    margin: auto 20px;
+}
+
+.kategori-pemenang .icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.kategori-pemenang .text {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Peringkat Pemenang

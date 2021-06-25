@@ -25,9 +25,14 @@
             @foreach ($kategoriPemenangMhs as $value)
             <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
                 <a href={{ asset('/pemenang/personal/'.strtolower($value->id_kategori_pemenang))}}>
-                    <div class="item-group">
-                        <h3>{{$value->kategoriPemenang->nama_kategori_pemenang}}</h3>
-                        <h4>Kategori Individu</h4>
+                    <div class="item-group row align-items-center">
+                        <div class="col-1 icon">
+                            <img src="{{asset('aset-'.$tahun.'/img/pemenang/backend.png')}}" alt="">
+                        </div>
+                        <div class="col text">
+                            <h3>{{$value->kategoriPemenang->nama_kategori_pemenang}}</h3>
+                            <h4>Kategori Individu</h4>
+                        </div>                      
                     </div>
                 </a>
             </div>
@@ -36,9 +41,14 @@
             @foreach ($kategoriPemenangTim as $value)
             <div class="col-md-6 item" data-aos="fade-up" data-aos-delay="50">
                 <a href={{ asset('/pemenang/tim/'.strtolower($value->id_kategori_pemenang))}}>
-                    <div class="item-group">
-                        <h3>{{$value->kategoriPemenang->nama_kategori_pemenang}}</h3>
-                        <h4>Kategori Tim</h4>
+                    <div class="item-group row align-items-center">
+                        <div class="col-1 icon">
+                            <img src="{{asset('aset-'.$tahun.'/img/pemenang/backend.png')}}" alt="">
+                        </div>
+                        <div class="col text">
+                            <h3>{{$value->kategoriPemenang->nama_kategori_pemenang}}</h3>
+                            <h4>Kategori Individu</h4>
+                        </div>  
                     </div>
                 </a>
             </div>
