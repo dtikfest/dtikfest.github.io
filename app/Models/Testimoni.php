@@ -14,7 +14,7 @@ class Testimoni extends Model
 
     public function mahasiswa()
     {
-        return $this->hasOne(Mahasiswa::class, 'nrp');
+        return $this->hasOne(Mahasiswa::class, 'nrp', 'nrp');
         //parameter kedua untuk menspesifikasi field yang dijadikan relasi
     }
 }

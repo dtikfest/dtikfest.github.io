@@ -13,7 +13,7 @@ class TimExhibitor extends Model
 
     public function produk()
     {
-        return $this->hasOne(Produk::class, 'id_produk');
+        return $this->hasOne(Produk::class, 'id_produk', 'id_produk');
     }
 
     public function anggotaTim()
