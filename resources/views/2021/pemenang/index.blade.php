@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row">
             @foreach ($kategoriPemenangMhs as $value)
-            <div class="col-md-4 item" data-aos="fade-up" data-aos-delay="50">
+            <div class="col-lg-4 col-md-6 item" data-aos="fade-up" data-aos-delay="50">
                 <a href={{ asset('/pemenang/personal/'.strtolower($value->id_kategori_pemenang))}}>
                     <div class="item-group row align-items-center">
                         <div class="col-1 icon">
@@ -39,7 +39,7 @@
             @endforeach
 
             @foreach ($kategoriPemenangTim as $value)
-            <div class="col-md-4 item" data-aos="fade-up" data-aos-delay="50">
+            <div class="col-lg-4 col-md-6 item" data-aos="fade-up" data-aos-delay="50">
                 <a href={{ asset('/pemenang/tim/'.strtolower($value->id_kategori_pemenang))}}>
                     <div class="item-group row align-items-center">
                         <div class="col-1 icon">

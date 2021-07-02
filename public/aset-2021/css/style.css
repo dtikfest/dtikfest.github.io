@@ -1814,9 +1814,13 @@ section {
     position: relative;
     overflow: hidden;
     width: 90%;
-    border-radius: 30px;
+    border-radius: 10px;
+    border: 1px solid #ebecf0;
     background: #ffffff;
     margin: 10px auto;
+}
+
+#peringkat .peringkat-box:hover {
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.1);
 }
 
