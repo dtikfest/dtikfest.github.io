@@ -20,6 +20,7 @@
                         {{-- {{dd($value->mhs)}} --}}
                         <img src="{{asset('aset-'.$tahun.'/img/mahasiswa/'.$value->mhs->foto)}}" alt=""
                             style="height:300px">
+                        <div class="urutan-peringkat" style="height: 50px; width:50px">1</div>
                         <div class="desc">
                             <h3>{{$value->mhs->nama_mahasiswa}}</h3>
                             {{-- <h4>kelas</h4> --}}
@@ -37,6 +38,7 @@
                     <div class="peringkat-box">
                         <img src={{asset('aset-'.$tahun.'/img/produk/'.$value->id_tim. preg_replace("/[^A-Za-z0-9]/", "", $value->tim->produk->nama_produk).'/produk.png')}}
                             alt="">
+                        <div class="urutan-peringkat" style="height: 50px; width:50px">1</div>
                         <div class="desc">
                             <h3>{{$value->tim->produk->nama_produk}}</h3>
                             <h4>Tim {{$value->tim->nama_tim}}</h4>
