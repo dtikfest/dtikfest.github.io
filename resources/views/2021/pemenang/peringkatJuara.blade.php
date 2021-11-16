@@ -22,7 +22,7 @@
                             style="height:300px">
                         <div class="desc">
                             <h3>{{$value->mhs->nama_mahasiswa}}</h3>
-                            {{-- <h4>kelas</h4> --}}
+                            <h4>{{$value->mhs->no_hp}}</h4>
                         </div>
                     </div>
                 </a>
