@@ -674,15 +674,6 @@ section {
 # galeri
 --------------------------------------------------------------*/
 
-#gallery-page img {
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    margin: 0 auto;
-    width: 350px;
-    height: 200px;
-}
-
 .galeri {
     padding: 60px 0;
     background: url("../img/bg-gallery.png") no-repeat top, #1762AA;
@@ -713,18 +704,20 @@ section {
 .galeri .gallery {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    background: #ffffff;
-    margin: 10px auto;
+    border: 10px solid #ffffff;
+    margin: 0 15px;
 }
 
 .galeri .gallery img {
-    width: 94%;
-    margin: 3%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    width: 500px;
+    height: 300px;
 }
 
 .galeri .swiper-pagination {
-    margin-top: 20px;
+    margin-top: 50px;
     position: relative;
 }
 
