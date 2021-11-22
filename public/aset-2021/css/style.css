@@ -673,7 +673,14 @@ section {
 /*--------------------------------------------------------------
 # galeri
 --------------------------------------------------------------*/
-
+#gallery-page img {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: 200px;
+}
 .galeri {
     padding: 60px 0;
     background: url("../img/bg-gallery.png") no-repeat top, #1762AA;
