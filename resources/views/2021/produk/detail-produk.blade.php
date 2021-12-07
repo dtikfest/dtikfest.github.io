@@ -21,9 +21,9 @@
                     <a class="next" onclick="plusSlides(1)">❯</a>
 
                     <div class="row">
-                        @foreach ($images as $img)
+                        @foreach ($images as $key=>$img)
                         <div class="column">
-                            <img class="demo cursor" src="{{asset($img)}}" onclick="currentSlide($i)">
+                            <img class="demo cursor" src="{{asset($img)}}" onclick="currentSlide({{$key+1}})">
                         </div>
                         @endforeach
                     </div>
@@ -72,7 +72,6 @@
     </div>
 </section>
 <!-- End Mobile -->
-
 
 <script>
     /*Image Slideshow*/
