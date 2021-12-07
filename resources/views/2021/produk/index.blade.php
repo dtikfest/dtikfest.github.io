@@ -16,7 +16,7 @@
                 <a href="{{asset('/detailProdukTim/'.$katPro->tim->id_tim)}}">
                     <div class="product-box">
                         {{-- <img src="{{asset('aset-'.$tahun.'/img/products/'. $katPro->foto_produk1)}}" alt=""> --}}
-                        <img src="{{asset('aset-'.$tahun.'/img/produk/'. $katPro->id_produk. preg_replace("/[^A-Za-z0-9]/", "", $katPro->nama_produk).'/produk.png')}}"
+                        <img src="{{asset('aset-'.$tahun.'/img/produk/'. $katPro->id_produk. strtolower(preg_replace("/[^A-Za-z0-9]/", "", $katPro->nama_produk)).'/produk.png')}}"
                             alt="">
                         <div class="desc">
                             <h3>{{$katPro->nama_produk}}</h3>

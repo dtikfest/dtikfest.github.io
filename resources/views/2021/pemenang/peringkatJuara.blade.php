@@ -23,7 +23,7 @@
                         <div class="urutan-peringkat" style="height: 50px; width:50px">{{$value->juara_ke}}</div>
                         <div class="desc">
                             <h3>{{$value->mhs->nama_mahasiswa}}</h3>
-                            {{-- <h4>kelas</h4> --}}
+                            <h4>{{$value->mhs->no_hp}}</h4>
                         </div>
                     </div>
                 </a>
@@ -36,7 +36,7 @@
             <div class="col-lg-4 col-md-6 app" data-aos="zoom-in">
                 <a href={{asset('/detailProdukTim/'.$value->tim->id_tim)}}>
                     <div class="peringkat-box">
-                        <img src={{asset('aset-'.$tahun.'/img/produk/'.$value->id_tim. preg_replace("/[^A-Za-z0-9]/", "", $value->tim->produk->nama_produk).'/produk.png')}}
+                        <img src={{asset('aset-'.$tahun.'/img/produk/'.$value->id_tim. strtolower(preg_replace("/[^A-Za-z0-9]/", "", $value->tim->produk->nama_produk)).'/produk.png')}}
                             alt="">
                         <div class="urutan-peringkat" style="height: 50px; width:50px">{{$value->juara_ke}}</div>
                         <div class="desc">

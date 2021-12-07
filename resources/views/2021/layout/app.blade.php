@@ -42,7 +42,7 @@
     <div class="preloader">
         <div class="ring">
             <div class="ring-img">
-                <img src="{{asset('aset-'.$tahun.'/img/DTIK Fest.png')}}" class="img-fluid" alt="">
+                <img src="{{asset('aset-'.$tahun.'/img/DTIK Fest.png')}}" alt="">
             </div>
             <span></span>
         </div>
