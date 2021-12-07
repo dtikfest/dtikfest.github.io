@@ -25,7 +25,9 @@ class PemenangController extends Controller
     {
         $tahun = session()->get('tahun');
         $req = $req->segment(count(request()->segments()));
-        $peringkatJuara = KategoriPemenangMhs::where('id_kategori_pemenang', $req)->get();
+        $peringkatJuara = KategoriPemenangMhs::where('id_kategori_pemenang', $req)
+        ->orderBy('juara_ke', 'ASC')
+        ->get();
         $jenis = 'solo';
         return view($tahun . '.pemenang.peringkatJuara', compact('tahun', 'peringkatJuara', 'jenis'));
     }
@@ -33,7 +35,9 @@ class PemenangController extends Controller
     {
         $tahun = session()->get('tahun');
         $req = $req->segment(count(request()->segments()));
-        $peringkatJuara = KategoriPemenangTim::where('id_kategori_pemenang', $req)->get();
+        $peringkatJuara = KategoriPemenangTim::where('id_kategori_pemenang', $req)
+        ->orderBy('juara_ke', 'ASC')
+        ->get();
         $jenis = 'tim';
         return view($tahun . '.pemenang.peringkatJuara', compact('tahun', 'peringkatJuara', 'jenis'));
     }
